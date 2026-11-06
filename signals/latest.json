@@ -1,0 +1,62 @@
+{
+  "generated_utc": "2026-11-06T06:18:00Z",
+  "valid_until_utc": "2026-11-06T18:18:00Z",
+  "mood": "risk-off",
+  "headline": "Risk-off after Thursday's tech rout (Nasdaq -5.5%, Nikkei -6%+) puts the yen and dollar in demand ahead of US and Canadian jobs data at 15:30. Trade only GBP-vs-NZD/CHF setups, pullback-only, and stand aside around NFP.",
+  "allow": [
+    {
+      "symbol": "GBPNZD",
+      "dir": "LONG"
+    },
+    {
+      "symbol": "NZDCHF",
+      "dir": "SHORT"
+    }
+  ],
+  "backup": {
+    "symbol": "GBPCHF",
+    "dir": "LONG"
+  },
+  "blackouts": [
+    {
+      "from": "2026-11-06T06:45:00Z",
+      "to": "2026-11-06T07:30:00Z",
+      "ccy": "EUR"
+    },
+    {
+      "from": "2026-11-06T09:15:00Z",
+      "to": "2026-11-06T10:00:00Z",
+      "ccy": "USD"
+    },
+    {
+      "from": "2026-11-06T13:15:00Z",
+      "to": "2026-11-06T14:00:00Z",
+      "ccy": "ALL"
+    },
+    {
+      "from": "2026-11-06T13:15:00Z",
+      "to": "2026-11-06T14:00:00Z",
+      "ccy": "CAD"
+    },
+    {
+      "from": "2026-11-06T13:55:00Z",
+      "to": "2026-11-06T14:40:00Z",
+      "ccy": "USD"
+    },
+    {
+      "from": "2026-11-06T14:45:00Z",
+      "to": "2026-11-06T15:30:00Z",
+      "ccy": "USD"
+    },
+    {
+      "from": "2026-11-06T15:45:00Z",
+      "to": "2026-11-06T16:30:00Z",
+      "ccy": "JPY"
+    },
+    {
+      "from": "2026-11-06T17:00:00Z",
+      "to": "2026-11-06T17:45:00Z",
+      "ccy": "USD"
+    }
+  ]
+}
