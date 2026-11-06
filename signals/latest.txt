@@ -1,6 +1,6 @@
 version=1
-generated_utc=2026-11-06T07:06:00Z
-valid_until_utc=2026-11-06T19:06:00Z
+generated_utc=2026-11-06T07:07:00Z
+valid_until_utc=2026-11-06T19:07:00Z
 mood=risk-off
 max_trades=3
 allow=GBPNZD,LONG
