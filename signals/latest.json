@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-11-06T06:51:00Z",
-  "valid_until_utc": "2026-11-06T18:51:00Z",
+  "generated_utc": "2026-11-06T07:06:00Z",
+  "valid_until_utc": "2026-11-06T19:06:00Z",
   "mood": "risk-off",
-  "headline": "A tech-led rout (Nasdaq -5.5%, VIX near 28) keeps havens bid before US payrolls at 15:30. Trade only the GBP/CHF vs NZD/AUD crosses, which have no medium or high news today.",
+  "headline": "Thursday's tech rout (Nasdaq -5.5%, VIX ~28) keeps havens bid before US payrolls at 15:30. Trade only GBP/CHF against NZD/AUD; these have no medium or high news today.",
   "allow": [
     {
       "symbol": "GBPNZD",
@@ -25,11 +25,6 @@
     {
       "from": "2026-11-06T06:45:00Z",
       "to": "2026-11-06T07:30:00Z",
-      "ccy": "EUR"
-    },
-    {
-      "from": "2026-11-06T09:15:00Z",
-      "to": "2026-11-06T10:00:00Z",
       "ccy": "EUR"
     },
     {
