@@ -1,67 +1,19 @@
 {
-  "generated_utc": "2026-11-06T07:07:00Z",
-  "valid_until_utc": "2026-11-06T19:07:00Z",
-  "mood": "risk-off",
-  "headline": "Thursday's tech rout (Nasdaq -5.5%, VIX ~28) keeps havens bid before US payrolls at 15:30 Kyiv time. Trade only GBP/CHF against NZD/AUD; these have no medium or high news today.",
+  "generated_utc": "2026-11-06T16:09:10Z",
+  "valid_until_utc": "2026-11-07T04:09:10Z",
+  "mood": "mixed",
+  "headline": "Strong US jobs (+165K) lifted the dollar and Fed hike bets to 78% for December. Late Friday after the data: trade small or stand aside.",
   "allow": [
-    {
-      "symbol": "GBPNZD",
-      "dir": "LONG"
-    },
-    {
-      "symbol": "NZDCHF",
-      "dir": "SHORT"
-    },
     {
       "symbol": "GBPAUD",
       "dir": "LONG"
     }
   ],
   "backup": {
-    "symbol": "AUDNZD",
+    "symbol": "GBPNZD",
     "dir": "LONG"
   },
   "blackouts": [
-    {
-      "from": "2026-11-06T06:45:00Z",
-      "to": "2026-11-06T07:30:00Z",
-      "ccy": "EUR"
-    },
-    {
-      "from": "2026-11-06T09:15:00Z",
-      "to": "2026-11-06T10:00:00Z",
-      "ccy": "USD"
-    },
-    {
-      "from": "2026-11-06T09:45:00Z",
-      "to": "2026-11-06T10:30:00Z",
-      "ccy": "EUR"
-    },
-    {
-      "from": "2026-11-06T13:15:00Z",
-      "to": "2026-11-06T14:00:00Z",
-      "ccy": "USD"
-    },
-    {
-      "from": "2026-11-06T13:15:00Z",
-      "to": "2026-11-06T14:00:00Z",
-      "ccy": "ALL"
-    },
-    {
-      "from": "2026-11-06T13:15:00Z",
-      "to": "2026-11-06T14:00:00Z",
-      "ccy": "CAD"
-    },
-    {
-      "from": "2026-11-06T13:55:00Z",
-      "to": "2026-11-06T14:40:00Z",
-      "ccy": "USD"
-    },
-    {
-      "from": "2026-11-06T14:45:00Z",
-      "to": "2026-11-06T15:30:00Z",
-      "ccy": "USD"
-    },
     {
       "from": "2026-11-06T15:45:00Z",
       "to": "2026-11-06T16:30:00Z",
