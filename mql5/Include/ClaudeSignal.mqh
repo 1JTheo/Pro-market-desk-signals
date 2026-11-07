@@ -353,6 +353,39 @@ public:
       return false;
      }
 
+   //--- news ahead for an OPEN position: true if a blackout covering this
+   //    symbol is active now or starts within leadSec. fromOut = that
+   //    blackout's start (lets the EA act once per news event).
+   bool              BlackoutSoon(const string symbol, const datetime gmt, const int leadSec, datetime &fromOut) const
+     {
+      fromOut = 0;
+      if(m_passThrough || !m_loaded) return false;
+      string code = CodeOf(symbol);
+      for(int i = 0; i < ArraySize(m_black); i++)
+        {
+         if(m_black[i].ccy != "ALL" && StringFind(code, m_black[i].ccy) < 0) continue;
+         if(gmt > m_black[i].toGmt) continue;                       // already over
+         if(m_black[i].fromGmt - gmt > leadSec) continue;           // too far ahead
+         fromOut = m_black[i].fromGmt;
+         return true;
+        }
+      return false;
+     }
+
+   //--- short tag of the best group listing this symbol, e.g. "T:L", "S:S"; "" if none
+   string            TagFor(const string symbol) const
+     {
+      if(m_passThrough || !m_loaded) return "";
+      string code = CodeOf(symbol);
+      int best = CS_GROUP_NONE, dir = 0;
+      for(int i = 0; i < ArraySize(m_allow); i++)
+         if(m_allow[i].code == code && (best == CS_GROUP_NONE || m_allow[i].group < best))
+           { best = m_allow[i].group; dir = m_allow[i].dir; }
+      if(best == CS_GROUP_NONE) return "";
+      string g = (best == CS_GROUP_TOP ? "T" : best == CS_GROUP_BACKUP ? "K" : best == CS_GROUP_STRENGTH ? "S" : "B");
+      return g + (dir == CS_DIR_LONG ? ":L" : ":S") + (HasConflict(symbol) ? "!" : "");
+     }
+
    //--- true if two groups list this symbol in opposite directions
    bool              HasConflict(const string symbol) const
      {
