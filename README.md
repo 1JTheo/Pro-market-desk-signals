@@ -27,17 +27,29 @@ allow=GBPNZD,LONG
 allow=NZDCHF,SHORT
 allow=AUDCHF,SHORT
 backup=GBPAUD,LONG
+strength=GBPNZD,LONG
+strength=GBPJPY,LONG
+strength=NZDCAD,SHORT
+strength=CADJPY,LONG
+bias=EURJPY,SHORT
+bias=AUDNZD,LONG
 blackout=2026-11-06T13:15:00Z,2026-11-06T13:45:00Z,USD
 end=1
 ```
 
-| Key | Meaning |
-|---|---|
-| `allow` | Today's Top 3: symbol (6 letters, no broker suffix) and `LONG` or `SHORT`. 0–3 lines. No lines = stand aside. |
-| `backup` | Optional 4th pair. The EA ignores it unless `UseBackup` is on. |
-| `blackout` | No new entries for pairs containing that currency between the two times. `ALL` blocks everything. |
-| `valid_until_utc` | After this the EA opens nothing until a new signal arrives. |
-| `max_trades` | Daily cap the analysis recommends (never above 3). |
+| Key | Group | Meaning |
+|---|---|---|
+| `allow` | Top 3 | Claude's three picks: symbol (6 letters, no broker suffix) and `LONG` or `SHORT`. 0–3 lines. |
+| `backup` | Backup | Optional 4th pick. Used only if `UseBackup` is on. |
+| `strength` | Strength | The 2 strongest currencies crossed with the 2 weakest on the strength meter (up to 4 pairs), long the strong side. |
+| `bias` | Bias | Pairs ranked No edge, Avoid or Excluded that still carry a Long or Short bias. |
+| `blackout` | all | No new entries for pairs containing that currency between the two times. `ALL` blocks everything. |
+| `valid_until_utc` | all | After this the EA opens nothing until a new signal arrives. |
+| `max_trades` | Top 3 | Daily cap the analysis recommends for the Top 3 (never above 3). |
+
+Priority when a pair is in more than one group: Top 3 > Backup > Strength > Bias. If two groups list the same pair in **opposite** directions, the pair is not traded that day.
+
+Older EAs that only know `allow`/`backup` ignore the `strength` and `bias` lines.
 
 ## Safety rules built into `ClaudeSignal.mqh`
 

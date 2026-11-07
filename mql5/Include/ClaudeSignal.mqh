@@ -1,8 +1,18 @@
 //+------------------------------------------------------------------+
 //| ClaudeSignal.mqh                                                 |
-//| Reads the Market Desk Pro signal file and answers two questions: |
-//|   IsAllowed(symbol, direction)  - may the EA open this trade?    |
+//| Reads the Market Desk Pro signal file and answers:               |
+//|   GroupFor(symbol, dir, ...)    - which signal group allows it?  |
+//|   IsAllowed(symbol, direction)  - Top 3 (+backup) only, as v1    |
 //|   InBlackout(symbol, gmtTime)   - is this a news no-entry window?|
+//|                                                                  |
+//| Signal groups                                                    |
+//|   TOP 3    allow=    Claude's three picks                        |
+//|   BACKUP   backup=   Claude's fourth pick                        |
+//|   STRENGTH strength= 2 strongest x 2 weakest currencies (4 pairs)|
+//|   BIAS     bias=     No edge / Avoid / Excluded pairs that still |
+//|                      carry a Long or Short bias                  |
+//|   A pair listed in two groups with opposite directions is never  |
+//|   traded (conflict = stand aside).                               |
 //|                                                                  |
 //| Design rules                                                     |
 //|  * Fail closed: no file, stale file or bad file => no new trades.|
@@ -18,17 +28,26 @@
 #define CS_DEFAULT_URL "https://raw.githubusercontent.com/1JTheo/Pro-market-desk-signals/main/signals/latest.txt"
 #define CS_MAX_ALLOW    3
 #define CS_MAX_BACKUP   1
+#define CS_MAX_STRENGTH 4
+#define CS_MAX_BIAS     30
 #define CS_MAX_BLACKOUT 60
 #define CS_MAX_VALID_H  30
 
 #define CS_DIR_LONG   1
 #define CS_DIR_SHORT -1
 
+#define CS_GROUP_NONE     0
+#define CS_GROUP_TOP      1
+#define CS_GROUP_BACKUP   2
+#define CS_GROUP_STRENGTH 3
+#define CS_GROUP_BIAS     4
+
 struct SClaudeAllow
   {
    string            code;     // e.g. "GBPNZD"
    int               dir;      // CS_DIR_LONG / CS_DIR_SHORT
    bool              backup;   // true for the backup pick
+   int               group;    // CS_GROUP_*
   };
 
 struct SClaudeBlackout
@@ -143,7 +162,7 @@ private:
       int      maxTrades = 3;
       SClaudeAllow    al[];
       SClaudeBlackout bl[];
-      int nAllow = 0, nBackup = 0, nBlack = 0;
+      int nAllow = 0, nBackup = 0, nBlack = 0, nStrength = 0, nBias = 0;
 
       for(int i = 0; i < n; i++)
         {
@@ -161,7 +180,7 @@ private:
          else if(key == "mood")            mood = val;
          else if(key == "max_trades")      maxTrades = (int)StringToInteger(val);
          else if(key == "end")             ended = (val == "1");
-         else if(key == "allow" || key == "backup")
+         else if(key == "allow" || key == "backup" || key == "strength" || key == "bias")
            {
             string p[];
             if(StringSplit(val, ',', p) != 2) { err = "bad " + key + " line"; return false; }
@@ -171,11 +190,15 @@ private:
               { err = "bad symbol " + code; return false; }
             int dir = (d == "LONG" ? CS_DIR_LONG : (d == "SHORT" ? CS_DIR_SHORT : 0));
             if(dir == 0) { err = "bad direction " + d; return false; }
-            bool isB = (key == "backup");
-            if(isB) nBackup++; else nAllow++;
+            int grp = (key == "allow" ? CS_GROUP_TOP : key == "backup" ? CS_GROUP_BACKUP
+                       : key == "strength" ? CS_GROUP_STRENGTH : CS_GROUP_BIAS);
+            if(grp == CS_GROUP_TOP) nAllow++;
+            else if(grp == CS_GROUP_BACKUP) nBackup++;
+            else if(grp == CS_GROUP_STRENGTH) nStrength++;
+            else nBias++;
             int k = ArraySize(al);
             ArrayResize(al, k + 1);
-            al[k].code = code; al[k].dir = dir; al[k].backup = isB;
+            al[k].code = code; al[k].dir = dir; al[k].backup = (grp == CS_GROUP_BACKUP); al[k].group = grp;
            }
          else if(key == "blackout")
            {
@@ -198,6 +221,7 @@ private:
       if(gen > TimeGMT() + 600)          { err = "generated time is in the future"; return false; }
       if(valid <= gen || valid - gen > CS_MAX_VALID_H * 3600) { err = "bad validity window"; return false; }
       if(nAllow > CS_MAX_ALLOW || nBackup > CS_MAX_BACKUP)    { err = "too many pairs"; return false; }
+      if(nStrength > CS_MAX_STRENGTH || nBias > CS_MAX_BIAS)  { err = "too many strength/bias pairs"; return false; }
       if(nBlack > CS_MAX_BLACKOUT)       { err = "too many blackouts"; return false; }
       if(maxTrades < 0 || maxTrades > 3) maxTrades = 3;
 
@@ -209,7 +233,7 @@ private:
       int na = ArraySize(al), nb = ArraySize(bl);
       ArrayResize(m_allow, na);
       for(int j = 0; j < na; j++)
-        { m_allow[j].code = al[j].code; m_allow[j].dir = al[j].dir; m_allow[j].backup = al[j].backup; }
+        { m_allow[j].code = al[j].code; m_allow[j].dir = al[j].dir; m_allow[j].backup = al[j].backup; m_allow[j].group = al[j].group; }
       ArrayResize(m_black, nb);
       for(int j = 0; j < nb; j++)
         { m_black[j].fromGmt = bl[j].fromGmt; m_black[j].toGmt = bl[j].toGmt; m_black[j].ccy = bl[j].ccy; }
@@ -329,19 +353,80 @@ public:
       return false;
      }
 
-   //--- the gate: call before every new entry. dir = CS_DIR_LONG or CS_DIR_SHORT
-   bool              IsAllowed(const string symbol, const int dir) const
+   //--- true if two groups list this symbol in opposite directions
+   bool              HasConflict(const string symbol) const
      {
-      if(m_passThrough) return true;
-      if(!IsFresh()) return false;
-      if(InBlackout(symbol, TimeGMT())) return false;
       string code = CodeOf(symbol);
+      int seen = 0;
       for(int i = 0; i < ArraySize(m_allow); i++)
         {
-         if(m_allow[i].backup && !m_useBackup) continue;
-         if(m_allow[i].code == code && m_allow[i].dir == dir) return true;
+         if(m_allow[i].code != code) continue;
+         if(seen == 0) seen = m_allow[i].dir;
+         else if(m_allow[i].dir != seen) return true;
         }
       return false;
+     }
+
+   //--- which enabled group allows this trade? Highest priority wins:
+   //    TOP > BACKUP > STRENGTH > BIAS. Returns CS_GROUP_NONE if none, if the
+   //    signal is stale, during a news blackout, or on a direction conflict.
+   //    In the tester / with the filter off it returns CS_GROUP_TOP.
+   int               GroupFor(const string symbol, const int dir, const bool useTop, const bool useBackup,
+                              const bool useStrength, const bool useBias) const
+     {
+      if(m_passThrough) return CS_GROUP_TOP;
+      if(!IsFresh()) return CS_GROUP_NONE;
+      if(InBlackout(symbol, TimeGMT())) return CS_GROUP_NONE;
+      if(HasConflict(symbol)) return CS_GROUP_NONE;
+      string code = CodeOf(symbol);
+      int best = CS_GROUP_NONE;
+      for(int i = 0; i < ArraySize(m_allow); i++)
+        {
+         if(m_allow[i].code != code || m_allow[i].dir != dir) continue;
+         int g = m_allow[i].group;
+         bool on = (g == CS_GROUP_TOP && useTop) || (g == CS_GROUP_BACKUP && useBackup) ||
+                   (g == CS_GROUP_STRENGTH && useStrength) || (g == CS_GROUP_BIAS && useBias);
+         if(on && (best == CS_GROUP_NONE || g < best)) best = g;
+        }
+      return best;
+     }
+
+   //--- v1 gate (Top 3 + optional backup): dir = CS_DIR_LONG or CS_DIR_SHORT
+   bool              IsAllowed(const string symbol, const int dir) const
+     {
+      return GroupFor(symbol, dir, true, m_useBackup, false, false) != CS_GROUP_NONE;
+     }
+
+   int               CountGroup(const int group) const
+     {
+      int n = 0;
+      for(int i = 0; i < ArraySize(m_allow); i++) if(m_allow[i].group == group) n++;
+      return n;
+     }
+
+   static string     GroupName(const int g)
+     {
+      switch(g)
+        {
+         case CS_GROUP_TOP:      return "Top 3";
+         case CS_GROUP_BACKUP:   return "Backup";
+         case CS_GROUP_STRENGTH: return "Strength";
+         case CS_GROUP_BIAS:     return "Bias";
+        }
+      return "none";
+     }
+
+   //--- comma list of one group's pairs, e.g. "GBPNZD L, NZDCHF S"
+   string            GroupList(const int group) const
+     {
+      string s = "";
+      for(int i = 0; i < ArraySize(m_allow); i++)
+        {
+         if(m_allow[i].group != group) continue;
+         if(s != "") s += ", ";
+         s += m_allow[i].code + (m_allow[i].dir == CS_DIR_LONG ? " L" : " S");
+        }
+      return (s == "" ? "-" : s);
      }
 
    //--- convenience for order types
@@ -362,6 +447,7 @@ public:
       string s = "";
       for(int i = 0; i < ArraySize(m_allow); i++)
         {
+         if(m_allow[i].group != CS_GROUP_TOP && m_allow[i].group != CS_GROUP_BACKUP) continue;
          if(s != "") s += ", ";
          s += m_allow[i].code + (m_allow[i].dir == CS_DIR_LONG ? " LONG" : " SHORT") + (m_allow[i].backup ? " (backup)" : "");
         }
@@ -378,6 +464,8 @@ public:
          s += "Signal: " + TimeIso(m_generated) + "  valid to " + TimeIso(m_validUntil) + "\n";
          s += "Mood: " + m_mood + "   Max trades: " + IntegerToString(m_maxTrades) + "\n";
          s += "Allowed: " + AllowList() + (m_useBackup ? "" : "  [backup off]") + "\n";
+         s += "Strength: " + GroupList(CS_GROUP_STRENGTH) + "\n";
+         s += "Bias (" + IntegerToString(CountGroup(CS_GROUP_BIAS)) + "): " + GroupList(CS_GROUP_BIAS) + "\n";
          int active = 0, upcoming = 0;
          datetime now = TimeGMT();
          for(int i = 0; i < ArraySize(m_black); i++)
