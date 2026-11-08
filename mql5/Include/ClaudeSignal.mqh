@@ -372,6 +372,20 @@ public:
       return false;
      }
 
+   //--- all pairs of one group: codes (e.g. "GBPJPY") and directions; returns the count
+   int               GroupPairs(const int group, string &codes[], int &dirs[]) const
+     {
+      ArrayResize(codes, 0); ArrayResize(dirs, 0);
+      for(int i = 0; i < ArraySize(m_allow); i++)
+        {
+         if(m_allow[i].group != group) continue;
+         int k = ArraySize(codes);
+         ArrayResize(codes, k + 1); ArrayResize(dirs, k + 1);
+         codes[k] = m_allow[i].code; dirs[k] = m_allow[i].dir;
+        }
+      return ArraySize(codes);
+     }
+
    //--- short tag of the best group listing this symbol, e.g. "T:L", "S:S"; "" if none
    string            TagFor(const string symbol) const
      {
