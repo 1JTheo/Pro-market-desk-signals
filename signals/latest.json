@@ -1,13 +1,27 @@
 {
-  "generated_utc": "2026-11-07T14:06:44Z",
-  "valid_until_utc": "2026-11-08T02:06:44Z",
-  "mood": "mixed",
-  "headline": "FX is closed for the weekend after a hot US payrolls print lifted the dollar across the board; the Fed-hiking USD stands out against NZD, JPY and CAD going into Tuesday's US CPI.",
+  "generated_utc": "2026-11-08T21:55:55Z",
+  "valid_until_utc": "2026-11-09T00:55:55Z",
+  "mood": "risk-off",
+  "headline": "FX is reopening after a week of hot US jobs, Fed hike bets near 80% and a sharp tech sell-off. USD leads; NZD, CAD, AUD and JPY lag. Monday is light; US CPI on Tuesday is the big test.",
   "allow": [
     {
-      "symbol": "GBPNZD",
+      "symbol": "USDCAD",
       "dir": "LONG"
     },
+    {
+      "symbol": "USDJPY",
+      "dir": "LONG"
+    },
+    {
+      "symbol": "EURUSD",
+      "dir": "SHORT"
+    }
+  ],
+  "backup": {
+    "symbol": "USDCHF",
+    "dir": "LONG"
+  },
+  "strength": [
     {
       "symbol": "NZDUSD",
       "dir": "SHORT"
@@ -15,78 +29,19 @@
     {
       "symbol": "USDCAD",
       "dir": "LONG"
-    }
-  ],
-  "backup": {
-    "symbol": "USDJPY",
-    "dir": "LONG"
-  },
-  "strength": [
-    {
-      "symbol": "USDJPY",
-      "dir": "LONG"
-    },
-    {
-      "symbol": "NZDUSD",
-      "dir": "SHORT"
-    },
-    {
-      "symbol": "GBPJPY",
-      "dir": "LONG"
     },
     {
       "symbol": "GBPNZD",
+      "dir": "LONG"
+    },
+    {
+      "symbol": "GBPCAD",
       "dir": "LONG"
     }
   ],
   "bias": [
     {
-      "symbol": "GBPJPY",
-      "dir": "LONG",
-      "status": "No edge"
-    },
-    {
-      "symbol": "EURUSD",
-      "dir": "SHORT",
-      "status": "No edge"
-    },
-    {
-      "symbol": "GBPUSD",
-      "dir": "SHORT",
-      "status": "No edge"
-    },
-    {
-      "symbol": "AUDUSD",
-      "dir": "SHORT",
-      "status": "No edge"
-    },
-    {
-      "symbol": "AUDNZD",
-      "dir": "LONG",
-      "status": "No edge"
-    },
-    {
-      "symbol": "GBPCAD",
-      "dir": "LONG",
-      "status": "No edge"
-    },
-    {
-      "symbol": "USDCHF",
-      "dir": "LONG",
-      "status": "No edge"
-    },
-    {
-      "symbol": "EURNZD",
-      "dir": "LONG",
-      "status": "No edge"
-    },
-    {
-      "symbol": "GBPCHF",
-      "dir": "LONG",
-      "status": "No edge"
-    },
-    {
-      "symbol": "AUDJPY",
+      "symbol": "EURCAD",
       "dir": "LONG",
       "status": "No edge"
     },
@@ -101,40 +56,100 @@
       "status": "No edge"
     },
     {
-      "symbol": "EURGBP",
+      "symbol": "EURCHF",
       "dir": "SHORT",
       "status": "No edge"
     },
     {
-      "symbol": "AUDCAD",
-      "dir": "LONG",
+      "symbol": "CADCHF",
+      "dir": "SHORT",
       "status": "No edge"
+    },
+    {
+      "symbol": "NZDUSD",
+      "dir": "SHORT",
+      "status": "Avoid"
+    },
+    {
+      "symbol": "NZDJPY",
+      "dir": "SHORT",
+      "status": "Avoid"
     },
     {
       "symbol": "NZDCHF",
       "dir": "SHORT",
-      "status": "No edge"
+      "status": "Avoid"
     },
     {
-      "symbol": "EURCAD",
+      "symbol": "NZDCAD",
+      "dir": "SHORT",
+      "status": "Avoid"
+    },
+    {
+      "symbol": "EURNZD",
       "dir": "LONG",
-      "status": "No edge"
+      "status": "Avoid"
+    },
+    {
+      "symbol": "GBPNZD",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "GBPCAD",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "GBPJPY",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "GBPUSD",
+      "dir": "SHORT",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "EURGBP",
+      "dir": "SHORT",
+      "status": "Excluded"
     },
     {
       "symbol": "GBPAUD",
       "dir": "LONG",
-      "status": "No edge"
+      "status": "Excluded"
+    },
+    {
+      "symbol": "AUDUSD",
+      "dir": "SHORT",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "AUDCHF",
+      "dir": "SHORT",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "AUDNZD",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "EURAUD",
+      "dir": "LONG",
+      "status": "Excluded"
     }
   ],
   "currency_strength": {
     "USD": 3,
-    "GBP": 1,
-    "AUD": 0,
+    "GBP": 0,
+    "CHF": 0,
     "EUR": -1,
-    "CHF": -1,
+    "JPY": -2,
     "CAD": -2,
-    "NZD": -2,
-    "JPY": -2
+    "AUD": -2,
+    "NZD": -3
   },
   "blackouts": []
 }
