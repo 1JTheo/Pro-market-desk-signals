@@ -1,25 +1,25 @@
 {
-  "generated_utc": "2026-11-08T21:55:55Z",
-  "valid_until_utc": "2026-11-09T00:55:55Z",
+  "generated_utc": "2026-11-08T23:55:06Z",
+  "valid_until_utc": "2026-11-09T02:55:06Z",
   "mood": "risk-off",
-  "headline": "FX is reopening after a week of hot US jobs, Fed hike bets near 80% and a sharp tech sell-off. USD leads; NZD, CAD, AUD and JPY lag. Monday is light; US CPI on Tuesday is the big test.",
+  "headline": "FX has just reopened after a risk-off week: hot US payrolls, Dec Fed hike odds near 78% and a tech sell-off. USD, GBP, AUD and NZD pairs all face news today (Fed speakers, Bailey, China CPI), so today's picks are CAD-, CHF-, EUR- and JPY-only crosses.",
   "allow": [
     {
-      "symbol": "USDCAD",
-      "dir": "LONG"
-    },
-    {
-      "symbol": "USDJPY",
-      "dir": "LONG"
-    },
-    {
-      "symbol": "EURUSD",
+      "symbol": "CADCHF",
       "dir": "SHORT"
+    },
+    {
+      "symbol": "CHFJPY",
+      "dir": "LONG"
+    },
+    {
+      "symbol": "EURCAD",
+      "dir": "LONG"
     }
   ],
   "backup": {
-    "symbol": "USDCHF",
-    "dir": "LONG"
+    "symbol": "EURCHF",
+    "dir": "SHORT"
   },
   "strength": [
     {
@@ -41,54 +41,54 @@
   ],
   "bias": [
     {
-      "symbol": "EURCAD",
-      "dir": "LONG",
-      "status": "No edge"
-    },
-    {
       "symbol": "EURJPY",
       "dir": "LONG",
       "status": "No edge"
     },
     {
-      "symbol": "CHFJPY",
+      "symbol": "USDCAD",
       "dir": "LONG",
-      "status": "No edge"
+      "status": "Excluded"
     },
     {
-      "symbol": "EURCHF",
-      "dir": "SHORT",
-      "status": "No edge"
+      "symbol": "USDJPY",
+      "dir": "LONG",
+      "status": "Excluded"
     },
     {
-      "symbol": "CADCHF",
+      "symbol": "EURUSD",
       "dir": "SHORT",
-      "status": "No edge"
+      "status": "Excluded"
+    },
+    {
+      "symbol": "USDCHF",
+      "dir": "LONG",
+      "status": "Excluded"
     },
     {
       "symbol": "NZDUSD",
       "dir": "SHORT",
-      "status": "Avoid"
+      "status": "Excluded"
     },
     {
       "symbol": "NZDJPY",
       "dir": "SHORT",
-      "status": "Avoid"
+      "status": "Excluded"
     },
     {
       "symbol": "NZDCHF",
       "dir": "SHORT",
-      "status": "Avoid"
+      "status": "Excluded"
     },
     {
       "symbol": "NZDCAD",
       "dir": "SHORT",
-      "status": "Avoid"
+      "status": "Excluded"
     },
     {
       "symbol": "EURNZD",
       "dir": "LONG",
-      "status": "Avoid"
+      "status": "Excluded"
     },
     {
       "symbol": "GBPNZD",
@@ -151,5 +151,11 @@
     "AUD": -2,
     "NZD": -3
   },
-  "blackouts": []
+  "blackouts": [
+    {
+      "from": "2026-11-09T01:15:00Z",
+      "to": "2026-11-09T02:00:00Z",
+      "ccy": "AUD"
+    }
+  ]
 }
