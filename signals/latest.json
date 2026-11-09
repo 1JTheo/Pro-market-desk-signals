@@ -1,15 +1,15 @@
 {
-  "generated_utc": "2026-11-09T07:55:16Z",
-  "valid_until_utc": "2026-11-09T10:55:16Z",
+  "generated_utc": "2026-11-09T09:57:28Z",
+  "valid_until_utc": "2026-11-09T12:57:28Z",
   "mood": "mixed",
-  "headline": "The dollar eases after its payrolls jump and the yen leads on BoJ December hike talk. CAD stays weakest as oil slides; picks stay short CAD and long EUR, with USD and GBP pairs waiting on Fed speakers and Bailey.",
+  "headline": "The dollar keeps easing after payrolls and Asia stocks rebound, but yen gains have faded with USDJPY back at 158.2. CAD stays weakest as Brent slips under $97; picks stay short CAD and long EUR, with USD and GBP pairs waiting on Fed speakers and Bailey.",
   "allow": [
     {
       "symbol": "EURCAD",
       "dir": "LONG"
     },
     {
-      "symbol": "CADJPY",
+      "symbol": "CADCHF",
       "dir": "SHORT"
     },
     {
@@ -18,7 +18,7 @@
     }
   ],
   "backup": {
-    "symbol": "CADCHF",
+    "symbol": "CADJPY",
     "dir": "SHORT"
   },
   "strength": [],
@@ -34,33 +34,18 @@
       "status": "No edge"
     },
     {
-      "symbol": "EURAUD",
-      "dir": "LONG",
-      "status": "Avoid"
-    },
-    {
-      "symbol": "AUDJPY",
-      "dir": "SHORT",
-      "status": "No edge"
-    },
-    {
-      "symbol": "NZDJPY",
-      "dir": "SHORT",
-      "status": "No edge"
-    },
-    {
-      "symbol": "CHFJPY",
-      "dir": "SHORT",
-      "status": "No edge"
-    },
-    {
       "symbol": "EURCHF",
       "dir": "LONG",
       "status": "No edge"
     },
     {
-      "symbol": "EURJPY",
-      "dir": "SHORT",
+      "symbol": "EURAUD",
+      "dir": "LONG",
+      "status": "Avoid"
+    },
+    {
+      "symbol": "AUDNZD",
+      "dir": "LONG",
       "status": "No edge"
     },
     {
@@ -74,22 +59,7 @@
       "status": "Avoid"
     },
     {
-      "symbol": "AUDNZD",
-      "dir": "LONG",
-      "status": "No edge"
-    },
-    {
       "symbol": "USDCAD",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "USDJPY",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "USDCHF",
       "dir": "LONG",
       "status": "Excluded"
     },
@@ -104,13 +74,13 @@
       "status": "Excluded"
     },
     {
-      "symbol": "XAUUSD",
+      "symbol": "USDCHF",
       "dir": "LONG",
       "status": "Excluded"
     },
     {
-      "symbol": "GBPJPY",
-      "dir": "SHORT",
+      "symbol": "XAUUSD",
+      "dir": "LONG",
       "status": "Excluded"
     },
     {
@@ -129,20 +99,20 @@
       "status": "Excluded"
     },
     {
-      "symbol": "GBPUSD",
-      "dir": "SHORT",
+      "symbol": "EURGBP",
+      "dir": "LONG",
       "status": "Excluded"
     },
     {
-      "symbol": "EURGBP",
-      "dir": "LONG",
+      "symbol": "GBPUSD",
+      "dir": "SHORT",
       "status": "Excluded"
     }
   ],
   "currency_strength": {
     "EUR": 1,
-    "JPY": 1,
     "USD": 1,
+    "JPY": 0,
     "GBP": 0,
     "CHF": 0,
     "AUD": -1,
