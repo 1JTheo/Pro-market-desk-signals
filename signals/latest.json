@@ -1,9 +1,13 @@
 {
-  "generated_utc": "2026-11-09T11:56:19Z",
-  "valid_until_utc": "2026-11-09T14:56:19Z",
-  "mood": "mixed",
-  "headline": "Brent drops 3.5% to about $95, keeping CAD the weakest currency while the dollar holds post-payroll gains. Picks stay short CAD; NZD replaces EURNZD as kiwi firms after the election. USD and GBP wait on Bowman, the NY Fed survey and Bailey.",
+  "generated_utc": "2026-11-09T13:56:36Z",
+  "valid_until_utc": "2026-11-09T16:56:36Z",
+  "mood": "risk-on",
+  "headline": "The dollar gives back Friday's payroll gains (DXY -0.4%) as stocks rally and Brent slips to about $96. NZD leads and CAD stays weakest, so NZDCAD joins EURCAD and CADCHF as short-CAD picks.",
   "allow": [
+    {
+      "symbol": "NZDCAD",
+      "dir": "LONG"
+    },
     {
       "symbol": "EURCAD",
       "dir": "LONG"
@@ -11,20 +15,21 @@
     {
       "symbol": "CADCHF",
       "dir": "SHORT"
-    },
-    {
-      "symbol": "NZDCAD",
-      "dir": "LONG"
     }
   ],
   "backup": {
     "symbol": "CADJPY",
     "dir": "SHORT"
   },
-  "strength": [],
+  "strength": [
+    {
+      "symbol": "NZDCAD",
+      "dir": "LONG"
+    }
+  ],
   "bias": [
     {
-      "symbol": "EURNZD",
+      "symbol": "NZDCHF",
       "dir": "LONG",
       "status": "No edge"
     },
@@ -39,8 +44,23 @@
       "status": "No edge"
     },
     {
-      "symbol": "EURAUD",
+      "symbol": "NZDJPY",
       "dir": "LONG",
+      "status": "No edge"
+    },
+    {
+      "symbol": "EURJPY",
+      "dir": "LONG",
+      "status": "No edge"
+    },
+    {
+      "symbol": "AUDJPY",
+      "dir": "LONG",
+      "status": "No edge"
+    },
+    {
+      "symbol": "EURNZD",
+      "dir": "SHORT",
       "status": "Avoid"
     },
     {
@@ -49,9 +69,9 @@
       "status": "Avoid"
     },
     {
-      "symbol": "AUDCHF",
-      "dir": "SHORT",
-      "status": "No edge"
+      "symbol": "EURAUD",
+      "dir": "LONG",
+      "status": "Avoid"
     },
     {
       "symbol": "USDCAD",
@@ -59,17 +79,17 @@
       "status": "Excluded"
     },
     {
-      "symbol": "AUDUSD",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
       "symbol": "NZDUSD",
-      "dir": "SHORT",
+      "dir": "LONG",
       "status": "Excluded"
     },
     {
-      "symbol": "USDCHF",
+      "symbol": "EURUSD",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "GBPUSD",
       "dir": "LONG",
       "status": "Excluded"
     },
@@ -84,35 +104,45 @@
       "status": "Excluded"
     },
     {
+      "symbol": "GBPNZD",
+      "dir": "SHORT",
+      "status": "Excluded"
+    },
+    {
       "symbol": "GBPAUD",
       "dir": "LONG",
       "status": "Excluded"
     },
     {
-      "symbol": "EURGBP",
+      "symbol": "GBPJPY",
       "dir": "LONG",
       "status": "Excluded"
     },
     {
-      "symbol": "GBPUSD",
-      "dir": "SHORT",
+      "symbol": "GBPCHF",
+      "dir": "LONG",
       "status": "Excluded"
     }
   ],
   "currency_strength": {
+    "NZD": 2,
     "EUR": 1,
-    "USD": 1,
-    "NZD": 0,
+    "GBP": 1,
+    "USD": 0,
+    "AUD": 0,
     "JPY": 0,
     "CHF": 0,
-    "GBP": 0,
-    "AUD": -1,
     "CAD": -2
   },
   "blackouts": [
     {
       "from": "2026-11-09T13:25:00Z",
       "to": "2026-11-09T14:10:00Z",
+      "ccy": "USD"
+    },
+    {
+      "from": "2026-11-09T15:45:00Z",
+      "to": "2026-11-09T16:30:00Z",
       "ccy": "USD"
     }
   ]
