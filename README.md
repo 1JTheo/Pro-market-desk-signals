@@ -41,7 +41,7 @@ end=1
 |---|---|---|
 | `allow` | Top 3 | Claude's three picks: symbol (6 letters, no broker suffix) and `LONG` or `SHORT`. 0–3 lines. |
 | `backup` | Backup | Optional 4th pick. Used only if `UseBackup` is on. |
-| `strength` | Strength | The 2 strongest currencies crossed with the 2 weakest on the strength meter (up to 4 pairs), long the strong side. |
+| `strength` | Strength | Every currency scoring +2 or +3 on the strength meter crossed with every currency scoring -2 or -3 (0 to 4 pairs; biggest score gap kept if more), long the strong side. No line when nothing reaches +2 / -2. |
 | `bias` | Bias | Pairs ranked No edge, Avoid or Excluded that still carry a Long or Short bias. |
 | `blackout` | all | No new entries for pairs containing that currency between the two times. `ALL` blocks everything. |
 | `valid_until_utc` | all | After this the EA opens nothing until a new signal arrives. |
