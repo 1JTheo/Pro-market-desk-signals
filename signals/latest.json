@@ -1,50 +1,45 @@
 {
-  "generated_utc": "2026-11-09T15:55:44Z",
-  "valid_until_utc": "2026-11-09T18:55:44Z",
+  "generated_utc": "2026-11-09T17:54:57Z",
+  "valid_until_utc": "2026-11-09T20:54:57Z",
   "mood": "risk-on",
-  "headline": "The dollar keeps sliding (DXY 101.83, -0.45%) as Brent drops 5% to about $93 on US-Iran deal hopes and stocks rally. NZD leads and CAD is weakest, so the Top 3 stay NZDCAD, NZDCHF and EURCAD.",
+  "headline": "The dollar gives back part of Friday's jobs rally as Asian stocks jump and gold climbs. CAD is the weakest major; stay out of USD pairs until Tuesday's CPI at 15:30.",
   "allow": [
     {
-      "symbol": "NZDCAD",
+      "symbol": "GBPCAD",
       "dir": "LONG"
     },
     {
-      "symbol": "NZDCHF",
+      "symbol": "AUDCAD",
       "dir": "LONG"
     },
     {
-      "symbol": "EURCAD",
+      "symbol": "GBPCHF",
       "dir": "LONG"
     }
   ],
   "backup": {
-    "symbol": "AUDCAD",
+    "symbol": "NZDCAD",
     "dir": "LONG"
   },
   "strength": [
     {
-      "symbol": "NZDCAD",
+      "symbol": "USDCAD",
       "dir": "LONG"
     }
   ],
   "bias": [
     {
-      "symbol": "EURNZD",
-      "dir": "SHORT",
-      "status": "No edge"
-    },
-    {
-      "symbol": "CADCHF",
-      "dir": "SHORT",
-      "status": "No edge"
-    },
-    {
-      "symbol": "NZDJPY",
+      "symbol": "EURCAD",
       "dir": "LONG",
       "status": "No edge"
     },
     {
-      "symbol": "AUDCHF",
+      "symbol": "GBPNZD",
+      "dir": "LONG",
+      "status": "No edge"
+    },
+    {
+      "symbol": "AUDNZD",
       "dir": "LONG",
       "status": "No edge"
     },
@@ -54,13 +49,28 @@
       "status": "No edge"
     },
     {
-      "symbol": "EURCHF",
+      "symbol": "AUDCHF",
       "dir": "LONG",
       "status": "No edge"
     },
     {
+      "symbol": "EURGBP",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
+      "symbol": "GBPJPY",
+      "dir": "LONG",
+      "status": "Avoid"
+    },
+    {
       "symbol": "AUDJPY",
       "dir": "LONG",
+      "status": "Avoid"
+    },
+    {
+      "symbol": "CADCHF",
+      "dir": "SHORT",
       "status": "No edge"
     },
     {
@@ -74,92 +84,42 @@
       "status": "No edge"
     },
     {
-      "symbol": "AUDNZD",
-      "dir": "SHORT",
-      "status": "Avoid"
-    },
-    {
-      "symbol": "XAUUSD",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "EURUSD",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "NZDUSD",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "AUDUSD",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
       "symbol": "USDCAD",
       "dir": "LONG",
       "status": "Excluded"
     },
     {
-      "symbol": "USDJPY",
+      "symbol": "NZDUSD",
       "dir": "SHORT",
       "status": "Excluded"
     },
     {
-      "symbol": "GBPCAD",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "GBPCHF",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "GBPNZD",
+      "symbol": "EURUSD",
       "dir": "SHORT",
       "status": "Excluded"
     },
     {
-      "symbol": "EURGBP",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "GBPJPY",
+      "symbol": "USDCHF",
       "dir": "LONG",
       "status": "Excluded"
     },
     {
-      "symbol": "GBPUSD",
+      "symbol": "XAUUSD",
       "dir": "LONG",
       "status": "Excluded"
     }
   ],
   "currency_strength": {
-    "USD": -1,
-    "EUR": 0,
+    "USD": 2,
     "GBP": 1,
-    "JPY": 0,
-    "CHF": -1,
-    "CAD": -2,
     "AUD": 1,
-    "NZD": 2
+    "JPY": 0,
+    "EUR": -1,
+    "CHF": -1,
+    "NZD": -1,
+    "CAD": -2
   },
   "blackouts": [
-    {
-      "from": "2026-11-09T15:45:00Z",
-      "to": "2026-11-09T16:30:00Z",
-      "ccy": "USD"
-    },
-    {
-      "from": "2026-11-09T17:10:00Z",
-      "to": "2026-11-09T17:55:00Z",
-      "ccy": "GBP"
-    },
     {
       "from": "2026-11-09T17:45:00Z",
       "to": "2026-11-09T18:30:00Z",
