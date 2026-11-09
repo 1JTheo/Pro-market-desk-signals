@@ -1,15 +1,15 @@
 {
-  "generated_utc": "2026-11-09T19:54:43Z",
-  "valid_until_utc": "2026-11-09T22:54:43Z",
+  "generated_utc": "2026-11-09T21:56:16Z",
+  "valid_until_utc": "2026-11-10T00:56:16Z",
   "mood": "risk-on",
-  "headline": "Stocks rally and oil slides on Iran peace hopes, pulling the dollar 0.4% lower. CAD is the weakest major; USD pairs stay out until Tuesday's CPI at 15:30.",
+  "headline": "Stocks rallied over 2% and oil fell about 4% on Iran peace hopes, pushing the dollar down 0.4-0.6%. CAD is the weakest major; USD pairs wait for Tuesday's CPI at 15:30 Kyiv.",
   "allow": [
     {
       "symbol": "GBPCAD",
       "dir": "LONG"
     },
     {
-      "symbol": "AUDCAD",
+      "symbol": "EURCAD",
       "dir": "LONG"
     },
     {
@@ -24,33 +24,8 @@
   "strength": [],
   "bias": [
     {
-      "symbol": "EURCAD",
+      "symbol": "EURCHF",
       "dir": "LONG",
-      "status": "No edge"
-    },
-    {
-      "symbol": "AUDNZD",
-      "dir": "LONG",
-      "status": "No edge"
-    },
-    {
-      "symbol": "CADJPY",
-      "dir": "SHORT",
-      "status": "No edge"
-    },
-    {
-      "symbol": "GBPNZD",
-      "dir": "LONG",
-      "status": "No edge"
-    },
-    {
-      "symbol": "AUDCHF",
-      "dir": "LONG",
-      "status": "No edge"
-    },
-    {
-      "symbol": "EURGBP",
-      "dir": "SHORT",
       "status": "No edge"
     },
     {
@@ -59,24 +34,19 @@
       "status": "No edge"
     },
     {
-      "symbol": "EURAUD",
-      "dir": "SHORT",
+      "symbol": "NZDCHF",
+      "dir": "LONG",
       "status": "No edge"
     },
     {
-      "symbol": "GBPJPY",
+      "symbol": "AUDCAD",
       "dir": "LONG",
-      "status": "Avoid"
+      "status": "Excluded"
     },
     {
-      "symbol": "AUDJPY",
-      "dir": "LONG",
-      "status": "Avoid"
-    },
-    {
-      "symbol": "CHFJPY",
+      "symbol": "CADJPY",
       "dir": "SHORT",
-      "status": "No edge"
+      "status": "Excluded"
     },
     {
       "symbol": "USDCAD",
@@ -84,12 +54,27 @@
       "status": "Excluded"
     },
     {
-      "symbol": "NZDUSD",
-      "dir": "SHORT",
+      "symbol": "GBPJPY",
+      "dir": "LONG",
       "status": "Excluded"
     },
     {
-      "symbol": "USDCHF",
+      "symbol": "EURJPY",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "NZDJPY",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "AUDCHF",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "AUDJPY",
       "dir": "LONG",
       "status": "Excluded"
     },
@@ -97,17 +82,53 @@
       "symbol": "XAUUSD",
       "dir": "LONG",
       "status": "Excluded"
+    },
+    {
+      "symbol": "EURUSD",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "GBPUSD",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "NZDUSD",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "USDJPY",
+      "dir": "LONG",
+      "status": "Excluded"
     }
   ],
   "currency_strength": {
     "GBP": 1,
+    "EUR": 1,
+    "NZD": 1,
     "AUD": 1,
-    "USD": 1,
-    "EUR": 0,
-    "JPY": 0,
+    "USD": 0,
+    "JPY": -1,
     "CHF": -1,
-    "NZD": -1,
     "CAD": -2
   },
-  "blackouts": []
+  "blackouts": [
+    {
+      "from": "2026-11-09T23:15:00Z",
+      "to": "2026-11-10T00:00:00Z",
+      "ccy": "AUD"
+    },
+    {
+      "from": "2026-11-09T23:35:00Z",
+      "to": "2026-11-10T00:20:00Z",
+      "ccy": "JPY"
+    },
+    {
+      "from": "2026-11-10T00:15:00Z",
+      "to": "2026-11-10T01:00:00Z",
+      "ccy": "AUD"
+    }
+  ]
 }
