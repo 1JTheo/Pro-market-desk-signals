@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-11-09T09:57:28Z",
-  "valid_until_utc": "2026-11-09T12:57:28Z",
+  "generated_utc": "2026-11-09T11:56:19Z",
+  "valid_until_utc": "2026-11-09T14:56:19Z",
   "mood": "mixed",
-  "headline": "The dollar keeps easing after payrolls and Asia stocks rebound, but yen gains have faded with USDJPY back at 158.2. CAD stays weakest as Brent slips under $97; picks stay short CAD and long EUR, with USD and GBP pairs waiting on Fed speakers and Bailey.",
+  "headline": "Brent drops 3.5% to about $95, keeping CAD the weakest currency while the dollar holds post-payroll gains. Picks stay short CAD; NZD replaces EURNZD as kiwi firms after the election. USD and GBP wait on Bowman, the NY Fed survey and Bailey.",
   "allow": [
     {
       "symbol": "EURCAD",
@@ -13,7 +13,7 @@
       "dir": "SHORT"
     },
     {
-      "symbol": "EURNZD",
+      "symbol": "NZDCAD",
       "dir": "LONG"
     }
   ],
@@ -24,12 +24,12 @@
   "strength": [],
   "bias": [
     {
-      "symbol": "AUDCAD",
+      "symbol": "EURNZD",
       "dir": "LONG",
       "status": "No edge"
     },
     {
-      "symbol": "NZDCAD",
+      "symbol": "AUDCAD",
       "dir": "LONG",
       "status": "No edge"
     },
@@ -45,18 +45,13 @@
     },
     {
       "symbol": "AUDNZD",
-      "dir": "LONG",
-      "status": "No edge"
+      "dir": "SHORT",
+      "status": "Avoid"
     },
     {
       "symbol": "AUDCHF",
       "dir": "SHORT",
       "status": "No edge"
-    },
-    {
-      "symbol": "NZDCHF",
-      "dir": "SHORT",
-      "status": "Avoid"
     },
     {
       "symbol": "USDCAD",
@@ -89,11 +84,6 @@
       "status": "Excluded"
     },
     {
-      "symbol": "GBPNZD",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
       "symbol": "GBPAUD",
       "dir": "LONG",
       "status": "Excluded"
@@ -112,12 +102,18 @@
   "currency_strength": {
     "EUR": 1,
     "USD": 1,
+    "NZD": 0,
     "JPY": 0,
-    "GBP": 0,
     "CHF": 0,
+    "GBP": 0,
     "AUD": -1,
-    "NZD": -1,
     "CAD": -2
   },
-  "blackouts": []
+  "blackouts": [
+    {
+      "from": "2026-11-09T13:25:00Z",
+      "to": "2026-11-09T14:10:00Z",
+      "ccy": "USD"
+    }
+  ]
 }
