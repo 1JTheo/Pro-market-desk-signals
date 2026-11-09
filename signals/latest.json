@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-11-09T17:54:57Z",
-  "valid_until_utc": "2026-11-09T20:54:57Z",
+  "generated_utc": "2026-11-09T19:54:43Z",
+  "valid_until_utc": "2026-11-09T22:54:43Z",
   "mood": "risk-on",
-  "headline": "The dollar gives back part of Friday's jobs rally as Asian stocks jump and gold climbs. CAD is the weakest major; stay out of USD pairs until Tuesday's CPI at 15:30.",
+  "headline": "Stocks rally and oil slides on Iran peace hopes, pulling the dollar 0.4% lower. CAD is the weakest major; USD pairs stay out until Tuesday's CPI at 15:30.",
   "allow": [
     {
       "symbol": "GBPCAD",
@@ -21,20 +21,10 @@
     "symbol": "NZDCAD",
     "dir": "LONG"
   },
-  "strength": [
-    {
-      "symbol": "USDCAD",
-      "dir": "LONG"
-    }
-  ],
+  "strength": [],
   "bias": [
     {
       "symbol": "EURCAD",
-      "dir": "LONG",
-      "status": "No edge"
-    },
-    {
-      "symbol": "GBPNZD",
       "dir": "LONG",
       "status": "No edge"
     },
@@ -49,12 +39,27 @@
       "status": "No edge"
     },
     {
+      "symbol": "GBPNZD",
+      "dir": "LONG",
+      "status": "No edge"
+    },
+    {
       "symbol": "AUDCHF",
       "dir": "LONG",
       "status": "No edge"
     },
     {
       "symbol": "EURGBP",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
+      "symbol": "CADCHF",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
+      "symbol": "EURAUD",
       "dir": "SHORT",
       "status": "No edge"
     },
@@ -67,16 +72,6 @@
       "symbol": "AUDJPY",
       "dir": "LONG",
       "status": "Avoid"
-    },
-    {
-      "symbol": "CADCHF",
-      "dir": "SHORT",
-      "status": "No edge"
-    },
-    {
-      "symbol": "EURAUD",
-      "dir": "SHORT",
-      "status": "No edge"
     },
     {
       "symbol": "CHFJPY",
@@ -94,11 +89,6 @@
       "status": "Excluded"
     },
     {
-      "symbol": "EURUSD",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
       "symbol": "USDCHF",
       "dir": "LONG",
       "status": "Excluded"
@@ -110,20 +100,14 @@
     }
   ],
   "currency_strength": {
-    "USD": 2,
     "GBP": 1,
     "AUD": 1,
+    "USD": 1,
+    "EUR": 0,
     "JPY": 0,
-    "EUR": -1,
     "CHF": -1,
     "NZD": -1,
     "CAD": -2
   },
-  "blackouts": [
-    {
-      "from": "2026-11-09T17:45:00Z",
-      "to": "2026-11-09T18:30:00Z",
-      "ccy": "USD"
-    }
-  ]
+  "blackouts": []
 }
