@@ -1,62 +1,35 @@
 {
-  "generated_utc": "2026-11-09T05:55:07Z",
-  "valid_until_utc": "2026-11-09T08:55:07Z",
-  "mood": "risk-on",
-  "headline": "Asia rebounds hard (Nikkei +3.5%, Taiwan +6%) and S&P futures rise 0.6%, while the dollar holds payrolls gains near DXY 102.2. Picks stay on EUR and CAD crosses; USD and GBP pairs wait for Fed speakers and Bailey.",
+  "generated_utc": "2026-11-09T07:37:15Z",
+  "valid_until_utc": "2026-11-09T10:37:15Z",
+  "mood": "mixed",
+  "headline": "The dollar gives back some payrolls gains and the yen leads on BoJ December hike talk, while Nasdaq futures slip on the Nvidia scandal. CAD stays weakest as Brent sits near $96.5; picks short CAD and long EUR, with USD and GBP pairs waiting for Fed speakers and Bailey.",
   "allow": [
     {
       "symbol": "EURCAD",
       "dir": "LONG"
     },
     {
-      "symbol": "EURJPY",
-      "dir": "LONG"
+      "symbol": "CADJPY",
+      "dir": "SHORT"
     },
     {
-      "symbol": "AUDCAD",
+      "symbol": "EURNZD",
       "dir": "LONG"
     }
   ],
   "backup": {
-    "symbol": "EURCHF",
-    "dir": "LONG"
+    "symbol": "CADCHF",
+    "dir": "SHORT"
   },
-  "strength": [
-    {
-      "symbol": "USDCAD",
-      "dir": "LONG"
-    },
-    {
-      "symbol": "USDJPY",
-      "dir": "LONG"
-    },
-    {
-      "symbol": "EURCAD",
-      "dir": "LONG"
-    },
-    {
-      "symbol": "EURJPY",
-      "dir": "LONG"
-    }
-  ],
+  "strength": [],
   "bias": [
     {
-      "symbol": "CHFJPY",
+      "symbol": "AUDCAD",
       "dir": "LONG",
       "status": "No edge"
     },
     {
-      "symbol": "AUDJPY",
-      "dir": "LONG",
-      "status": "No edge"
-    },
-    {
-      "symbol": "CADCHF",
-      "dir": "SHORT",
-      "status": "No edge"
-    },
-    {
-      "symbol": "AUDNZD",
+      "symbol": "NZDCAD",
       "dir": "LONG",
       "status": "No edge"
     },
@@ -66,14 +39,44 @@
       "status": "Avoid"
     },
     {
-      "symbol": "EURNZD",
+      "symbol": "AUDJPY",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
+      "symbol": "NZDJPY",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
+      "symbol": "CHFJPY",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
+      "symbol": "EURCHF",
       "dir": "LONG",
-      "status": "Avoid"
+      "status": "No edge"
+    },
+    {
+      "symbol": "EURJPY",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
+      "symbol": "AUDCHF",
+      "dir": "SHORT",
+      "status": "No edge"
     },
     {
       "symbol": "NZDCHF",
       "dir": "SHORT",
       "status": "Avoid"
+    },
+    {
+      "symbol": "AUDNZD",
+      "dir": "LONG",
+      "status": "No edge"
     },
     {
       "symbol": "USDCAD",
@@ -82,11 +85,6 @@
     },
     {
       "symbol": "USDJPY",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "EURUSD",
       "dir": "SHORT",
       "status": "Excluded"
     },
@@ -112,7 +110,7 @@
     },
     {
       "symbol": "GBPJPY",
-      "dir": "LONG",
+      "dir": "SHORT",
       "status": "Excluded"
     },
     {
@@ -136,20 +134,20 @@
       "status": "Excluded"
     },
     {
-      "symbol": "GBPCHF",
+      "symbol": "EURGBP",
       "dir": "LONG",
       "status": "Excluded"
     }
   ],
   "currency_strength": {
-    "USD": 2,
-    "EUR": 0,
+    "EUR": 1,
+    "JPY": 1,
+    "USD": 1,
     "GBP": 0,
-    "CHF": -1,
+    "CHF": 0,
     "AUD": -1,
-    "JPY": -2,
-    "CAD": -2,
-    "NZD": -2
+    "NZD": -1,
+    "CAD": -2
   },
   "blackouts": []
 }
