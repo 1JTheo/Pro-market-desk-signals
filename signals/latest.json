@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-11-08T23:55:06Z",
-  "valid_until_utc": "2026-11-09T02:55:06Z",
+  "generated_utc": "2026-11-09T01:54:49Z",
+  "valid_until_utc": "2026-11-09T04:54:49Z",
   "mood": "risk-off",
-  "headline": "FX has just reopened after a risk-off week: hot US payrolls, Dec Fed hike odds near 78% and a tech sell-off. USD, GBP, AUD and NZD pairs all face news today (Fed speakers, Bailey, China CPI), so today's picks are CAD-, CHF-, EUR- and JPY-only crosses.",
+  "headline": "Quiet Asia session: the dollar holds its payrolls gains (DXY 102.2) while AUD and NZD bounce slightly after a soft China CPI and a close NZ election. Picks stay on CAD, CHF, EUR and JPY crosses; USD and GBP pairs face speakers later today.",
   "allow": [
     {
       "symbol": "CADCHF",
@@ -46,6 +46,41 @@
       "status": "No edge"
     },
     {
+      "symbol": "NZDCHF",
+      "dir": "SHORT",
+      "status": "Avoid"
+    },
+    {
+      "symbol": "EURNZD",
+      "dir": "LONG",
+      "status": "Avoid"
+    },
+    {
+      "symbol": "AUDNZD",
+      "dir": "LONG",
+      "status": "No edge"
+    },
+    {
+      "symbol": "NZDJPY",
+      "dir": "SHORT",
+      "status": "Avoid"
+    },
+    {
+      "symbol": "NZDCAD",
+      "dir": "SHORT",
+      "status": "Avoid"
+    },
+    {
+      "symbol": "AUDCHF",
+      "dir": "SHORT",
+      "status": "Avoid"
+    },
+    {
+      "symbol": "EURAUD",
+      "dir": "LONG",
+      "status": "Avoid"
+    },
+    {
       "symbol": "USDCAD",
       "dir": "LONG",
       "status": "Excluded"
@@ -68,26 +103,6 @@
     {
       "symbol": "NZDUSD",
       "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "NZDJPY",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "NZDCHF",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "NZDCAD",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "EURNZD",
-      "dir": "LONG",
       "status": "Excluded"
     },
     {
@@ -123,21 +138,6 @@
     {
       "symbol": "AUDUSD",
       "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "AUDCHF",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "AUDNZD",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "EURAUD",
-      "dir": "LONG",
       "status": "Excluded"
     }
   ],
