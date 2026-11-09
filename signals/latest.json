@@ -1,53 +1,68 @@
 {
-  "generated_utc": "2026-11-09T01:54:49Z",
-  "valid_until_utc": "2026-11-09T04:54:49Z",
-  "mood": "risk-off",
-  "headline": "Quiet Asia session: the dollar holds its payrolls gains (DXY 102.2) while AUD and NZD bounce slightly after a soft China CPI and a close NZ election. Picks stay on CAD, CHF, EUR and JPY crosses; USD and GBP pairs face speakers later today.",
+  "generated_utc": "2026-11-09T03:56:21Z",
+  "valid_until_utc": "2026-11-09T06:56:21Z",
+  "mood": "risk-on",
+  "headline": "Asia turns risk-on: Nikkei and Taiwan stocks rebound, oil slips and the dollar eases (DXY ~102.06). EUR firms on ECB hike pricing; picks stay on EUR and CAD crosses while USD and GBP pairs wait for speakers.",
   "allow": [
     {
-      "symbol": "CADCHF",
-      "dir": "SHORT"
-    },
-    {
-      "symbol": "CHFJPY",
+      "symbol": "EURCAD",
       "dir": "LONG"
     },
     {
-      "symbol": "EURCAD",
+      "symbol": "EURJPY",
+      "dir": "LONG"
+    },
+    {
+      "symbol": "AUDCAD",
       "dir": "LONG"
     }
   ],
   "backup": {
     "symbol": "EURCHF",
-    "dir": "SHORT"
+    "dir": "LONG"
   },
   "strength": [
-    {
-      "symbol": "NZDUSD",
-      "dir": "SHORT"
-    },
     {
       "symbol": "USDCAD",
       "dir": "LONG"
     },
     {
-      "symbol": "GBPNZD",
+      "symbol": "USDJPY",
       "dir": "LONG"
     },
     {
-      "symbol": "GBPCAD",
+      "symbol": "EURCAD",
+      "dir": "LONG"
+    },
+    {
+      "symbol": "EURJPY",
       "dir": "LONG"
     }
   ],
   "bias": [
     {
-      "symbol": "EURJPY",
+      "symbol": "CHFJPY",
       "dir": "LONG",
       "status": "No edge"
     },
     {
-      "symbol": "NZDCHF",
+      "symbol": "AUDJPY",
+      "dir": "LONG",
+      "status": "No edge"
+    },
+    {
+      "symbol": "CADCHF",
       "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
+      "symbol": "AUDNZD",
+      "dir": "LONG",
+      "status": "No edge"
+    },
+    {
+      "symbol": "EURAUD",
+      "dir": "LONG",
       "status": "Avoid"
     },
     {
@@ -56,28 +71,8 @@
       "status": "Avoid"
     },
     {
-      "symbol": "AUDNZD",
-      "dir": "LONG",
-      "status": "No edge"
-    },
-    {
-      "symbol": "NZDJPY",
+      "symbol": "NZDCHF",
       "dir": "SHORT",
-      "status": "Avoid"
-    },
-    {
-      "symbol": "NZDCAD",
-      "dir": "SHORT",
-      "status": "Avoid"
-    },
-    {
-      "symbol": "AUDCHF",
-      "dir": "SHORT",
-      "status": "Avoid"
-    },
-    {
-      "symbol": "EURAUD",
-      "dir": "LONG",
       "status": "Avoid"
     },
     {
@@ -101,17 +96,17 @@
       "status": "Excluded"
     },
     {
+      "symbol": "AUDUSD",
+      "dir": "SHORT",
+      "status": "Excluded"
+    },
+    {
       "symbol": "NZDUSD",
       "dir": "SHORT",
       "status": "Excluded"
     },
     {
-      "symbol": "GBPNZD",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "GBPCAD",
+      "symbol": "XAUUSD",
       "dir": "LONG",
       "status": "Excluded"
     },
@@ -121,13 +116,13 @@
       "status": "Excluded"
     },
     {
-      "symbol": "GBPUSD",
-      "dir": "SHORT",
+      "symbol": "GBPCAD",
+      "dir": "LONG",
       "status": "Excluded"
     },
     {
-      "symbol": "EURGBP",
-      "dir": "SHORT",
+      "symbol": "GBPNZD",
+      "dir": "LONG",
       "status": "Excluded"
     },
     {
@@ -136,26 +131,25 @@
       "status": "Excluded"
     },
     {
-      "symbol": "AUDUSD",
+      "symbol": "GBPUSD",
       "dir": "SHORT",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "GBPCHF",
+      "dir": "LONG",
       "status": "Excluded"
     }
   ],
   "currency_strength": {
-    "USD": 3,
+    "USD": 2,
+    "EUR": 0,
     "GBP": 0,
-    "CHF": 0,
-    "EUR": -1,
+    "CHF": -1,
+    "AUD": -1,
     "JPY": -2,
     "CAD": -2,
-    "AUD": -2,
-    "NZD": -3
+    "NZD": -2
   },
-  "blackouts": [
-    {
-      "from": "2026-11-09T01:15:00Z",
-      "to": "2026-11-09T02:00:00Z",
-      "ccy": "AUD"
-    }
-  ]
+  "blackouts": []
 }
