@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-11-10T09:56:31Z",
-  "valid_until_utc": "2026-11-10T12:56:31Z",
+  "generated_utc": "2026-11-10T11:55:44Z",
+  "valid_until_utc": "2026-11-10T14:55:44Z",
   "mood": "risk-on",
-  "headline": "Risk-on holds after Monday's equity rally and an oil slide, but Fed's Waller floated a 50bp December hike and halted the dollar's drop before US CPI at 15:30 Kyiv. Only EUR, CHF, JPY, AUD and NZD crosses stay clear of today's news.",
+  "headline": "Risk-on holds: European stocks are up about 1% and oil keeps sliding, so AUD leads and CAD lags. US CPI at 15:30 Kyiv decides the dollar; trade only CHF and JPY crosses on pullbacks after it.",
   "allow": [
     {
       "symbol": "AUDCHF",
@@ -21,7 +21,12 @@
     "symbol": "NZDCHF",
     "dir": "LONG"
   },
-  "strength": [],
+  "strength": [
+    {
+      "symbol": "AUDCAD",
+      "dir": "LONG"
+    }
+  ],
   "bias": [
     {
       "symbol": "AUDNZD",
@@ -41,6 +46,11 @@
     {
       "symbol": "EURNZD",
       "dir": "LONG",
+      "status": "No edge"
+    },
+    {
+      "symbol": "EURAUD",
+      "dir": "SHORT",
       "status": "No edge"
     },
     {
@@ -65,6 +75,11 @@
     },
     {
       "symbol": "USDCAD",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "AUDUSD",
       "dir": "LONG",
       "status": "Excluded"
     },
@@ -115,20 +130,30 @@
     }
   ],
   "currency_strength": {
+    "USD": 0,
     "EUR": 1,
     "GBP": 1,
-    "AUD": 1,
-    "USD": 0,
-    "NZD": 0,
     "JPY": -1,
     "CHF": -1,
-    "CAD": -2
+    "CAD": -2,
+    "AUD": 2,
+    "NZD": 0
   },
   "blackouts": [
     {
       "from": "2026-11-10T12:15:00Z",
       "to": "2026-11-10T13:00:00Z",
       "ccy": "GBP"
+    },
+    {
+      "from": "2026-11-10T13:00:00Z",
+      "to": "2026-11-10T13:45:00Z",
+      "ccy": "USD"
+    },
+    {
+      "from": "2026-11-10T13:15:00Z",
+      "to": "2026-11-10T14:00:00Z",
+      "ccy": "USD"
     }
   ]
 }
