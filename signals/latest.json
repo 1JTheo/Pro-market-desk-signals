@@ -1,70 +1,55 @@
 {
-  "generated_utc": "2026-11-10T07:56:46Z",
-  "valid_until_utc": "2026-11-10T10:56:46Z",
+  "generated_utc": "2026-11-10T09:56:31Z",
+  "valid_until_utc": "2026-11-10T12:56:31Z",
   "mood": "risk-on",
-  "headline": "Risk-on holds into the European open with US and EU futures up and Brent near $91.5; the dollar's slide has paused before US CPI at 15:30 Kyiv. Only AUD, NZD, CHF and JPY pairs stay clear of today's news.",
+  "headline": "Risk-on holds after Monday's equity rally and an oil slide, but Fed's Waller floated a 50bp December hike and halted the dollar's drop before US CPI at 15:30 Kyiv. Only EUR, CHF, JPY, AUD and NZD crosses stay clear of today's news.",
   "allow": [
     {
-      "symbol": "NZDCHF",
-      "dir": "LONG"
-    },
-    {
-      "symbol": "AUDJPY",
-      "dir": "LONG"
-    },
-    {
       "symbol": "AUDCHF",
+      "dir": "LONG"
+    },
+    {
+      "symbol": "EURCHF",
+      "dir": "LONG"
+    },
+    {
+      "symbol": "EURJPY",
       "dir": "LONG"
     }
   ],
   "backup": {
-    "symbol": "NZDJPY",
+    "symbol": "NZDCHF",
     "dir": "LONG"
   },
   "strength": [],
   "bias": [
     {
-      "symbol": "NZDCAD",
+      "symbol": "AUDNZD",
       "dir": "LONG",
-      "status": "Excluded"
+      "status": "No edge"
     },
     {
-      "symbol": "AUDCAD",
+      "symbol": "AUDJPY",
       "dir": "LONG",
-      "status": "Excluded"
+      "status": "No edge"
     },
     {
-      "symbol": "EURCAD",
+      "symbol": "NZDJPY",
       "dir": "LONG",
-      "status": "Excluded"
+      "status": "No edge"
     },
     {
-      "symbol": "USDCAD",
+      "symbol": "EURNZD",
       "dir": "LONG",
-      "status": "Excluded"
+      "status": "No edge"
     },
     {
-      "symbol": "GBPCAD",
+      "symbol": "CHFJPY",
       "dir": "LONG",
-      "status": "Excluded"
+      "status": "Avoid"
     },
     {
-      "symbol": "CADJPY",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "CADCHF",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "GBPJPY",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "GBPCHF",
+      "symbol": "EURUSD",
       "dir": "LONG",
       "status": "Excluded"
     },
@@ -79,56 +64,71 @@
       "status": "Excluded"
     },
     {
-      "symbol": "EURGBP",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "EURNZD",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "EURAUD",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "EURJPY",
+      "symbol": "USDCAD",
       "dir": "LONG",
       "status": "Excluded"
     },
     {
-      "symbol": "EURCHF",
+      "symbol": "GBPJPY",
       "dir": "LONG",
       "status": "Excluded"
     },
     {
-      "symbol": "XAUUSD",
+      "symbol": "GBPCHF",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "GBPNZD",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "GBPCAD",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "EURCAD",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "AUDCAD",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "NZDCAD",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "CADJPY",
+      "dir": "SHORT",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "CADCHF",
       "dir": "SHORT",
       "status": "Excluded"
     }
   ],
   "currency_strength": {
+    "EUR": 1,
     "GBP": 1,
-    "USD": 1,
-    "NZD": 1,
     "AUD": 1,
-    "EUR": 0,
+    "USD": 0,
+    "NZD": 0,
     "JPY": -1,
     "CHF": -1,
     "CAD": -2
   },
   "blackouts": [
     {
-      "from": "2026-11-10T08:15:00Z",
-      "to": "2026-11-10T09:00:00Z",
+      "from": "2026-11-10T12:15:00Z",
+      "to": "2026-11-10T13:00:00Z",
       "ccy": "GBP"
-    },
-    {
-      "from": "2026-11-10T08:45:00Z",
-      "to": "2026-11-10T09:30:00Z",
-      "ccy": "USD"
     }
   ]
 }
