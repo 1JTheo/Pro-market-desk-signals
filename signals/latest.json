@@ -1,25 +1,25 @@
 {
-  "generated_utc": "2026-11-10T19:55:14Z",
-  "valid_until_utc": "2026-11-10T22:55:14Z",
+  "generated_utc": "2026-11-10T21:56:55Z",
+  "valid_until_utc": "2026-11-11T00:56:55Z",
   "mood": "risk-off",
-  "headline": "The dollar holds its post-CPI gains with USDJPY near 158.8 and AUD the day's worst performer. Avoid USD and NZD pairs tonight; small EURAUD, CADJPY or EURGBP longs on pullbacks only.",
+  "headline": "The dollar keeps its best day since September after hot CPI; AUD and JPY are the weakest. Thin Asia trade: small CADJPY long, AUDCAD or GBPAUD trades on pullbacks only, and skip USD and NZD around Bowman and the RBNZ presser.",
   "allow": [
-    {
-      "symbol": "EURAUD",
-      "dir": "LONG"
-    },
     {
       "symbol": "CADJPY",
       "dir": "LONG"
     },
     {
-      "symbol": "EURGBP",
+      "symbol": "AUDCAD",
+      "dir": "SHORT"
+    },
+    {
+      "symbol": "GBPAUD",
       "dir": "LONG"
     }
   ],
   "backup": {
-    "symbol": "EURJPY",
-    "dir": "LONG"
+    "symbol": "AUDCHF",
+    "dir": "SHORT"
   },
   "strength": [
     {
@@ -33,7 +33,7 @@
   ],
   "bias": [
     {
-      "symbol": "GBPAUD",
+      "symbol": "GBPJPY",
       "dir": "LONG",
       "status": "No edge"
     },
@@ -43,28 +43,8 @@
       "status": "No edge"
     },
     {
-      "symbol": "EURCHF",
-      "dir": "LONG",
-      "status": "No edge"
-    },
-    {
       "symbol": "CADCHF",
       "dir": "LONG",
-      "status": "No edge"
-    },
-    {
-      "symbol": "AUDCAD",
-      "dir": "SHORT",
-      "status": "No edge"
-    },
-    {
-      "symbol": "GBPJPY",
-      "dir": "LONG",
-      "status": "No edge"
-    },
-    {
-      "symbol": "AUDCHF",
-      "dir": "SHORT",
       "status": "No edge"
     },
     {
@@ -126,6 +106,26 @@
       "symbol": "NZDCAD",
       "dir": "SHORT",
       "status": "Excluded"
+    },
+    {
+      "symbol": "EURJPY",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "EURGBP",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "EURAUD",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "EURCHF",
+      "dir": "LONG",
+      "status": "Excluded"
     }
   ],
   "currency_strength": {
@@ -140,14 +140,14 @@
   },
   "blackouts": [
     {
-      "from": "2026-11-10T19:45:00Z",
-      "to": "2026-11-10T20:30:00Z",
-      "ccy": "NZD"
+      "from": "2026-11-10T23:15:00Z",
+      "to": "2026-11-11T00:00:00Z",
+      "ccy": "USD"
     },
     {
-      "from": "2026-11-10T20:15:00Z",
-      "to": "2026-11-10T21:00:00Z",
-      "ccy": "USD"
+      "from": "2026-11-10T23:45:00Z",
+      "to": "2026-11-11T00:30:00Z",
+      "ccy": "NZD"
     }
   ]
 }
