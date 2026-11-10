@@ -1,19 +1,19 @@
 {
-  "generated_utc": "2026-11-10T05:56:51Z",
-  "valid_until_utc": "2026-11-10T08:56:51Z",
+  "generated_utc": "2026-11-10T07:56:46Z",
+  "valid_until_utc": "2026-11-10T10:56:46Z",
   "mood": "risk-on",
-  "headline": "Risk-on rolls on in Asia with Nikkei +3% and Brent near its lowest since August; yen stays soft at 158. US CPI at 15:30 Kyiv plus BoE, ECB and BoC events leave only AUD, NZD, CHF and JPY pairs tradeable.",
+  "headline": "Risk-on holds into the European open with US and EU futures up and Brent near $91.5; the dollar's slide has paused before US CPI at 15:30 Kyiv. Only AUD, NZD, CHF and JPY pairs stay clear of today's news.",
   "allow": [
     {
       "symbol": "NZDCHF",
       "dir": "LONG"
     },
     {
-      "symbol": "AUDCHF",
+      "symbol": "AUDJPY",
       "dir": "LONG"
     },
     {
-      "symbol": "AUDJPY",
+      "symbol": "AUDCHF",
       "dir": "LONG"
     }
   ],
@@ -23,11 +23,6 @@
   },
   "strength": [],
   "bias": [
-    {
-      "symbol": "AUDNZD",
-      "dir": "LONG",
-      "status": "No edge"
-    },
     {
       "symbol": "NZDCAD",
       "dir": "LONG",
@@ -117,8 +112,8 @@
   "currency_strength": {
     "GBP": 1,
     "USD": 1,
-    "AUD": 1,
     "NZD": 1,
+    "AUD": 1,
     "EUR": 0,
     "JPY": -1,
     "CHF": -1,
