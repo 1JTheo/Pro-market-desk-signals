@@ -1,20 +1,20 @@
 {
-  "generated_utc": "2026-11-10T15:56:26Z",
-  "valid_until_utc": "2026-11-10T18:56:26Z",
-  "mood": "mixed",
-  "headline": "Hot US CPI keeps USD bid and lifts 50bp Fed hike odds to about 15%, but US stocks have pared most losses. Stand aside on USD, EUR, GBP and CAD pairs; trade only AUDJPY or AUDCHF on pullbacks.",
+  "generated_utc": "2026-11-10T18:01:25Z",
+  "valid_until_utc": "2026-11-10T21:01:25Z",
+  "mood": "risk-off",
+  "headline": "Logan's call for at least two more Fed hikes adds to the hot-CPI dollar rally, and US stocks are now down about 1%. Stand aside on USD, EUR, GBP and CAD pairs; only CHFJPY or AUDJPY longs on pullbacks.",
   "allow": [
     {
-      "symbol": "AUDJPY",
+      "symbol": "CHFJPY",
       "dir": "LONG"
     },
     {
-      "symbol": "AUDCHF",
+      "symbol": "AUDJPY",
       "dir": "LONG"
     }
   ],
   "backup": {
-    "symbol": "NZDJPY",
+    "symbol": "AUDCHF",
     "dir": "LONG"
   },
   "strength": [
@@ -29,12 +29,7 @@
   ],
   "bias": [
     {
-      "symbol": "CHFJPY",
-      "dir": "LONG",
-      "status": "No edge"
-    },
-    {
-      "symbol": "NZDCHF",
+      "symbol": "NZDJPY",
       "dir": "LONG",
       "status": "No edge"
     },
@@ -55,6 +50,11 @@
     },
     {
       "symbol": "EURNZD",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "EURAUD",
       "dir": "LONG",
       "status": "Excluded"
     },
@@ -114,6 +114,11 @@
       "status": "Excluded"
     },
     {
+      "symbol": "GBPNZD",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
       "symbol": "GBPCAD",
       "dir": "LONG",
       "status": "Excluded"
@@ -140,26 +145,16 @@
     }
   ],
   "currency_strength": {
-    "USD": 2,
+    "USD": 3,
     "EUR": 1,
-    "AUD": 1,
     "GBP": 0,
-    "NZD": 0,
+    "AUD": 0,
     "CHF": -1,
+    "NZD": -1,
     "JPY": -2,
     "CAD": -2
   },
   "blackouts": [
-    {
-      "from": "2026-11-10T15:35:00Z",
-      "to": "2026-11-10T16:20:00Z",
-      "ccy": "USD"
-    },
-    {
-      "from": "2026-11-10T16:30:00Z",
-      "to": "2026-11-10T17:15:00Z",
-      "ccy": "EUR"
-    },
     {
       "from": "2026-11-10T17:45:00Z",
       "to": "2026-11-10T18:30:00Z",
@@ -174,6 +169,11 @@
       "from": "2026-11-10T18:15:00Z",
       "to": "2026-11-10T19:00:00Z",
       "ccy": "GBP"
+    },
+    {
+      "from": "2026-11-10T20:15:00Z",
+      "to": "2026-11-10T21:00:00Z",
+      "ccy": "USD"
     }
   ]
 }
