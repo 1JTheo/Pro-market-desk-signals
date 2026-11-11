@@ -1,6 +1,6 @@
 version=1
-generated_utc=2026-11-11T13:54:32Z
-valid_until_utc=2026-11-11T16:54:32Z
+generated_utc=2026-11-11T15:54:51Z
+valid_until_utc=2026-11-11T18:54:51Z
 mood=mixed
 max_trades=3
 allow=NZDUSD,SHORT
