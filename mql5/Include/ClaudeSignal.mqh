@@ -78,6 +78,11 @@ private:
    int               m_maxTrades;
    SClaudeAllow      m_allow[];
    SClaudeBlackout   m_black[];
+   // MultiAssetSignalPro scores added by the GitHub Action (appscore= / appfilter= lines)
+   bool              m_appDone;
+   string            m_appCode[];
+   double            m_appScore[];     // -1 = no data
+   string            m_appRec[];
    datetime          m_lastFetch;
    datetime          m_lastOk;
    string            m_lastError;
@@ -162,6 +167,8 @@ private:
       int      maxTrades = 3;
       SClaudeAllow    al[];
       SClaudeBlackout bl[];
+      string apC[], apR[]; double apS[];
+      bool   apDone = false;
       int nAllow = 0, nBackup = 0, nBlack = 0, nStrength = 0, nBias = 0;
 
       for(int i = 0; i < n; i++)
@@ -212,6 +219,19 @@ private:
             bl[k].fromGmt = f; bl[k].toGmt = t; bl[k].ccy = c;
             nBlack++;
            }
+         else if(key == "appscore")   // appscore=GBPJPY,72.5,BUY   (score NA = no data)
+           {
+            string p[];
+            if(StringSplit(val, ',', p) >= 2)
+              {
+               string code = Trim(p[0]); StringToUpper(code);
+               string sc = Trim(p[1]);
+               int k = ArraySize(apC);
+               ArrayResize(apC, k + 1); ArrayResize(apS, k + 1); ArrayResize(apR, k + 1);
+               apC[k] = code; apS[k] = (sc == "NA" ? -1.0 : StringToDouble(sc)); apR[k] = ArraySize(p) >= 3 ? Trim(p[2]) : "";
+              }
+           }
+         else if(key == "appfilter") apDone = (StringFind(val, "done") == 0);
          // unknown keys are ignored so the format can grow
         }
 
@@ -237,6 +257,10 @@ private:
       ArrayResize(m_black, nb);
       for(int j = 0; j < nb; j++)
         { m_black[j].fromGmt = bl[j].fromGmt; m_black[j].toGmt = bl[j].toGmt; m_black[j].ccy = bl[j].ccy; }
+      m_appDone = apDone;
+      int nap = ArraySize(apC);
+      ArrayResize(m_appCode, nap); ArrayResize(m_appScore, nap); ArrayResize(m_appRec, nap);
+      for(int j = 0; j < nap; j++) { m_appCode[j] = apC[j]; m_appScore[j] = apS[j]; m_appRec[j] = apR[j]; }
       m_loaded = true;
       return true;
      }
@@ -266,7 +290,7 @@ public:
       m_enabled = true; m_passThrough = false; m_url = CS_DEFAULT_URL; m_token = "";
       m_refreshSec = 300; m_maxAgeHours = 14; m_useBackup = false; m_timeoutMs = 5000;
       m_cacheFile = "ClaudeSignal_cache.txt";
-      m_loaded = false; m_generated = 0; m_validUntil = 0; m_mood = ""; m_maxTrades = 3;
+      m_loaded = false; m_generated = 0; m_validUntil = 0; m_mood = ""; m_maxTrades = 3; m_appDone = false;
       m_lastFetch = 0; m_lastOk = 0; m_lastError = "";
      }
 
@@ -481,6 +505,27 @@ public:
      {
       bool buy = (type == ORDER_TYPE_BUY || type == ORDER_TYPE_BUY_LIMIT || type == ORDER_TYPE_BUY_STOP || type == ORDER_TYPE_BUY_STOP_LIMIT);
       return IsAllowed(symbol, buy ? CS_DIR_LONG : CS_DIR_SHORT);
+     }
+
+   //--- MultiAssetSignalPro scores (written into the file by the GitHub Action after each signal)
+   bool              AppFilterDone(void) const { return m_loaded && m_appDone; }
+   bool              AppScore(const string code6, double &score, string &rec) const
+     {
+      for(int i = 0; i < ArraySize(m_appCode); i++)
+         if(m_appCode[i] == code6)
+           {
+            score = m_appScore[i]; rec = m_appRec[i];
+            return score >= 0.0;
+           }
+      return false;
+     }
+   string            AppList(void) const
+     {
+      if(!m_appDone) return "pending";
+      string s = "";
+      for(int i = 0; i < ArraySize(m_appCode); i++)
+         s += (s == "" ? "" : ", ") + m_appCode[i] + " " + (m_appScore[i] < 0 ? "n/a" : DoubleToString(m_appScore[i], 0));
+      return s == "" ? "none" : s;
      }
 
    int               MaxTrades(void) const { return m_maxTrades; }

@@ -66,3 +66,22 @@ Older EAs that only know `allow`/`backup` ignore the `strength` and `bias` lines
 4. When the monitor shows `ACTIVE`, wire the module into CEA4 (see `docs/CEA4-integration.md`) and run it on a **demo account** first.
 
 If this repo is made private later, create a fine-grained GitHub token with read-only **Contents** access to this repo only and paste it into the `GithubToken` input.
+
+## MultiAssetSignalPro score filter (optional)
+
+After every new signal, the GitHub Action `.github/workflows/app-filter.yml` scores each
+Strength pair with the MultiAssetSignalPro app (private repo, `Streamlit` branch) and adds
+these lines to `signals/latest.txt`, just before `end=1`:
+
+```
+appscore=USDJPY,63.5,BUY        # app score 0-100 and recommendation; NA = no live data
+appfilter=done,2026-11-11T16:05:00Z
+```
+
+Full details go to `signals/appscores.json`. EAs that support it (CEA4_Scalp_FTMO,
+CEA4_v3_FTMO) have a setting "MultiAssetSignalPro filter for Strength pairs":
+Off / Buy-Sell or stronger (60+ for longs, under 40 for shorts) / Strong only (75+ / under 25).
+Older EAs ignore these lines.
+
+Setup: add a repository secret `MASP_TOKEN` (a fine-grained GitHub token with read-only
+Contents access to 1JTheo/MultiAssetSignalPro). Optional: `FRED_API_KEY`.
