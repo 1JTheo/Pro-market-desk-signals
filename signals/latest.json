@@ -1,8 +1,8 @@
 {
- "generated_utc": "2026-11-11T03:59:26Z",
- "valid_until_utc": "2026-11-11T06:59:26Z",
+ "generated_utc": "2026-11-11T05:56:21Z",
+ "valid_until_utc": "2026-11-11T08:56:21Z",
  "mood": "mixed",
- "headline": "The dollar holds its CPI gains and the Aussie sits near a 7-month low after weak confidence data. Stay with AUDUSD and AUDCAD shorts and a USDJPY long on pullbacks only; skip EUR before Cipollone and Lagarde.",
+ "headline": "The dollar holds its hot-CPI gains as a December Fed hike is priced in, leaving AUD and JPY weakest. Sell AUD and buy USDJPY on pullbacks only; skip EUR pairs while ECB speakers, Lagarde included, are on.",
  "allow": [
   {
    "symbol": "AUDUSD",
@@ -13,12 +13,12 @@
    "dir": "LONG"
   },
   {
-   "symbol": "AUDCAD",
+   "symbol": "AUDCHF",
    "dir": "SHORT"
   }
  ],
  "backup": {
-  "symbol": "USDCHF",
+  "symbol": "USDCAD",
   "dir": "LONG"
  },
  "strength": [
@@ -33,12 +33,7 @@
  ],
  "bias": [
   {
-   "symbol": "USDCAD",
-   "dir": "LONG",
-   "status": "No edge"
-  },
-  {
-   "symbol": "CADJPY",
+   "symbol": "USDCHF",
    "dir": "LONG",
    "status": "No edge"
   },
@@ -53,22 +48,17 @@
    "status": "No edge"
   },
   {
-   "symbol": "GBPAUD",
+   "symbol": "AUDCAD",
+   "dir": "SHORT",
+   "status": "No edge"
+  },
+  {
+   "symbol": "NZDJPY",
    "dir": "LONG",
    "status": "No edge"
   },
   {
-   "symbol": "AUDCHF",
-   "dir": "SHORT",
-   "status": "No edge"
-  },
-  {
-   "symbol": "XAUUSD",
-   "dir": "SHORT",
-   "status": "No edge"
-  },
-  {
-   "symbol": "GBPJPY",
+   "symbol": "CADJPY",
    "dir": "LONG",
    "status": "No edge"
   },
@@ -78,8 +68,18 @@
    "status": "No edge"
   },
   {
-   "symbol": "NZDJPY",
+   "symbol": "GBPJPY",
    "dir": "LONG",
+   "status": "No edge"
+  },
+  {
+   "symbol": "GBPAUD",
+   "dir": "LONG",
+   "status": "No edge"
+  },
+  {
+   "symbol": "AUDNZD",
+   "dir": "SHORT",
    "status": "No edge"
   },
   {
@@ -88,23 +88,33 @@
    "status": "No edge"
   },
   {
-   "symbol": "CADCHF",
+   "symbol": "NZDCHF",
+   "dir": "SHORT",
+   "status": "No edge"
+  },
+  {
+   "symbol": "GBPNZD",
    "dir": "LONG",
    "status": "No edge"
   },
   {
-   "symbol": "GBPCAD",
+   "symbol": "GBPCHF",
    "dir": "SHORT",
    "status": "No edge"
+  },
+  {
+   "symbol": "CADCHF",
+   "dir": "SHORT",
+   "status": "No edge"
+  },
+  {
+   "symbol": "XAUUSD",
+   "dir": "SHORT",
+   "status": "Avoid"
   },
   {
    "symbol": "EURUSD",
    "dir": "SHORT",
-   "status": "Excluded"
-  },
-  {
-   "symbol": "EURAUD",
-   "dir": "LONG",
    "status": "Excluded"
   },
   {
@@ -113,30 +123,41 @@
    "status": "Excluded"
   },
   {
-   "symbol": "EURNZD",
+   "symbol": "EURAUD",
    "dir": "LONG",
    "status": "Excluded"
   },
   {
    "symbol": "EURGBP",
-   "dir": "LONG",
+   "dir": "SHORT",
    "status": "Excluded"
   },
   {
    "symbol": "EURCHF",
-   "dir": "LONG",
+   "dir": "SHORT",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "EURCAD",
+   "dir": "SHORT",
    "status": "Excluded"
   }
  ],
  "currency_strength": {
-  "USD": 2,
-  "EUR": 0,
+  "USD": 3,
+  "CHF": 1,
+  "GBP": 0,
   "CAD": 0,
-  "GBP": -1,
-  "CHF": -1,
+  "EUR": -1,
   "NZD": -1,
   "AUD": -2,
   "JPY": -2
  },
- "blackouts": []
+ "blackouts": [
+  {
+   "from": "2026-11-11T07:35:00Z",
+   "to": "2026-11-11T08:20:00Z",
+   "ccy": "EUR"
+  }
+ ]
 }
