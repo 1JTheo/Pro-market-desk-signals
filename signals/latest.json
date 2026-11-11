@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-11-11T07:56:42Z",
-  "valid_until_utc": "2026-11-11T10:56:42Z",
+  "generated_utc": "2026-11-11T09:58:29Z",
+  "valid_until_utc": "2026-11-11T12:58:29Z",
   "mood": "mixed",
-  "headline": "The dollar holds its hot-CPI gains on a quiet US holiday, with NZD and JPY weakest. Sell NZDUSD and AUDUSD on rallies and buy USDJPY on dips; skip EUR pairs around Lagarde at 09:45 UTC.",
+  "headline": "The dollar holds its hot-CPI gains in quiet holiday trade, with NZD and JPY weakest. Sell NZDUSD and buy USDJPY and USDCAD on pullbacks; skip EUR pairs on Lagarde day.",
   "allow": [
     {
       "symbol": "NZDUSD",
@@ -13,37 +13,42 @@
       "dir": "LONG"
     },
     {
-      "symbol": "AUDUSD",
-      "dir": "SHORT"
+      "symbol": "USDCAD",
+      "dir": "LONG"
     }
   ],
   "backup": {
-    "symbol": "USDCAD",
-    "dir": "LONG"
+    "symbol": "AUDUSD",
+    "dir": "SHORT"
   },
   "strength": [
     {
-      "symbol": "USDJPY",
-      "dir": "LONG"
-    },
-    {
       "symbol": "NZDUSD",
       "dir": "SHORT"
+    },
+    {
+      "symbol": "USDJPY",
+      "dir": "LONG"
     }
   ],
   "bias": [
-    {
-      "symbol": "USDCHF",
-      "dir": "LONG",
-      "status": "No edge"
-    },
     {
       "symbol": "GBPUSD",
       "dir": "SHORT",
       "status": "No edge"
     },
     {
+      "symbol": "USDCHF",
+      "dir": "LONG",
+      "status": "No edge"
+    },
+    {
       "symbol": "GBPNZD",
+      "dir": "LONG",
+      "status": "No edge"
+    },
+    {
+      "symbol": "CADJPY",
       "dir": "LONG",
       "status": "No edge"
     },
@@ -53,22 +58,22 @@
       "status": "No edge"
     },
     {
-      "symbol": "GBPJPY",
+      "symbol": "GBPCAD",
       "dir": "LONG",
-      "status": "Avoid"
+      "status": "No edge"
     },
     {
-      "symbol": "CADJPY",
-      "dir": "LONG",
-      "status": "Avoid"
-    },
-    {
-      "symbol": "CHFJPY",
+      "symbol": "GBPAUD",
       "dir": "LONG",
       "status": "No edge"
     },
     {
       "symbol": "AUDJPY",
+      "dir": "LONG",
+      "status": "No edge"
+    },
+    {
+      "symbol": "CHFJPY",
       "dir": "LONG",
       "status": "No edge"
     },
@@ -88,18 +93,13 @@
       "status": "No edge"
     },
     {
-      "symbol": "GBPAUD",
-      "dir": "LONG",
-      "status": "No edge"
-    },
-    {
-      "symbol": "GBPCAD",
-      "dir": "LONG",
-      "status": "No edge"
-    },
-    {
       "symbol": "CADCHF",
       "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
+      "symbol": "GBPJPY",
+      "dir": "LONG",
       "status": "No edge"
     },
     {
@@ -134,8 +134,8 @@
     }
   ],
   "currency_strength": {
-    "USD": 3,
-    "GBP": 0,
+    "USD": 2,
+    "GBP": 1,
     "CHF": 0,
     "EUR": -1,
     "CAD": -1,
