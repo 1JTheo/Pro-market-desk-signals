@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-11-10T23:59:45Z",
-  "valid_until_utc": "2026-11-11T02:59:45Z",
-  "mood": "risk-off",
-  "headline": "The dollar holds its post-CPI surge into a thin Asia session; AUD and JPY stay weakest. With US bonds shut for Veterans Day, take AUDUSD and AUDCAD shorts and a USDJPY long on pullbacks only; skip NZD and EUR today.",
+  "generated_utc": "2026-11-11T01:55:54Z",
+  "valid_until_utc": "2026-11-11T04:55:54Z",
+  "mood": "mixed",
+  "headline": "The dollar holds its CPI gains in a quiet Asia session and the yen slips to a 4-week low near 158.9. Stay with AUDUSD and AUDCAD shorts and a USDJPY long on pullbacks only; skip EUR before Lagarde.",
   "allow": [
     {
       "symbol": "AUDUSD",
@@ -33,13 +33,18 @@
   ],
   "bias": [
     {
+      "symbol": "USDCAD",
+      "dir": "LONG",
+      "status": "No edge"
+    },
+    {
       "symbol": "CADJPY",
       "dir": "LONG",
       "status": "No edge"
     },
     {
-      "symbol": "USDCAD",
-      "dir": "LONG",
+      "symbol": "NZDUSD",
+      "dir": "SHORT",
       "status": "No edge"
     },
     {
@@ -73,6 +78,16 @@
       "status": "No edge"
     },
     {
+      "symbol": "NZDJPY",
+      "dir": "LONG",
+      "status": "No edge"
+    },
+    {
+      "symbol": "NZDCAD",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
       "symbol": "CADCHF",
       "dir": "LONG",
       "status": "No edge"
@@ -83,18 +98,8 @@
       "status": "No edge"
     },
     {
-      "symbol": "NZDUSD",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
       "symbol": "EURUSD",
       "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "NZDJPY",
-      "dir": "LONG",
       "status": "Excluded"
     },
     {
@@ -110,11 +115,6 @@
     {
       "symbol": "EURNZD",
       "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "NZDCAD",
-      "dir": "SHORT",
       "status": "Excluded"
     },
     {
@@ -138,11 +138,5 @@
     "AUD": -2,
     "JPY": -2
   },
-  "blackouts": [
-    {
-      "from": "2026-11-10T23:45:00Z",
-      "to": "2026-11-11T00:30:00Z",
-      "ccy": "NZD"
-    }
-  ]
+  "blackouts": []
 }
