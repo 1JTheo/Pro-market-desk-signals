@@ -1,6 +1,6 @@
 {
-  "signal_generated_utc": "2026-11-11T18:00:45Z",
-  "scored_utc": "2026-11-11T18:01:35Z",
+  "signal_generated_utc": "2026-11-11T19:55:08Z",
+  "scored_utc": "2026-11-11T19:55:52Z",
   "source": "MultiAssetSignalPro (Streamlit branch)",
   "pairs": [
     {
@@ -30,13 +30,13 @@
     {
       "pair": "NZDUSD",
       "signal_dir": "SHORT",
-      "score": 42.8,
+      "score": 44.3,
       "recommendation": "WEAK SELL",
       "components": {
         "technical": 37.0,
         "fundamental": 49.0,
         "sentiment": 55,
-        "momentum": 20
+        "momentum": 35
       }
     }
   ]
