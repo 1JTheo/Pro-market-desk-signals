@@ -1,6 +1,6 @@
 version=1
-generated_utc=2026-11-11T18:00:45Z
-valid_until_utc=2026-11-11T21:00:45Z
+generated_utc=2026-11-11T19:55:08Z
+valid_until_utc=2026-11-11T22:55:08Z
 mood=mixed
 max_trades=3
 allow=NZDUSD,SHORT
@@ -30,8 +30,4 @@ bias=GBPCHF,LONG
 bias=GBPNZD,LONG
 bias=GBPCAD,LONG
 bias=EURGBP,SHORT
-appscore=USDJPY,58.7,WEAK_BUY
-appscore=USDCHF,66.7,BUY
-appscore=NZDUSD,42.8,WEAK_SELL
-appfilter=done,2026-11-11T18:01:35Z
 end=1
