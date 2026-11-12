@@ -1,24 +1,24 @@
 {
-  "generated_utc": "2026-11-12T01:55:40Z",
-  "valid_until_utc": "2026-11-12T04:55:40Z",
+  "generated_utc": "2026-11-12T03:55:26Z",
+  "valid_until_utc": "2026-11-12T06:55:26Z",
   "mood": "mixed",
-  "headline": "The dollar holds near one-month highs after hot US CPI, and USD/JPY touched 159.94 before Japan's Mimura warned again. Asia is quiet; trade only non-USD, non-GBP, non-EUR crosses: AUD over NZD and CAD, CHF over CAD.",
+  "headline": "The dollar sits at a 19-month high with a December Fed hike fully priced, while Nasdaq futures slip on Nvidia turmoil. Asia is quiet; trade only non-USD, non-GBP, non-EUR crosses: CHF over CAD and NZD, AUD over NZD.",
   "allow": [
-    {
-      "symbol": "AUDNZD",
-      "dir": "LONG"
-    },
     {
       "symbol": "CADCHF",
       "dir": "SHORT"
     },
     {
-      "symbol": "AUDCAD",
+      "symbol": "NZDCHF",
+      "dir": "SHORT"
+    },
+    {
+      "symbol": "AUDNZD",
       "dir": "LONG"
     }
   ],
   "backup": {
-    "symbol": "NZDCHF",
+    "symbol": "AUDCHF",
     "dir": "SHORT"
   },
   "strength": [
@@ -41,8 +41,8 @@
   ],
   "bias": [
     {
-      "symbol": "AUDCHF",
-      "dir": "SHORT",
+      "symbol": "AUDCAD",
+      "dir": "LONG",
       "status": "No edge"
     },
     {
@@ -116,8 +116,8 @@
       "status": "Excluded"
     },
     {
-      "symbol": "GBPCHF",
-      "dir": "LONG",
+      "symbol": "EURCHF",
+      "dir": "SHORT",
       "status": "Excluded"
     },
     {
@@ -146,10 +146,16 @@
     "EUR": -1,
     "GBP": 0,
     "JPY": -2,
-    "CHF": -1,
+    "CHF": 0,
     "CAD": -2,
     "AUD": -2,
     "NZD": -2
   },
-  "blackouts": []
+  "blackouts": [
+    {
+      "from": "2026-11-12T06:45:00Z",
+      "to": "2026-11-12T07:30:00Z",
+      "ccy": "GBP"
+    }
+  ]
 }
