@@ -1,34 +1,8 @@
 {
-  "signal_generated_utc": "2026-11-12T13:56:00Z",
-  "scored_utc": "2026-11-12T13:57:27Z",
+  "signal_generated_utc": "2026-11-12T15:55:00Z",
+  "scored_utc": "2026-11-12T15:56:50Z",
   "source": "MultiAssetSignalPro (Streamlit branch)",
   "pairs": [
-    {
-      "pair": "AUDCHF",
-      "signal_dir": "SHORT",
-      "score": 63.8,
-      "recommendation": "BUY",
-      "components": {
-        "technical": 56.3,
-        "fundamental": 71.3,
-        "sentiment": null,
-        "momentum": 60
-      },
-      "cot": "COT: no recent CFTC data for CHF - left out of the score"
-    },
-    {
-      "pair": "NZDCHF",
-      "signal_dir": "SHORT",
-      "score": 58.7,
-      "recommendation": "WEAK BUY",
-      "components": {
-        "technical": 47.8,
-        "fundamental": 67.9,
-        "sentiment": null,
-        "momentum": 60
-      },
-      "cot": "COT: no recent CFTC data for CHF - left out of the score"
-    },
     {
       "pair": "AUDUSD",
       "signal_dir": "SHORT",
@@ -45,15 +19,41 @@
     {
       "pair": "NZDUSD",
       "signal_dir": "SHORT",
-      "score": 36.6,
+      "score": 35.1,
       "recommendation": "SELL",
       "components": {
         "technical": 36.8,
         "fundamental": 45.2,
         "sentiment": 14.1,
-        "momentum": 35
+        "momentum": 20
       },
       "cot": "NZD: speculators net short 60,015 contracts (-62% of their positions), COT index 7/100 - extreme, crowded, 4-week change -30,669. USD (US dollar index): speculators net long 14,190 contracts (+27% of their positions), COT index 79/100, 4-week change +2,179. Positioning favours USD by 72 points. CFTC report as of 03 Nov 2026"
+    },
+    {
+      "pair": "AUDCHF",
+      "signal_dir": "SHORT",
+      "score": 55.0,
+      "recommendation": "WEAK BUY",
+      "components": {
+        "technical": 56.3,
+        "fundamental": 71.3,
+        "sentiment": 5.0,
+        "momentum": 60
+      },
+      "cot": "AUD: speculators net short 129,457 contracts (-39% of their positions), COT index 0/100 - extreme, crowded, 4-week change -30,869. CHF: speculators net short 16,589 contracts (-22% of their positions), COT index 100/100 - extreme, crowded, 4-week change +7,151. Positioning favours CHF by 100 points. CFTC report as of 03 Nov 2026"
+    },
+    {
+      "pair": "NZDCHF",
+      "signal_dir": "SHORT",
+      "score": 50.6,
+      "recommendation": "HOLD",
+      "components": {
+        "technical": 47.8,
+        "fundamental": 67.9,
+        "sentiment": 5.0,
+        "momentum": 60
+      },
+      "cot": "NZD: speculators net short 60,015 contracts (-62% of their positions), COT index 7/100 - extreme, crowded, 4-week change -30,669. CHF: speculators net short 16,589 contracts (-22% of their positions), COT index 100/100 - extreme, crowded, 4-week change +7,151. Positioning favours CHF by 93 points. CFTC report as of 03 Nov 2026"
     }
   ]
 }
