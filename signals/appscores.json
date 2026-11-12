@@ -1,55 +1,59 @@
 {
   "signal_generated_utc": "2026-11-12T03:55:26Z",
-  "scored_utc": "2026-11-12T04:13:11Z",
+  "scored_utc": "2026-11-12T04:39:39Z",
   "source": "MultiAssetSignalPro (Streamlit branch)",
   "pairs": [
     {
       "pair": "USDJPY",
       "signal_dir": "LONG",
-      "score": 56.2,
-      "recommendation": "WEAK BUY",
+      "score": 53.7,
+      "recommendation": "HOLD",
       "components": {
         "technical": 40.5,
         "fundamental": 62.9,
-        "sentiment": null,
+        "sentiment": 42.5,
         "momentum": 80
-      }
+      },
+      "cot": "USD (US dollar index): speculators net long 14,190 contracts (+27% of their positions), COT index 79/100, 4-week change +2,179. JPY: speculators net long 102,321 contracts (+29% of their positions), COT index 94/100 - extreme, crowded, 4-week change +39,996. Positioning favours JPY by 15 points. CFTC report as of 03 Nov 2026"
     },
     {
       "pair": "USDCAD",
       "signal_dir": "LONG",
-      "score": 53.7,
+      "score": 54.1,
       "recommendation": "HOLD",
       "components": {
         "technical": 47.7,
         "fundamental": 55.7,
-        "sentiment": null,
+        "sentiment": 57.4,
         "momentum": 65
-      }
+      },
+      "cot": "USD (US dollar index): speculators net long 14,190 contracts (+27% of their positions), COT index 79/100, 4-week change +2,179. CAD: speculators net short 41,775 contracts (-17% of their positions), COT index 64/100, 4-week change +48,388. Positioning favours USD by 15 points. CFTC report as of 03 Nov 2026"
     },
     {
       "pair": "AUDUSD",
       "signal_dir": "SHORT",
-      "score": 47.2,
-      "recommendation": "HOLD",
+      "score": 41.9,
+      "recommendation": "WEAK SELL",
       "components": {
         "technical": 46.2,
         "fundamental": 51.5,
-        "sentiment": null,
+        "sentiment": 10.7,
         "momentum": 35
-      }
+      },
+      "cot": "AUD: speculators net short 129,457 contracts (-39% of their positions), COT index 0/100 - extreme, crowded, 4-week change -30,869. USD (US dollar index): speculators net long 14,190 contracts (+27% of their positions), COT index 79/100, 4-week change +2,179. Positioning favours USD by 79 points. CFTC report as of 03 Nov 2026"
     },
     {
       "pair": "NZDUSD",
       "signal_dir": "SHORT",
-      "score": 42.3,
-      "recommendation": "WEAK SELL",
+      "score": 38.1,
+      "recommendation": "SELL",
       "components": {
         "technical": 36.8,
         "fundamental": 49.0,
-        "sentiment": null,
+        "sentiment": 14.1,
         "momentum": 35
-      }
+      },
+      "cot": "NZD: speculators net short 60,015 contracts (-62% of their positions), COT index 7/100 - extreme, crowded, 4-week change -30,669. USD (US dollar index): speculators net long 14,190 contracts (+27% of their positions), COT index 79/100, 4-week change +2,179. Positioning favours USD by 72 points. CFTC report as of 03 Nov 2026"
     }
   ]
 }
