@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-11-12T03:55:26Z",
-  "valid_until_utc": "2026-11-12T06:55:26Z",
+  "generated_utc": "2026-11-12T05:56:13Z",
+  "valid_until_utc": "2026-11-12T08:56:13Z",
   "mood": "mixed",
-  "headline": "The dollar sits at a 19-month high with a December Fed hike fully priced, while Nasdaq futures slip on Nvidia turmoil. Asia is quiet; trade only non-USD, non-GBP, non-EUR crosses: CHF over CAD and NZD, AUD over NZD.",
+  "headline": "The dollar holds a 19-month high with a December Fed hike 91% priced, while Nasdaq futures sag on Nvidia turmoil. UK GDP lands at 09:00 Kyiv; trade only non-USD, non-GBP, non-EUR crosses: CHF over CAD and NZD, AUD over NZD.",
   "allow": [
     {
       "symbol": "CADCHF",
@@ -111,12 +111,12 @@
       "status": "Excluded"
     },
     {
-      "symbol": "EURGBP",
+      "symbol": "EURCHF",
       "dir": "SHORT",
       "status": "Excluded"
     },
     {
-      "symbol": "EURCHF",
+      "symbol": "GBPCHF",
       "dir": "SHORT",
       "status": "Excluded"
     },
@@ -144,7 +144,7 @@
   "currency_strength": {
     "USD": 3,
     "EUR": -1,
-    "GBP": 0,
+    "GBP": -1,
     "JPY": -2,
     "CHF": 0,
     "CAD": -2,
