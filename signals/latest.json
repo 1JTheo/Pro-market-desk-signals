@@ -1,8 +1,8 @@
 {
- "generated_utc": "2026-11-12T20:01:00Z",
- "valid_until_utc": "2026-11-12T23:01:00Z",
- "mood": "mixed",
- "headline": "The dollar holds a 19-month high after a weak 30-year auction and hawkish Daly and Schmid; stocks flat, gold down 2.8%. Keep selling AUD vs CAD and NZD vs CHF, buy GBP vs AUD on pullbacks only; quiet Asia ahead, Williams 01:30 and US PPI Friday 15:30.",
+ "generated_utc": "2026-11-12T21:58:00Z",
+ "valid_until_utc": "2026-11-13T00:58:00Z",
+ "mood": "risk-off",
+ "headline": "Dollar holds its 19-month high as yields hit 5.1% and stocks slip 0.35% on no end to the Iran war; gold -3%. Keep selling AUD vs CAD and NZD vs CHF, buy GBP vs AUD on pullbacks; Williams 01:30, US PPI Friday 15:30.",
  "allow": [
   {
    "symbol": "AUDCAD",
@@ -148,5 +148,11 @@
   "NZD": -2,
   "AUD": -3
  },
- "blackouts": []
+ "blackouts": [
+  {
+   "from": "2026-11-12T23:15:00Z",
+   "to": "2026-11-13T00:00:00Z",
+   "ccy": "USD"
+  }
+ ]
 }
