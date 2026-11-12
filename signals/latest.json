@@ -1,9 +1,13 @@
 {
-  "generated_utc": "2026-11-12T07:56:10Z",
-  "valid_until_utc": "2026-11-12T10:56:10Z",
-  "mood": "mixed",
-  "headline": "The dollar sits near a 19-month high with a December Fed hike about 87-91% priced, while Nvidia's slide weighs on tech futures. UK GDP beat but the pound stays soft; US news after 15:30 Kyiv rules out USD pairs, so sell CAD and NZD against a steady CHF on pullbacks.",
+  "generated_utc": "2026-11-12T10:00:49Z",
+  "valid_until_utc": "2026-11-12T13:00:49Z",
+  "mood": "risk-off",
+  "headline": "The dollar holds a 19-month high with a December Fed hike about 91% priced, and USDJPY sits near 160. UK GDP held up; buy GBP and sell CAD and NZD against CHF on pullbacks before US claims at 15:30.",
   "allow": [
+    {
+      "symbol": "GBPAUD",
+      "dir": "LONG"
+    },
     {
       "symbol": "CADCHF",
       "dir": "SHORT"
@@ -14,8 +18,8 @@
     }
   ],
   "backup": {
-    "symbol": "AUDCHF",
-    "dir": "SHORT"
+    "symbol": "GBPNZD",
+    "dir": "LONG"
   },
   "strength": [
     {
@@ -37,32 +41,52 @@
   ],
   "bias": [
     {
+      "symbol": "AUDCHF",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
+      "symbol": "GBPCAD",
+      "dir": "LONG",
+      "status": "No edge"
+    },
+    {
       "symbol": "CHFJPY",
       "dir": "LONG",
       "status": "Avoid"
     },
     {
-      "symbol": "USDJPY",
+      "symbol": "GBPJPY",
       "dir": "LONG",
-      "status": "Excluded"
+      "status": "Avoid"
     },
     {
-      "symbol": "USDCAD",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "NZDUSD",
+      "symbol": "EURGBP",
       "dir": "SHORT",
       "status": "Excluded"
     },
     {
-      "symbol": "AUDUSD",
+      "symbol": "EURAUD",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "EURNZD",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "EURCAD",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "EURCHF",
       "dir": "SHORT",
       "status": "Excluded"
     },
     {
-      "symbol": "USDCHF",
+      "symbol": "EURJPY",
       "dir": "LONG",
       "status": "Excluded"
     },
@@ -77,65 +101,40 @@
       "status": "Excluded"
     },
     {
+      "symbol": "USDJPY",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "USDCHF",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "USDCAD",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "AUDUSD",
+      "dir": "SHORT",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "NZDUSD",
+      "dir": "SHORT",
+      "status": "Excluded"
+    },
+    {
       "symbol": "XAUUSD",
       "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "GBPCAD",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "GBPAUD",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "GBPNZD",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "GBPJPY",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "GBPCHF",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "EURCHF",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "EURCAD",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "EURAUD",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "EURNZD",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "EURJPY",
-      "dir": "LONG",
       "status": "Excluded"
     }
   ],
   "currency_strength": {
     "USD": 3,
     "EUR": -1,
-    "GBP": -1,
+    "GBP": 0,
     "JPY": -2,
     "CHF": 0,
     "CAD": -2,
