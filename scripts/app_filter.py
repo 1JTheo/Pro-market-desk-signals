@@ -43,7 +43,8 @@ def main():
             score, rec = float(r['score']), r['recommendation']
             out.append(f"appscore={code},{score:.1f},{rec.replace(' ', '_')}")
             results.append({'pair': code, 'signal_dir': d, 'score': score, 'recommendation': rec,
-                            'components': {k: v.get('score') for k, v in r['components'].items()}})
+                            'components': {k: v.get('score') for k, v in r['components'].items()},
+                            'cot': r['components']['sentiment']['details'].get('description', '')})
             print(f'{code} {d}: {rec} {score:.1f}')
         except Exception as e:
             out.append(f'appscore={code},NA,NODATA')
