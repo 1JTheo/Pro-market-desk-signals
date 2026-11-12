@@ -1,16 +1,16 @@
 {
-  "signal_generated_utc": "2026-11-12T20:01:00Z",
-  "scored_utc": "2026-11-12T20:02:17Z",
+  "signal_generated_utc": "2026-11-12T21:58:00Z",
+  "scored_utc": "2026-11-12T22:00:16Z",
   "source": "MultiAssetSignalPro (Streamlit branch)",
   "pairs": [
     {
       "pair": "AUDUSD",
       "signal_dir": "SHORT",
-      "score": 41.9,
+      "score": 41.8,
       "recommendation": "WEAK SELL",
       "components": {
         "technical": 54.9,
-        "fundamental": 47.8,
+        "fundamental": 47.5,
         "sentiment": 10.7,
         "momentum": 20
       },
@@ -19,11 +19,11 @@
     {
       "pair": "NZDUSD",
       "signal_dir": "SHORT",
-      "score": 35.8,
+      "score": 35.0,
       "recommendation": "SELL",
       "components": {
-        "technical": 39.0,
-        "fundamental": 45.2,
+        "technical": 36.8,
+        "fundamental": 45.0,
         "sentiment": 14.1,
         "momentum": 20
       },
