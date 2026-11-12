@@ -1,29 +1,29 @@
 {
-  "signal_generated_utc": "2026-11-12T07:56:10Z",
-  "scored_utc": "2026-11-12T07:56:54Z",
+  "signal_generated_utc": "2026-11-12T10:00:49Z",
+  "scored_utc": "2026-11-12T10:01:45Z",
   "source": "MultiAssetSignalPro (Streamlit branch)",
   "pairs": [
     {
       "pair": "USDJPY",
       "signal_dir": "LONG",
-      "score": 53.7,
+      "score": 51.7,
       "recommendation": "HOLD",
       "components": {
         "technical": 40.5,
-        "fundamental": 62.9,
+        "fundamental": 61.6,
         "sentiment": 42.5,
-        "momentum": 80
+        "momentum": 65
       },
       "cot": "USD (US dollar index): speculators net long 14,190 contracts (+27% of their positions), COT index 79/100, 4-week change +2,179. JPY: speculators net long 102,321 contracts (+29% of their positions), COT index 94/100 - extreme, crowded, 4-week change +39,996. Positioning favours JPY by 15 points. CFTC report as of 03 Nov 2026"
     },
     {
       "pair": "USDCAD",
       "signal_dir": "LONG",
-      "score": 54.1,
-      "recommendation": "HOLD",
+      "score": 55.1,
+      "recommendation": "WEAK BUY",
       "components": {
         "technical": 47.7,
-        "fundamental": 55.7,
+        "fundamental": 58.2,
         "sentiment": 57.4,
         "momentum": 65
       },
@@ -32,11 +32,11 @@
     {
       "pair": "AUDUSD",
       "signal_dir": "SHORT",
-      "score": 43.4,
+      "score": 41.9,
       "recommendation": "WEAK SELL",
       "components": {
         "technical": 54.9,
-        "fundamental": 51.5,
+        "fundamental": 47.8,
         "sentiment": 10.7,
         "momentum": 20
       },
@@ -45,11 +45,11 @@
     {
       "pair": "NZDUSD",
       "signal_dir": "SHORT",
-      "score": 38.1,
+      "score": 36.6,
       "recommendation": "SELL",
       "components": {
         "technical": 36.8,
-        "fundamental": 49.0,
+        "fundamental": 45.2,
         "sentiment": 14.1,
         "momentum": 35
       },
