@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-11-12T05:56:13Z",
-  "valid_until_utc": "2026-11-12T08:56:13Z",
+  "generated_utc": "2026-11-12T07:56:10Z",
+  "valid_until_utc": "2026-11-12T10:56:10Z",
   "mood": "mixed",
-  "headline": "The dollar holds a 19-month high with a December Fed hike 91% priced, while Nasdaq futures sag on Nvidia turmoil. UK GDP lands at 09:00 Kyiv; trade only non-USD, non-GBP, non-EUR crosses: CHF over CAD and NZD, AUD over NZD.",
+  "headline": "The dollar sits near a 19-month high with a December Fed hike about 87-91% priced, while Nvidia's slide weighs on tech futures. UK GDP beat but the pound stays soft; US news after 15:30 Kyiv rules out USD pairs, so sell CAD and NZD against a steady CHF on pullbacks.",
   "allow": [
     {
       "symbol": "CADCHF",
@@ -11,10 +11,6 @@
     {
       "symbol": "NZDCHF",
       "dir": "SHORT"
-    },
-    {
-      "symbol": "AUDNZD",
-      "dir": "LONG"
     }
   ],
   "backup": {
@@ -41,14 +37,14 @@
   ],
   "bias": [
     {
-      "symbol": "AUDCAD",
-      "dir": "LONG",
-      "status": "No edge"
-    },
-    {
       "symbol": "CHFJPY",
       "dir": "LONG",
       "status": "Avoid"
+    },
+    {
+      "symbol": "USDJPY",
+      "dir": "LONG",
+      "status": "Excluded"
     },
     {
       "symbol": "USDCAD",
@@ -63,11 +59,6 @@
     {
       "symbol": "AUDUSD",
       "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "USDJPY",
-      "dir": "LONG",
       "status": "Excluded"
     },
     {
@@ -111,12 +102,12 @@
       "status": "Excluded"
     },
     {
-      "symbol": "EURCHF",
+      "symbol": "GBPCHF",
       "dir": "SHORT",
       "status": "Excluded"
     },
     {
-      "symbol": "GBPCHF",
+      "symbol": "EURCHF",
       "dir": "SHORT",
       "status": "Excluded"
     },
@@ -126,12 +117,12 @@
       "status": "Excluded"
     },
     {
-      "symbol": "EURNZD",
+      "symbol": "EURAUD",
       "dir": "LONG",
       "status": "Excluded"
     },
     {
-      "symbol": "EURAUD",
+      "symbol": "EURNZD",
       "dir": "LONG",
       "status": "Excluded"
     },
@@ -151,11 +142,5 @@
     "AUD": -2,
     "NZD": -2
   },
-  "blackouts": [
-    {
-      "from": "2026-11-12T06:45:00Z",
-      "to": "2026-11-12T07:30:00Z",
-      "ccy": "GBP"
-    }
-  ]
+  "blackouts": []
 }
