@@ -1,18 +1,18 @@
 {
-  "signal_generated_utc": "2026-11-12T03:55:26Z",
-  "scored_utc": "2026-11-12T04:39:39Z",
+  "signal_generated_utc": "2026-11-12T05:56:13Z",
+  "scored_utc": "2026-11-12T05:57:10Z",
   "source": "MultiAssetSignalPro (Streamlit branch)",
   "pairs": [
     {
       "pair": "USDJPY",
       "signal_dir": "LONG",
-      "score": 53.7,
+      "score": 52.2,
       "recommendation": "HOLD",
       "components": {
         "technical": 40.5,
         "fundamental": 62.9,
         "sentiment": 42.5,
-        "momentum": 80
+        "momentum": 65
       },
       "cot": "USD (US dollar index): speculators net long 14,190 contracts (+27% of their positions), COT index 79/100, 4-week change +2,179. JPY: speculators net long 102,321 contracts (+29% of their positions), COT index 94/100 - extreme, crowded, 4-week change +39,996. Positioning favours JPY by 15 points. CFTC report as of 03 Nov 2026"
     },
@@ -32,10 +32,10 @@
     {
       "pair": "AUDUSD",
       "signal_dir": "SHORT",
-      "score": 41.9,
+      "score": 41.8,
       "recommendation": "WEAK SELL",
       "components": {
-        "technical": 46.2,
+        "technical": 46.1,
         "fundamental": 51.5,
         "sentiment": 10.7,
         "momentum": 35
