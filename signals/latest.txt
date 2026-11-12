@@ -30,4 +30,7 @@ bias=GBPUSD,SHORT
 bias=USDJPY,LONG
 bias=USDCHF,LONG
 bias=XAUUSD,SHORT
+appscore=AUDUSD,41.9,WEAK_SELL
+appscore=NZDUSD,35.8,SELL
+appfilter=done,2026-11-12T20:02:17Z
 end=1
