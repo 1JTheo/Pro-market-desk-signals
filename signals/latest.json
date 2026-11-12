@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-11-12T11:55:48Z",
-  "valid_until_utc": "2026-11-12T14:55:48Z",
+  "generated_utc": "2026-11-12T13:56:00Z",
+  "valid_until_utc": "2026-11-12T16:56:00Z",
   "mood": "risk-off",
-  "headline": "The dollar holds a 19-month high with a December Fed hike fully priced and US yields near 5%, while a Nvidia-led tech selloff keeps risk soft. Buy GBP against AUD and sell NZD and CAD against CHF on pullbacks, and stand aside around US claims at 15:30.",
+  "headline": "The dollar holds near a 19-month high after US claims rose to a still-low 200k, while a Nvidia-led tech selloff keeps risk soft and CHF leads. Buy GBP against AUD and sell NZD and CAD against CHF on pullbacks; stand aside around Fed Hammack (16:00) and Barr (17:00).",
   "allow": [
     {
       "symbol": "GBPAUD",
@@ -23,8 +23,12 @@
   },
   "strength": [
     {
-      "symbol": "USDJPY",
-      "dir": "LONG"
+      "symbol": "AUDCHF",
+      "dir": "SHORT"
+    },
+    {
+      "symbol": "NZDCHF",
+      "dir": "SHORT"
     },
     {
       "symbol": "AUDUSD",
@@ -72,6 +76,11 @@
       "status": "No edge"
     },
     {
+      "symbol": "GBPCHF",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
       "symbol": "USDJPY",
       "dir": "LONG",
       "status": "Excluded"
@@ -84,11 +93,6 @@
     {
       "symbol": "NZDUSD",
       "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "USDCHF",
-      "dir": "LONG",
       "status": "Excluded"
     },
     {
@@ -138,9 +142,9 @@
     }
   ],
   "currency_strength": {
-    "USD": 3,
+    "USD": 2,
+    "CHF": 2,
     "GBP": 1,
-    "CHF": 1,
     "EUR": -1,
     "CAD": -1,
     "JPY": -2,
@@ -156,6 +160,16 @@
     {
       "from": "2026-11-12T13:45:00Z",
       "to": "2026-11-12T14:30:00Z",
+      "ccy": "USD"
+    },
+    {
+      "from": "2026-11-12T14:45:00Z",
+      "to": "2026-11-12T15:30:00Z",
+      "ccy": "USD"
+    },
+    {
+      "from": "2026-11-12T16:15:00Z",
+      "to": "2026-11-12T17:00:00Z",
       "ccy": "USD"
     }
   ]
