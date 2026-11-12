@@ -1,18 +1,18 @@
 {
-  "signal_generated_utc": "2026-11-12T01:55:40Z",
-  "scored_utc": "2026-11-12T01:56:29Z",
+  "signal_generated_utc": "2026-11-12T03:55:26Z",
+  "scored_utc": "2026-11-12T03:56:12Z",
   "source": "MultiAssetSignalPro (Streamlit branch)",
   "pairs": [
     {
       "pair": "USDJPY",
       "signal_dir": "LONG",
-      "score": 54.1,
-      "recommendation": "HOLD",
+      "score": 55.6,
+      "recommendation": "WEAK BUY",
       "components": {
         "technical": 40.5,
         "fundamental": 62.9,
         "sentiment": 55,
-        "momentum": 65
+        "momentum": 80
       }
     },
     {
