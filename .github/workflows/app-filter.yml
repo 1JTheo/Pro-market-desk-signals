@@ -25,7 +25,8 @@ jobs:
       - name: Skip if this signal is already scored
         id: check
         run: |
-          if grep -q '^appfilter=done' signals/latest.txt; then echo "skip=true" >> "$GITHUB_OUTPUT"; else echo "skip=false" >> "$GITHUB_OUTPUT"; fi
+          # a manual run (Actions tab -> Run workflow) always re-scores the current signal
+          if [ "${{ github.event_name }}" = "push" ] && grep -q '^appfilter=done' signals/latest.txt; then echo "skip=true" >> "$GITHUB_OUTPUT"; else echo "skip=false" >> "$GITHUB_OUTPUT"; fi
 
       - name: Check the access token
         if: steps.check.outputs.skip == 'false'
