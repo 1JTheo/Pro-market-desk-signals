@@ -1,20 +1,33 @@
 {
-  "signal_generated_utc": "2026-11-12T11:55:48Z",
-  "scored_utc": "2026-11-12T11:56:39Z",
+  "signal_generated_utc": "2026-11-12T13:56:00Z",
+  "scored_utc": "2026-11-12T13:57:27Z",
   "source": "MultiAssetSignalPro (Streamlit branch)",
   "pairs": [
     {
-      "pair": "USDJPY",
-      "signal_dir": "LONG",
-      "score": 51.7,
-      "recommendation": "HOLD",
+      "pair": "AUDCHF",
+      "signal_dir": "SHORT",
+      "score": 63.8,
+      "recommendation": "BUY",
       "components": {
-        "technical": 40.5,
-        "fundamental": 61.6,
-        "sentiment": 42.5,
-        "momentum": 65
+        "technical": 56.3,
+        "fundamental": 71.3,
+        "sentiment": null,
+        "momentum": 60
       },
-      "cot": "USD (US dollar index): speculators net long 14,190 contracts (+27% of their positions), COT index 79/100, 4-week change +2,179. JPY: speculators net long 102,321 contracts (+29% of their positions), COT index 94/100 - extreme, crowded, 4-week change +39,996. Positioning favours JPY by 15 points. CFTC report as of 03 Nov 2026"
+      "cot": "COT: no recent CFTC data for CHF - left out of the score"
+    },
+    {
+      "pair": "NZDCHF",
+      "signal_dir": "SHORT",
+      "score": 58.7,
+      "recommendation": "WEAK BUY",
+      "components": {
+        "technical": 47.8,
+        "fundamental": 67.9,
+        "sentiment": null,
+        "momentum": 60
+      },
+      "cot": "COT: no recent CFTC data for CHF - left out of the score"
     },
     {
       "pair": "AUDUSD",
