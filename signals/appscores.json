@@ -1,17 +1,17 @@
 {
   "signal_generated_utc": "2026-11-12T03:55:26Z",
-  "scored_utc": "2026-11-12T03:56:12Z",
+  "scored_utc": "2026-11-12T04:13:11Z",
   "source": "MultiAssetSignalPro (Streamlit branch)",
   "pairs": [
     {
       "pair": "USDJPY",
       "signal_dir": "LONG",
-      "score": 55.6,
+      "score": 56.2,
       "recommendation": "WEAK BUY",
       "components": {
         "technical": 40.5,
         "fundamental": 62.9,
-        "sentiment": 55,
+        "sentiment": null,
         "momentum": 80
       }
     },
@@ -23,31 +23,31 @@
       "components": {
         "technical": 47.7,
         "fundamental": 55.7,
-        "sentiment": 55,
+        "sentiment": null,
         "momentum": 65
       }
     },
     {
       "pair": "AUDUSD",
       "signal_dir": "SHORT",
-      "score": 48.5,
+      "score": 47.2,
       "recommendation": "HOLD",
       "components": {
         "technical": 46.2,
         "fundamental": 51.5,
-        "sentiment": 55,
+        "sentiment": null,
         "momentum": 35
       }
     },
     {
       "pair": "NZDUSD",
       "signal_dir": "SHORT",
-      "score": 44.2,
+      "score": 42.3,
       "recommendation": "WEAK SELL",
       "components": {
         "technical": 36.8,
         "fundamental": 49.0,
-        "sentiment": 55,
+        "sentiment": null,
         "momentum": 35
       }
     }
