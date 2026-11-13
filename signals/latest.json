@@ -1,20 +1,20 @@
 {
-  "generated_utc": "2026-11-13T03:55:24Z",
-  "valid_until_utc": "2026-11-13T06:55:24Z",
+  "generated_utc": "2026-11-13T05:55:36Z",
+  "valid_until_utc": "2026-11-13T08:55:36Z",
   "mood": "mixed",
-  "headline": "Dollar sits at a 19-month high with US 10-year yields at 5.14% and a December Fed hike fully priced; yen tests 160 under intervention threats. Sell NZD and AUD against CAD, buy GBP against NZD; leave USD, EUR and gold alone until after US PPI.",
+  "headline": "Dollar holds an 18-month high with the US 10-year above 5% and a December Fed hike fully priced; USDJPY sits at 160 under intervention warnings. Sell NZD and AUD against CAD, buy GBP against NZD on pullbacks; leave USD pairs and gold until after US PPI at 15:30.",
   "allow": [
     {
       "symbol": "NZDCAD",
       "dir": "SHORT"
     },
     {
-      "symbol": "AUDCAD",
-      "dir": "SHORT"
-    },
-    {
       "symbol": "GBPNZD",
       "dir": "LONG"
+    },
+    {
+      "symbol": "AUDCAD",
+      "dir": "SHORT"
     }
   ],
   "backup": {
@@ -33,26 +33,6 @@
   ],
   "bias": [
     {
-      "symbol": "AUDCHF",
-      "dir": "SHORT",
-      "status": "No edge"
-    },
-    {
-      "symbol": "NZDCHF",
-      "dir": "SHORT",
-      "status": "No edge"
-    },
-    {
-      "symbol": "CADCHF",
-      "dir": "LONG",
-      "status": "No edge"
-    },
-    {
-      "symbol": "GBPCAD",
-      "dir": "SHORT",
-      "status": "No edge"
-    },
-    {
       "symbol": "AUDJPY",
       "dir": "SHORT",
       "status": "No edge"
@@ -63,9 +43,49 @@
       "status": "No edge"
     },
     {
-      "symbol": "CADJPY",
+      "symbol": "AUDCHF",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
+      "symbol": "NZDCHF",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
+      "symbol": "EURAUD",
       "dir": "LONG",
-      "status": "Avoid"
+      "status": "No edge"
+    },
+    {
+      "symbol": "EURNZD",
+      "dir": "LONG",
+      "status": "No edge"
+    },
+    {
+      "symbol": "EURGBP",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
+      "symbol": "EURCAD",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
+      "symbol": "GBPCHF",
+      "dir": "LONG",
+      "status": "No edge"
+    },
+    {
+      "symbol": "CADCHF",
+      "dir": "LONG",
+      "status": "No edge"
+    },
+    {
+      "symbol": "EURCHF",
+      "dir": "SHORT",
+      "status": "No edge"
     },
     {
       "symbol": "GBPJPY",
@@ -73,19 +93,14 @@
       "status": "Avoid"
     },
     {
-      "symbol": "CHFJPY",
+      "symbol": "CADJPY",
       "dir": "LONG",
       "status": "Avoid"
     },
     {
-      "symbol": "EURUSD",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "GBPUSD",
-      "dir": "SHORT",
-      "status": "Excluded"
+      "symbol": "CHFJPY",
+      "dir": "LONG",
+      "status": "Avoid"
     },
     {
       "symbol": "AUDUSD",
@@ -98,8 +113,18 @@
       "status": "Excluded"
     },
     {
-      "symbol": "USDJPY",
+      "symbol": "USDCAD",
       "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "EURUSD",
+      "dir": "SHORT",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "GBPUSD",
+      "dir": "SHORT",
       "status": "Excluded"
     },
     {
@@ -111,40 +136,15 @@
       "symbol": "XAUUSD",
       "dir": "SHORT",
       "status": "Excluded"
-    },
-    {
-      "symbol": "EURGBP",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "EURCHF",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "EURCAD",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "EURAUD",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "EURNZD",
-      "dir": "LONG",
-      "status": "Excluded"
     }
   ],
   "currency_strength": {
-    "USD": 2,
+    "USD": 3,
     "CAD": 1,
-    "GBP": 0,
+    "GBP": 1,
     "CHF": 0,
-    "JPY": -1,
     "EUR": -1,
+    "JPY": -1,
     "NZD": -2,
     "AUD": -2
   },
