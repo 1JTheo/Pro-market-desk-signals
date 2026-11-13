@@ -30,4 +30,7 @@ bias=EURCHF,SHORT
 bias=EURCAD,SHORT
 bias=EURAUD,LONG
 bias=EURNZD,LONG
+appscore=NZDUSD,39.4,SELL
+appscore=AUDUSD,41.7,WEAK_SELL
+appfilter=done,2026-11-13T03:56:09Z
 end=1

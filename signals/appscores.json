@@ -1,21 +1,8 @@
 {
-  "signal_generated_utc": "2026-11-13T01:55:50Z",
-  "scored_utc": "2026-11-13T01:56:37Z",
+  "signal_generated_utc": "2026-11-13T03:55:24Z",
+  "scored_utc": "2026-11-13T03:56:09Z",
   "source": "MultiAssetSignalPro (Streamlit branch)",
   "pairs": [
-    {
-      "pair": "AUDUSD",
-      "signal_dir": "SHORT",
-      "score": 41.7,
-      "recommendation": "WEAK SELL",
-      "components": {
-        "technical": 54.5,
-        "fundamental": 47.5,
-        "sentiment": 10.7,
-        "momentum": 20
-      },
-      "cot": "AUD: speculators net short 129,457 contracts (-39% of their positions), COT index 0/100 - extreme, crowded, 4-week change -30,869. USD (US dollar index): speculators net long 14,190 contracts (+27% of their positions), COT index 79/100, 4-week change +2,179. Positioning favours USD by 79 points. CFTC report as of 03 Nov 2026"
-    },
     {
       "pair": "NZDUSD",
       "signal_dir": "SHORT",
@@ -28,6 +15,19 @@
         "momentum": 35
       },
       "cot": "NZD: speculators net short 60,015 contracts (-62% of their positions), COT index 7/100 - extreme, crowded, 4-week change -30,669. USD (US dollar index): speculators net long 14,190 contracts (+27% of their positions), COT index 79/100, 4-week change +2,179. Positioning favours USD by 72 points. CFTC report as of 03 Nov 2026"
+    },
+    {
+      "pair": "AUDUSD",
+      "signal_dir": "SHORT",
+      "score": 41.7,
+      "recommendation": "WEAK SELL",
+      "components": {
+        "technical": 54.5,
+        "fundamental": 47.5,
+        "sentiment": 10.7,
+        "momentum": 20
+      },
+      "cot": "AUD: speculators net short 129,457 contracts (-39% of their positions), COT index 0/100 - extreme, crowded, 4-week change -30,869. USD (US dollar index): speculators net long 14,190 contracts (+27% of their positions), COT index 79/100, 4-week change +2,179. Positioning favours USD by 79 points. CFTC report as of 03 Nov 2026"
     }
   ]
 }
