@@ -1,8 +1,8 @@
 {
- "generated_utc": "2026-11-12T21:58:00Z",
- "valid_until_utc": "2026-11-13T00:58:00Z",
+ "generated_utc": "2026-11-13T00:00:00Z",
+ "valid_until_utc": "2026-11-13T03:00:00Z",
  "mood": "risk-off",
- "headline": "Dollar holds its 19-month high as yields hit 5.1% and stocks slip 0.35% on no end to the Iran war; gold -3%. Keep selling AUD vs CAD and NZD vs CHF, buy GBP vs AUD on pullbacks; Williams 01:30, US PPI Friday 15:30.",
+ "headline": "Dollar sits at a 19-month high into Friday as US 10-year yields hold above 5.1% and a December Fed hike is ~91% priced; USDJPY is pinned under 160 by intervention warnings. Keep selling AUD vs CAD and NZD vs CHF, buy GBP vs AUD on pullbacks; no USD or EUR trades today (EU GDP 12:00, US PPI 15:30).",
  "allow": [
   {
    "symbol": "AUDCAD",
@@ -18,8 +18,8 @@
   }
  ],
  "backup": {
-  "symbol": "EURCAD",
-  "dir": "SHORT"
+  "symbol": "GBPNZD",
+  "dir": "LONG"
  },
  "strength": [
   {
@@ -38,23 +38,8 @@
    "status": "No edge"
   },
   {
-   "symbol": "GBPNZD",
-   "dir": "LONG",
-   "status": "No edge"
-  },
-  {
    "symbol": "NZDCAD",
    "dir": "SHORT",
-   "status": "No edge"
-  },
-  {
-   "symbol": "EURAUD",
-   "dir": "LONG",
-   "status": "No edge"
-  },
-  {
-   "symbol": "EURNZD",
-   "dir": "LONG",
    "status": "No edge"
   },
   {
@@ -64,16 +49,6 @@
   },
   {
    "symbol": "GBPCAD",
-   "dir": "SHORT",
-   "status": "No edge"
-  },
-  {
-   "symbol": "EURGBP",
-   "dir": "SHORT",
-   "status": "No edge"
-  },
-  {
-   "symbol": "EURCHF",
    "dir": "SHORT",
    "status": "No edge"
   },
@@ -101,6 +76,31 @@
    "symbol": "NZDJPY",
    "dir": "SHORT",
    "status": "Avoid"
+  },
+  {
+   "symbol": "EURAUD",
+   "dir": "LONG",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "EURNZD",
+   "dir": "LONG",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "EURCAD",
+   "dir": "SHORT",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "EURGBP",
+   "dir": "SHORT",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "EURCHF",
+   "dir": "SHORT",
+   "status": "Excluded"
   },
   {
    "symbol": "AUDUSD",
@@ -148,11 +148,5 @@
   "NZD": -2,
   "AUD": -3
  },
- "blackouts": [
-  {
-   "from": "2026-11-12T23:15:00Z",
-   "to": "2026-11-13T00:00:00Z",
-   "ccy": "USD"
-  }
- ]
+ "blackouts": []
 }
