@@ -1,24 +1,24 @@
 {
- "generated_utc": "2026-11-13T00:00:00Z",
- "valid_until_utc": "2026-11-13T03:00:00Z",
+ "generated_utc": "2026-11-13T01:55:50Z",
+ "valid_until_utc": "2026-11-13T04:55:50Z",
  "mood": "risk-off",
- "headline": "Dollar sits at a 19-month high into Friday as US 10-year yields hold above 5.1% and a December Fed hike is ~91% priced; USDJPY is pinned under 160 by intervention warnings. Keep selling AUD vs CAD and NZD vs CHF, buy GBP vs AUD on pullbacks; no USD or EUR trades today (EU GDP 12:00, US PPI 15:30).",
+ "headline": "Dollar holds a 19-month high into Friday with US 10-year yields above 5.1% and a December Fed hike near fully priced. Sell AUD against CAD and CHF, buy GBP against AUD on pullbacks; no USD, EUR or NZD trades today (RBNZ survey ~04:00, EU GDP 12:00, US PPI 15:30).",
  "allow": [
   {
    "symbol": "AUDCAD",
    "dir": "SHORT"
   },
   {
-   "symbol": "NZDCHF",
-   "dir": "SHORT"
-  },
-  {
    "symbol": "GBPAUD",
    "dir": "LONG"
+  },
+  {
+   "symbol": "AUDCHF",
+   "dir": "SHORT"
   }
  ],
  "backup": {
-  "symbol": "GBPNZD",
+  "symbol": "CADCHF",
   "dir": "LONG"
  },
  "strength": [
@@ -32,21 +32,6 @@
   }
  ],
  "bias": [
-  {
-   "symbol": "AUDCHF",
-   "dir": "SHORT",
-   "status": "No edge"
-  },
-  {
-   "symbol": "NZDCAD",
-   "dir": "SHORT",
-   "status": "No edge"
-  },
-  {
-   "symbol": "GBPCHF",
-   "dir": "SHORT",
-   "status": "No edge"
-  },
   {
    "symbol": "GBPCAD",
    "dir": "SHORT",
@@ -73,9 +58,24 @@
    "status": "Avoid"
   },
   {
+   "symbol": "NZDCAD",
+   "dir": "SHORT",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "NZDCHF",
+   "dir": "SHORT",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "GBPNZD",
+   "dir": "LONG",
+   "status": "Excluded"
+  },
+  {
    "symbol": "NZDJPY",
    "dir": "SHORT",
-   "status": "Avoid"
+   "status": "Excluded"
   },
   {
    "symbol": "EURAUD",
@@ -141,12 +141,18 @@
  "currency_strength": {
   "USD": 2,
   "CAD": 1,
-  "CHF": 1,
   "GBP": 0,
+  "CHF": 0,
   "JPY": -1,
   "EUR": -1,
   "NZD": -2,
   "AUD": -3
  },
- "blackouts": []
+ "blackouts": [
+  {
+   "from": "2026-11-13T01:45:00Z",
+   "to": "2026-11-13T02:30:00Z",
+   "ccy": "NZD"
+  }
+ ]
 }
