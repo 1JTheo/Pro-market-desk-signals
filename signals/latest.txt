@@ -28,4 +28,7 @@ bias=GBPJPY,LONG
 bias=CADJPY,LONG
 bias=AUDJPY,SHORT
 bias=NZDJPY,SHORT
+appscore=AUDUSD,41.7,WEAK_SELL
+appscore=NZDUSD,38.7,SELL
+appfilter=done,2026-11-13T17:55:37Z
 end=1
