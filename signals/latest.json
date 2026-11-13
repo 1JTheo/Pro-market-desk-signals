@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-11-13T07:56:36Z",
-  "valid_until_utc": "2026-11-13T10:56:36Z",
-  "mood": "mixed",
-  "headline": "Dollar pauses near a 19-month high ahead of US PPI at 15:30, with USDJPY parked just under 160 on intervention warnings. Keep selling NZD and AUD against CAD and buying GBP against NZD on pullbacks; leave USD pairs and gold until after PPI and the Fed speakers.",
+  "generated_utc": "2026-11-13T10:00:13Z",
+  "valid_until_utc": "2026-11-13T13:00:13Z",
+  "mood": "risk-off",
+  "headline": "Dollar holds near a 19-month high in quiet trade ahead of US PPI at 15:30, with USDJPY just under 160 on intervention warnings. Keep selling NZD and AUD against CAD and buying GBP against NZD on pullbacks; leave USD pairs and gold until after PPI.",
   "allow": [
     {
       "symbol": "NZDCAD",
