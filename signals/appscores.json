@@ -1,16 +1,20 @@
 {
   "signal_generated_utc": "2026-11-13T19:55:00Z",
-  "scored_utc": "2026-11-13T19:55:54Z",
+  "scored_utc": "2026-11-14T11:28:27Z",
   "source": "MultiAssetSignalPro (Streamlit branch)",
   "pairs": [
     {
       "pair": "AUDUSD",
       "signal_dir": "SHORT",
-      "score": 41.7,
+      "groups": [
+        "Strength SHORT",
+        "Bias SHORT"
+      ],
+      "score": 41.5,
       "recommendation": "WEAK SELL",
       "components": {
-        "technical": 54.5,
-        "fundamental": 47.5,
+        "technical": 54.2,
+        "fundamental": 47.3,
         "sentiment": 10.7,
         "momentum": 20
       },
@@ -19,15 +23,323 @@
     {
       "pair": "NZDUSD",
       "signal_dir": "SHORT",
-      "score": 38.7,
+      "groups": [
+        "Strength SHORT",
+        "Bias SHORT"
+      ],
+      "score": 37.9,
       "recommendation": "SELL",
       "components": {
-        "technical": 47.5,
-        "fundamental": 45.0,
+        "technical": 45.2,
+        "fundamental": 44.8,
         "sentiment": 14.1,
         "momentum": 20
       },
       "cot": "NZD: speculators net short 60,015 contracts (-62% of their positions), COT index 7/100 - extreme, crowded, 4-week change -30,669. USD (US dollar index): speculators net long 14,190 contracts (+27% of their positions), COT index 79/100, 4-week change +2,179. Positioning favours USD by 72 points. CFTC report as of 03 Nov 2026"
+    },
+    {
+      "pair": "USDCHF",
+      "signal_dir": "LONG",
+      "groups": [
+        "Bias LONG"
+      ],
+      "score": 62.8,
+      "recommendation": "BUY",
+      "components": {
+        "technical": 61.2,
+        "fundamental": 68.7,
+        "sentiment": 39.3,
+        "momentum": 80
+      },
+      "cot": "USD (US dollar index): speculators net long 14,190 contracts (+27% of their positions), COT index 79/100, 4-week change +2,179. CHF: speculators net short 16,589 contracts (-22% of their positions), COT index 100/100 - extreme, crowded, 4-week change +7,151. Positioning favours CHF by 21 points. CFTC report as of 03 Nov 2026"
+    },
+    {
+      "pair": "GBPAUD",
+      "signal_dir": "LONG",
+      "groups": [
+        "Bias LONG"
+      ],
+      "score": 59.1,
+      "recommendation": "WEAK BUY",
+      "components": {
+        "technical": 58.2,
+        "fundamental": 48.7,
+        "sentiment": 75.3,
+        "momentum": 80
+      },
+      "cot": "GBP: speculators net short 59,821 contracts (-32% of their positions), COT index 51/100, 4-week change +37,790. AUD: speculators net short 129,457 contracts (-39% of their positions), COT index 0/100 - extreme, crowded, 4-week change -30,869. Positioning favours GBP by 51 points. CFTC report as of 03 Nov 2026"
+    },
+    {
+      "pair": "GBPNZD",
+      "signal_dir": "LONG",
+      "groups": [
+        "Bias LONG"
+      ],
+      "score": 54.1,
+      "recommendation": "HOLD",
+      "components": {
+        "technical": 45.6,
+        "fundamental": 52.0,
+        "sentiment": 72.0,
+        "momentum": 65
+      },
+      "cot": "GBP: speculators net short 59,821 contracts (-32% of their positions), COT index 51/100, 4-week change +37,790. NZD: speculators net short 60,015 contracts (-62% of their positions), COT index 7/100 - extreme, crowded, 4-week change -30,669. Positioning favours GBP by 44 points. CFTC report as of 03 Nov 2026"
+    },
+    {
+      "pair": "EURUSD",
+      "signal_dir": "SHORT",
+      "groups": [
+        "Bias SHORT"
+      ],
+      "score": 34.4,
+      "recommendation": "SELL",
+      "components": {
+        "technical": 36.9,
+        "fundamental": 40.9,
+        "sentiment": 10.7,
+        "momentum": 35
+      },
+      "cot": "EUR: speculators net short 157,791 contracts (-26% of their positions), COT index 0/100 - extreme, crowded, 4-week change -58,459. USD (US dollar index): speculators net long 14,190 contracts (+27% of their positions), COT index 79/100, 4-week change +2,179. Positioning favours USD by 79 points. CFTC report as of 03 Nov 2026"
+    },
+    {
+      "pair": "USDCAD",
+      "signal_dir": "LONG",
+      "groups": [
+        "Bias LONG"
+      ],
+      "score": 56.2,
+      "recommendation": "WEAK BUY",
+      "components": {
+        "technical": 50.3,
+        "fundamental": 58.6,
+        "sentiment": 57.4,
+        "momentum": 65
+      },
+      "cot": "USD (US dollar index): speculators net long 14,190 contracts (+27% of their positions), COT index 79/100, 4-week change +2,179. CAD: speculators net short 41,775 contracts (-17% of their positions), COT index 64/100, 4-week change +48,388. Positioning favours USD by 15 points. CFTC report as of 03 Nov 2026"
+    },
+    {
+      "pair": "GBPUSD",
+      "signal_dir": "SHORT",
+      "groups": [
+        "Bias SHORT"
+      ],
+      "score": 43.5,
+      "recommendation": "WEAK SELL",
+      "components": {
+        "technical": 45.8,
+        "fundamental": 46.3,
+        "sentiment": 36.1,
+        "momentum": 35
+      },
+      "cot": "GBP: speculators net short 59,821 contracts (-32% of their positions), COT index 51/100, 4-week change +37,790. USD (US dollar index): speculators net long 14,190 contracts (+27% of their positions), COT index 79/100, 4-week change +2,179. Positioning favours USD by 28 points. CFTC report as of 03 Nov 2026"
+    },
+    {
+      "pair": "NZDCAD",
+      "signal_dir": "SHORT",
+      "groups": [
+        "Bias SHORT"
+      ],
+      "score": 44.9,
+      "recommendation": "WEAK SELL",
+      "components": {
+        "technical": 46.6,
+        "fundamental": 54.6,
+        "sentiment": 21.5,
+        "momentum": 35
+      },
+      "cot": "NZD: speculators net short 60,015 contracts (-62% of their positions), COT index 7/100 - extreme, crowded, 4-week change -30,669. CAD: speculators net short 41,775 contracts (-17% of their positions), COT index 64/100, 4-week change +48,388. Positioning favours CAD by 57 points. CFTC report as of 03 Nov 2026"
+    },
+    {
+      "pair": "AUDCAD",
+      "signal_dir": "SHORT",
+      "groups": [
+        "Bias SHORT"
+      ],
+      "score": 45.3,
+      "recommendation": "HOLD",
+      "components": {
+        "technical": 49.7,
+        "fundamental": 58.0,
+        "sentiment": 18.1,
+        "momentum": 20
+      },
+      "cot": "AUD: speculators net short 129,457 contracts (-39% of their positions), COT index 0/100 - extreme, crowded, 4-week change -30,869. CAD: speculators net short 41,775 contracts (-17% of their positions), COT index 64/100, 4-week change +48,388. Positioning favours CAD by 64 points. CFTC report as of 03 Nov 2026"
+    },
+    {
+      "pair": "EURAUD",
+      "signal_dir": "LONG",
+      "groups": [
+        "Bias LONG"
+      ],
+      "score": 45.0,
+      "recommendation": "HOLD",
+      "components": {
+        "technical": 41.0,
+        "fundamental": 41.5,
+        "sentiment": 50.0,
+        "momentum": 65
+      },
+      "cot": "EUR: speculators net short 157,791 contracts (-26% of their positions), COT index 0/100 - extreme, crowded, 4-week change -58,459. AUD: speculators net short 129,457 contracts (-39% of their positions), COT index 0/100 - extreme, crowded, 4-week change -30,869. Positioning favours AUD by 0 points. CFTC report as of 03 Nov 2026"
+    },
+    {
+      "pair": "EURNZD",
+      "signal_dir": "LONG",
+      "groups": [
+        "Bias LONG"
+      ],
+      "score": 51.8,
+      "recommendation": "HOLD",
+      "components": {
+        "technical": 58.2,
+        "fundamental": 44.8,
+        "sentiment": 46.6,
+        "momentum": 65
+      },
+      "cot": "EUR: speculators net short 157,791 contracts (-26% of their positions), COT index 0/100 - extreme, crowded, 4-week change -58,459. NZD: speculators net short 60,015 contracts (-62% of their positions), COT index 7/100 - extreme, crowded, 4-week change -30,669. Positioning favours NZD by 7 points. CFTC report as of 03 Nov 2026"
+    },
+    {
+      "pair": "GBPCHF",
+      "signal_dir": "LONG",
+      "groups": [
+        "Bias LONG"
+      ],
+      "score": 58.7,
+      "recommendation": "WEAK BUY",
+      "components": {
+        "technical": 58.3,
+        "fundamental": 69.9,
+        "sentiment": 25.4,
+        "momentum": 65
+      },
+      "cot": "GBP: speculators net short 59,821 contracts (-32% of their positions), COT index 51/100, 4-week change +37,790. CHF: speculators net short 16,589 contracts (-22% of their positions), COT index 100/100 - extreme, crowded, 4-week change +7,151. Positioning favours CHF by 49 points. CFTC report as of 03 Nov 2026"
+    },
+    {
+      "pair": "CADCHF",
+      "signal_dir": "LONG",
+      "groups": [
+        "Bias LONG"
+      ],
+      "score": 54.8,
+      "recommendation": "HOLD",
+      "components": {
+        "technical": 52.1,
+        "fundamental": 63.3,
+        "sentiment": 31.9,
+        "momentum": 65
+      },
+      "cot": "CAD: speculators net short 41,775 contracts (-17% of their positions), COT index 64/100, 4-week change +48,388. CHF: speculators net short 16,589 contracts (-22% of their positions), COT index 100/100 - extreme, crowded, 4-week change +7,151. Positioning favours CHF by 36 points. CFTC report as of 03 Nov 2026"
+    },
+    {
+      "pair": "XAUUSD",
+      "signal_dir": "SHORT",
+      "groups": [
+        "Bias SHORT"
+      ],
+      "score": 35.5,
+      "recommendation": "SELL",
+      "components": {
+        "technical": 35.2,
+        "fundamental": 39.1,
+        "sentiment": 23.8,
+        "momentum": 40
+      },
+      "cot": "XAU: speculators net long 179,548 contracts (+69% of their positions), COT index 26/100, 4-week change -30,787. USD (US dollar index): speculators net long 14,190 contracts (+27% of their positions), COT index 79/100, 4-week change +2,179. Positioning favours USD by 52 points. CFTC report as of 03 Nov 2026"
+    },
+    {
+      "pair": "AUDJPY",
+      "signal_dir": "SHORT",
+      "groups": [
+        "Bias SHORT"
+      ],
+      "score": 44.9,
+      "recommendation": "WEAK SELL",
+      "components": {
+        "technical": 40.4,
+        "fundamental": 62.6,
+        "sentiment": 5.0,
+        "momentum": 50
+      },
+      "cot": "AUD: speculators net short 129,457 contracts (-39% of their positions), COT index 0/100 - extreme, crowded, 4-week change -30,869. JPY: speculators net long 102,321 contracts (+29% of their positions), COT index 94/100 - extreme, crowded, 4-week change +39,996. Positioning favours JPY by 94 points. CFTC report as of 03 Nov 2026"
+    },
+    {
+      "pair": "NZDJPY",
+      "signal_dir": "SHORT",
+      "groups": [
+        "Bias SHORT"
+      ],
+      "score": 46.4,
+      "recommendation": "HOLD",
+      "components": {
+        "technical": 45.0,
+        "fundamental": 59.2,
+        "sentiment": 6.6,
+        "momentum": 60
+      },
+      "cot": "NZD: speculators net short 60,015 contracts (-62% of their positions), COT index 7/100 - extreme, crowded, 4-week change -30,669. JPY: speculators net long 102,321 contracts (+29% of their positions), COT index 94/100 - extreme, crowded, 4-week change +39,996. Positioning favours JPY by 87 points. CFTC report as of 03 Nov 2026"
+    },
+    {
+      "pair": "EURGBP",
+      "signal_dir": "SHORT",
+      "groups": [
+        "Bias SHORT"
+      ],
+      "score": 42.0,
+      "recommendation": "WEAK SELL",
+      "components": {
+        "technical": 46.2,
+        "fundamental": 42.8,
+        "sentiment": 24.6,
+        "momentum": 50
+      },
+      "cot": "EUR: speculators net short 157,791 contracts (-26% of their positions), COT index 0/100 - extreme, crowded, 4-week change -58,459. GBP: speculators net short 59,821 contracts (-32% of their positions), COT index 51/100, 4-week change +37,790. Positioning favours GBP by 51 points. CFTC report as of 03 Nov 2026"
+    },
+    {
+      "pair": "EURCAD",
+      "signal_dir": "SHORT",
+      "groups": [
+        "Bias SHORT"
+      ],
+      "score": 43.8,
+      "recommendation": "WEAK SELL",
+      "components": {
+        "technical": 51.0,
+        "fundamental": 49.4,
+        "sentiment": 18.1,
+        "momentum": 35
+      },
+      "cot": "EUR: speculators net short 157,791 contracts (-26% of their positions), COT index 0/100 - extreme, crowded, 4-week change -58,459. CAD: speculators net short 41,775 contracts (-17% of their positions), COT index 64/100, 4-week change +48,388. Positioning favours CAD by 64 points. CFTC report as of 03 Nov 2026"
+    },
+    {
+      "pair": "AUDCHF",
+      "signal_dir": "SHORT",
+      "groups": [
+        "Bias SHORT"
+      ],
+      "score": 52.9,
+      "recommendation": "HOLD",
+      "components": {
+        "technical": 53.3,
+        "fundamental": 71.3,
+        "sentiment": 5.0,
+        "momentum": 50
+      },
+      "cot": "AUD: speculators net short 129,457 contracts (-39% of their positions), COT index 0/100 - extreme, crowded, 4-week change -30,869. CHF: speculators net short 16,589 contracts (-22% of their positions), COT index 100/100 - extreme, crowded, 4-week change +7,151. Positioning favours CHF by 100 points. CFTC report as of 03 Nov 2026"
+    },
+    {
+      "pair": "NZDCHF",
+      "signal_dir": "SHORT",
+      "groups": [
+        "Bias SHORT"
+      ],
+      "score": 52.2,
+      "recommendation": "HOLD",
+      "components": {
+        "technical": 52.4,
+        "fundamental": 67.9,
+        "sentiment": 5.0,
+        "momentum": 60
+      },
+      "cot": "NZD: speculators net short 60,015 contracts (-62% of their positions), COT index 7/100 - extreme, crowded, 4-week change -30,669. CHF: speculators net short 16,589 contracts (-22% of their positions), COT index 100/100 - extreme, crowded, 4-week change +7,151. Positioning favours CHF by 93 points. CFTC report as of 03 Nov 2026"
     }
   ]
 }
