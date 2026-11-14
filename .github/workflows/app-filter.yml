@@ -1,6 +1,6 @@
 name: MultiAssetSignalPro score filter
 
-# After every new Market Desk Pro signal, score its Strength pairs with the
+# After every new Market Desk Pro signal, score all its pairs (Top 3, backup, Strength, Bias) with the
 # MultiAssetSignalPro app and write appscore=/appfilter= lines into signals/latest.txt.
 on:
   push:
@@ -18,7 +18,7 @@ concurrency:
 jobs:
   score:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
 
@@ -55,7 +55,7 @@ jobs:
         if: steps.check.outputs.skip == 'false'
         run: pip install -r masp/requirements.txt
 
-      - name: Score the Strength pairs
+      - name: Score all signal pairs
         if: steps.check.outputs.skip == 'false'
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}

@@ -519,12 +519,23 @@ public:
            }
       return false;
      }
-   string            AppList(void) const
+   //--- is this pair listed in a group of the current signal?
+   bool              InGroup(const string code6, const int group) const
+     {
+      for(int i = 0; i < ArraySize(m_allow); i++)
+         if(m_allow[i].code == code6 && m_allow[i].group == group) return true;
+      return false;
+     }
+   //--- scores as "AUDUSD 42, NZDUSD 39" for the pairs of one group (default Strength; CS_GROUP_NONE = all)
+   string            AppList(const int group = CS_GROUP_STRENGTH) const
      {
       if(!m_appDone) return "pending";
       string s = "";
       for(int i = 0; i < ArraySize(m_appCode); i++)
+        {
+         if(group != CS_GROUP_NONE && !InGroup(m_appCode[i], group)) continue;
          s += (s == "" ? "" : ", ") + m_appCode[i] + " " + (m_appScore[i] < 0 ? "n/a" : DoubleToString(m_appScore[i], 0));
+        }
       return s == "" ? "none" : s;
      }
 
