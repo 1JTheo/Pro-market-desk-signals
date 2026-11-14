@@ -35,7 +35,8 @@ def main():
 
     results, out = [], []
     for code, d in strength:
-        sym, name = f'{code}=X', f'{code[:3]}/{code[3:]}'
+        sym = 'GC=F' if code == 'XAUUSD' else f'{code}=X'   # gold: COMEX futures price, as in the app
+        name = f'{code[:3]}/{code[3:]}'
         try:
             r = gen_fx.generate_signal(sym, name)
             if r.get('error') or r.get('score') is None:
