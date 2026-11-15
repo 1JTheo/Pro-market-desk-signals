@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-11-15T22:00:05Z",
-  "valid_until_utc": "2026-11-16T01:00:05Z",
+  "generated_utc": "2026-11-15T23:55:41Z",
+  "valid_until_utc": "2026-11-16T02:55:41Z",
   "mood": "mixed",
-  "headline": "Dollar starts the week near a 19-month high on December Fed hike bets, with USDJPY pinned at 160 into Japan GDP. Trade the non-USD crosses where BoE and RBA hikes meet a holding RBNZ and a passive ECB.",
+  "headline": "Dollar opens the week near a 19-month high on December Fed hike bets, with USDJPY near 160 and Japan GDP just out. Iran's drone attack on Bahrain adds haven risk; trade the non-USD crosses where BoE and RBA hikes meet a holding RBNZ.",
   "allow": [
     {
       "symbol": "GBPNZD",
@@ -143,6 +143,16 @@
       "from": "2026-11-15T23:35:00Z",
       "to": "2026-11-16T00:20:00Z",
       "ccy": "JPY"
+    },
+    {
+      "from": "2026-11-16T01:45:00Z",
+      "to": "2026-11-16T02:30:00Z",
+      "ccy": "AUD"
+    },
+    {
+      "from": "2026-11-16T01:45:00Z",
+      "to": "2026-11-16T02:30:00Z",
+      "ccy": "NZD"
     }
   ]
 }
