@@ -1,20 +1,20 @@
 {
-  "generated_utc": "2026-11-16T01:54:15Z",
-  "valid_until_utc": "2026-11-16T04:54:15Z",
+  "generated_utc": "2026-11-16T03:56:42Z",
+  "valid_until_utc": "2026-11-16T06:56:42Z",
   "mood": "mixed",
-  "headline": "Japan's economy shrank 0.1% annualised in Q3, keeping USDJPY pinned near 159.7 while DXY sits at 103.44, its highest since April 2025, on 94% odds of a December Fed hike. Stick to non-USD crosses where BoE and RBA hikes meet a holding RBNZ and a passive ECB.",
+  "headline": "China's October data missed and Japan's economy shrank, but FX is quiet with DXY near 103.4 on a priced December Fed hike. Favour non-USD crosses where BoE and RBA hikes meet a holding RBNZ and ECB.",
   "allow": [
     {
       "symbol": "GBPNZD",
       "dir": "LONG"
     },
     {
-      "symbol": "AUDNZD",
-      "dir": "LONG"
-    },
-    {
       "symbol": "EURGBP",
       "dir": "SHORT"
+    },
+    {
+      "symbol": "AUDNZD",
+      "dir": "LONG"
     }
   ],
   "backup": {
@@ -38,8 +38,8 @@
       "status": "No edge"
     },
     {
-      "symbol": "NZDCHF",
-      "dir": "SHORT",
+      "symbol": "GBPAUD",
+      "dir": "LONG",
       "status": "No edge"
     },
     {
@@ -49,7 +49,12 @@
     },
     {
       "symbol": "AUDCHF",
-      "dir": "LONG",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
+      "symbol": "NZDCHF",
+      "dir": "SHORT",
       "status": "No edge"
     },
     {
@@ -88,17 +93,22 @@
       "status": "Excluded"
     },
     {
-      "symbol": "NZDJPY",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
       "symbol": "EURJPY",
       "dir": "SHORT",
       "status": "Excluded"
     },
     {
       "symbol": "GBPJPY",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "NZDJPY",
+      "dir": "SHORT",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "CHFJPY",
       "dir": "LONG",
       "status": "Excluded"
     },
@@ -113,13 +123,18 @@
       "status": "Excluded"
     },
     {
-      "symbol": "NZDCAD",
+      "symbol": "GBPCAD",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "AUDCAD",
       "dir": "SHORT",
       "status": "Excluded"
     },
     {
-      "symbol": "CADCHF",
-      "dir": "LONG",
+      "symbol": "NZDCAD",
+      "dir": "SHORT",
       "status": "Excluded"
     },
     {
@@ -130,25 +145,15 @@
   ],
   "currency_strength": {
     "USD": 3,
-    "GBP": 1,
-    "AUD": 0,
-    "CAD": 0,
-    "CHF": -1,
-    "JPY": -1,
     "EUR": -2,
+    "GBP": 1,
+    "JPY": -1,
+    "CHF": 0,
+    "CAD": 0,
+    "AUD": -1,
     "NZD": -2
   },
   "blackouts": [
-    {
-      "from": "2026-11-16T01:45:00Z",
-      "to": "2026-11-16T02:30:00Z",
-      "ccy": "AUD"
-    },
-    {
-      "from": "2026-11-16T01:45:00Z",
-      "to": "2026-11-16T02:30:00Z",
-      "ccy": "NZD"
-    },
     {
       "from": "2026-11-16T03:45:00Z",
       "to": "2026-11-16T04:30:00Z",
