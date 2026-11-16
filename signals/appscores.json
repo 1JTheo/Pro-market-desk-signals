@@ -1,6 +1,6 @@
 {
-  "signal_generated_utc": "2026-11-16T14:01:29Z",
-  "scored_utc": "2026-11-16T14:03:20Z",
+  "signal_generated_utc": "2026-11-16T15:55:13Z",
+  "scored_utc": "2026-11-16T15:56:35Z",
   "source": "MultiAssetSignalPro (Streamlit branch)",
   "pairs": [
     {
@@ -76,10 +76,10 @@
       "groups": [
         "Top 3 SHORT"
       ],
-      "score": 41.0,
+      "score": 40.4,
       "recommendation": "WEAK SELL",
       "components": {
-        "technical": 47.6,
+        "technical": 46.1,
         "fundamental": 42.8,
         "sentiment": 24.6,
         "momentum": 35
@@ -124,10 +124,10 @@
       "groups": [
         "Bias SHORT"
       ],
-      "score": 42.6,
-      "recommendation": "WEAK SELL",
+      "score": 45.7,
+      "recommendation": "HOLD",
       "components": {
-        "technical": 42.4,
+        "technical": 51.2,
         "fundamental": 62.6,
         "sentiment": 5.0,
         "momentum": 20
@@ -348,13 +348,13 @@
       "groups": [
         "Bias SHORT"
       ],
-      "score": 43.4,
+      "score": 41.9,
       "recommendation": "WEAK SELL",
       "components": {
         "technical": 45.6,
         "fundamental": 46.3,
         "sentiment": 36.1,
-        "momentum": 35
+        "momentum": 20
       },
       "cot": "GBP: speculators net short 59,821 contracts (-32% of their positions), COT index 51/100, 4-week change +37,790. USD (US dollar index): speculators net long 14,190 contracts (+27% of their positions), COT index 79/100, 4-week change +2,179. Positioning favours USD by 28 points. CFTC report as of 03 Nov 2026"
     },
@@ -396,13 +396,13 @@
       "groups": [
         "Bias LONG"
       ],
-      "score": 55.4,
+      "score": 56.9,
       "recommendation": "WEAK BUY",
       "components": {
         "technical": 48.1,
         "fundamental": 58.6,
         "sentiment": 57.4,
-        "momentum": 65
+        "momentum": 80
       },
       "cot": "USD (US dollar index): speculators net long 14,190 contracts (+27% of their positions), COT index 79/100, 4-week change +2,179. CAD: speculators net short 41,775 contracts (-17% of their positions), COT index 64/100, 4-week change +48,388. Positioning favours USD by 15 points. CFTC report as of 03 Nov 2026"
     },
