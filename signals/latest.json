@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-11-15T23:55:41Z",
-  "valid_until_utc": "2026-11-16T02:55:41Z",
+  "generated_utc": "2026-11-16T01:54:15Z",
+  "valid_until_utc": "2026-11-16T04:54:15Z",
   "mood": "mixed",
-  "headline": "Dollar opens the week near a 19-month high on December Fed hike bets, with USDJPY near 160 and Japan GDP just out. Iran's drone attack on Bahrain adds haven risk; trade the non-USD crosses where BoE and RBA hikes meet a holding RBNZ.",
+  "headline": "Japan's economy shrank 0.1% annualised in Q3, keeping USDJPY pinned near 159.7 while DXY sits at 103.44, its highest since April 2025, on 94% odds of a December Fed hike. Stick to non-USD crosses where BoE and RBA hikes meet a holding RBNZ and a passive ECB.",
   "allow": [
     {
       "symbol": "GBPNZD",
@@ -140,11 +140,6 @@
   },
   "blackouts": [
     {
-      "from": "2026-11-15T23:35:00Z",
-      "to": "2026-11-16T00:20:00Z",
-      "ccy": "JPY"
-    },
-    {
       "from": "2026-11-16T01:45:00Z",
       "to": "2026-11-16T02:30:00Z",
       "ccy": "AUD"
@@ -153,6 +148,11 @@
       "from": "2026-11-16T01:45:00Z",
       "to": "2026-11-16T02:30:00Z",
       "ccy": "NZD"
+    },
+    {
+      "from": "2026-11-16T03:45:00Z",
+      "to": "2026-11-16T04:30:00Z",
+      "ccy": "JPY"
     }
   ]
 }
