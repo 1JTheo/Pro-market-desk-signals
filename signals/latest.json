@@ -1,122 +1,72 @@
 {
- "generated_utc": "2026-11-16T19:54:59Z",
- "valid_until_utc": "2026-11-16T22:54:59Z",
+ "generated_utc": "2026-11-16T22:00:12Z",
+ "valid_until_utc": "2026-11-17T01:00:12Z",
  "mood": "risk-off",
- "headline": "Stocks keep sliding (Nasdaq -2.2%) and Hammack backed more gradual hikes, so the dollar sits at a 20-month high and the yen is bid. Sell AUDUSD and EURJPY, buy USDCAD, on pullbacks only; leave NZD pairs until the RBNZ report is out.",
+ "headline": "Stocks slid again (Nasdaq ETF -2.7%) and US 10-year yields sit above 5%, so the dollar and yen stay bid while NZD and AUD sink. With heavy data on Tuesday, only CADJPY and CADCHF shorts are clean; sell pullbacks only.",
  "allow": [
   {
-   "symbol": "AUDUSD",
+   "symbol": "CADJPY",
    "dir": "SHORT"
   },
   {
-   "symbol": "EURJPY",
+   "symbol": "CADCHF",
    "dir": "SHORT"
-  },
-  {
-   "symbol": "USDCAD",
-   "dir": "LONG"
   }
  ],
- "backup": {
-  "symbol": "AUDJPY",
-  "dir": "SHORT"
- },
+ "backup": null,
  "strength": [
-  {
-   "symbol": "AUDUSD",
-   "dir": "SHORT"
-  },
   {
    "symbol": "NZDUSD",
    "dir": "SHORT"
   },
   {
-   "symbol": "AUDJPY",
-   "dir": "SHORT"
-  },
-  {
-   "symbol": "NZDJPY",
+   "symbol": "AUDUSD",
    "dir": "SHORT"
   }
  ],
  "bias": [
   {
-   "symbol": "GBPAUD",
-   "dir": "LONG",
-   "status": "No edge"
-  },
-  {
-   "symbol": "CADJPY",
+   "symbol": "AUDUSD",
    "dir": "SHORT",
-   "status": "No edge"
+   "status": "Excluded"
   },
   {
-   "symbol": "EURUSD",
+   "symbol": "NZDUSD",
    "dir": "SHORT",
-   "status": "No edge"
-  },
-  {
-   "symbol": "GBPUSD",
-   "dir": "SHORT",
-   "status": "No edge"
-  },
-  {
-   "symbol": "USDCHF",
-   "dir": "LONG",
-   "status": "No edge"
-  },
-  {
-   "symbol": "EURAUD",
-   "dir": "LONG",
-   "status": "No edge"
-  },
-  {
-   "symbol": "AUDCHF",
-   "dir": "SHORT",
-   "status": "No edge"
-  },
-  {
-   "symbol": "AUDCAD",
-   "dir": "SHORT",
-   "status": "No edge"
-  },
-  {
-   "symbol": "GBPCAD",
-   "dir": "LONG",
-   "status": "No edge"
-  },
-  {
-   "symbol": "CADCHF",
-   "dir": "SHORT",
-   "status": "No edge"
-  },
-  {
-   "symbol": "GBPJPY",
-   "dir": "SHORT",
-   "status": "No edge"
-  },
-  {
-   "symbol": "CHFJPY",
-   "dir": "SHORT",
-   "status": "No edge"
-  },
-  {
-   "symbol": "EURGBP",
-   "dir": "SHORT",
-   "status": "No edge"
-  },
-  {
-   "symbol": "EURCHF",
-   "dir": "SHORT",
-   "status": "No edge"
+   "status": "Excluded"
   },
   {
    "symbol": "XAUUSD",
    "dir": "SHORT",
-   "status": "Avoid"
+   "status": "Excluded"
   },
   {
-   "symbol": "NZDUSD",
+   "symbol": "EURUSD",
+   "dir": "SHORT",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "GBPUSD",
+   "dir": "SHORT",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "USDCHF",
+   "dir": "LONG",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "USDCAD",
+   "dir": "LONG",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "AUDNZD",
+   "dir": "LONG",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "AUDJPY",
    "dir": "SHORT",
    "status": "Excluded"
   },
@@ -131,12 +81,32 @@
    "status": "Excluded"
   },
   {
+   "symbol": "GBPAUD",
+   "dir": "LONG",
+   "status": "Excluded"
+  },
+  {
    "symbol": "EURNZD",
    "dir": "LONG",
    "status": "Excluded"
   },
   {
-   "symbol": "AUDNZD",
+   "symbol": "EURAUD",
+   "dir": "LONG",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "AUDCAD",
+   "dir": "SHORT",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "AUDCHF",
+   "dir": "SHORT",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "NZDCAD",
    "dir": "SHORT",
    "status": "Excluded"
   },
@@ -146,7 +116,22 @@
    "status": "Excluded"
   },
   {
-   "symbol": "NZDCAD",
+   "symbol": "GBPCAD",
+   "dir": "LONG",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "EURJPY",
+   "dir": "SHORT",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "EURGBP",
+   "dir": "SHORT",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "EURCHF",
    "dir": "SHORT",
    "status": "Excluded"
   }
@@ -155,17 +140,22 @@
   "USD": 3,
   "EUR": -1,
   "GBP": 1,
-  "JPY": 2,
+  "JPY": 1,
   "CHF": 1,
   "CAD": -1,
-  "AUD": -3,
-  "NZD": -2
+  "AUD": -2,
+  "NZD": -3
  },
  "blackouts": [
   {
-   "from": "2026-11-16T19:45:00Z",
-   "to": "2026-11-16T20:30:00Z",
-   "ccy": "NZD"
+   "from": "2026-11-16T22:25:00Z",
+   "to": "2026-11-17T00:30:00Z",
+   "ccy": "AUD"
+  },
+  {
+   "from": "2026-11-17T00:15:00Z",
+   "to": "2026-11-17T01:00:00Z",
+   "ccy": "AUD"
   }
  ]
 }
