@@ -1,8 +1,8 @@
 {
- "generated_utc": "2026-11-16T11:57:44Z",
- "valid_until_utc": "2026-11-16T14:57:44Z",
+ "generated_utc": "2026-11-16T14:01:29Z",
+ "valid_until_utc": "2026-11-16T17:01:29Z",
  "mood": "risk-off",
- "headline": "The dollar stays at 19-month highs (DXY 103.5) with a December Fed hike ~91% priced, while chip-led stock losses keep risk soft and the yen bid. Keep selling AUD and EUR against GBP and JPY; leave USD, CAD and NZD pairs alone into Canada CPI and Warsh.",
+ "headline": "The dollar holds near 19-month highs (DXY 103.5) despite a weak Empire State print, while softer Canadian core inflation knocks CAD and tech-led futures losses keep the yen bid. Keep selling AUD and EUR against GBP and JPY; add CADJPY as backup and stay out of USD and NZD pairs into Williams and Warsh.",
  "allow": [
   {
    "symbol": "GBPAUD",
@@ -18,7 +18,7 @@
   }
  ],
  "backup": {
-  "symbol": "AUDJPY",
+  "symbol": "CADJPY",
   "dir": "SHORT"
  },
  "strength": [
@@ -36,6 +36,16 @@
   }
  ],
  "bias": [
+  {
+   "symbol": "AUDJPY",
+   "dir": "SHORT",
+   "status": "No edge"
+  },
+  {
+   "symbol": "GBPCAD",
+   "dir": "LONG",
+   "status": "No edge"
+  },
   {
    "symbol": "AUDCHF",
    "dir": "SHORT",
@@ -62,6 +72,16 @@
    "status": "No edge"
   },
   {
+   "symbol": "CADCHF",
+   "dir": "SHORT",
+   "status": "No edge"
+  },
+  {
+   "symbol": "AUDCAD",
+   "dir": "SHORT",
+   "status": "No edge"
+  },
+  {
    "symbol": "NZDCHF",
    "dir": "SHORT",
    "status": "Excluded"
@@ -78,6 +98,11 @@
   },
   {
    "symbol": "AUDNZD",
+   "dir": "SHORT",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "NZDCAD",
    "dir": "SHORT",
    "status": "Excluded"
   },
@@ -120,21 +145,6 @@
    "symbol": "XAUUSD",
    "dir": "SHORT",
    "status": "Excluded"
-  },
-  {
-   "symbol": "EURCAD",
-   "dir": "SHORT",
-   "status": "Excluded"
-  },
-  {
-   "symbol": "AUDCAD",
-   "dir": "SHORT",
-   "status": "Excluded"
-  },
-  {
-   "symbol": "NZDCAD",
-   "dir": "SHORT",
-   "status": "Excluded"
   }
  ],
  "currency_strength": {
@@ -142,25 +152,20 @@
   "GBP": 1,
   "JPY": 1,
   "CHF": 0,
-  "CAD": 0,
+  "CAD": -1,
   "EUR": -2,
   "NZD": -2,
   "AUD": -3
  },
  "blackouts": [
   {
-   "from": "2026-11-16T13:15:00Z",
-   "to": "2026-11-16T14:00:00Z",
-   "ccy": "CAD"
-  },
-  {
-   "from": "2026-11-16T13:15:00Z",
-   "to": "2026-11-16T14:00:00Z",
+   "from": "2026-11-16T13:50:00Z",
+   "to": "2026-11-16T14:35:00Z",
    "ccy": "USD"
   },
   {
-   "from": "2026-11-16T13:50:00Z",
-   "to": "2026-11-16T14:35:00Z",
+   "from": "2026-11-16T16:45:00Z",
+   "to": "2026-11-16T17:30:00Z",
    "ccy": "USD"
   }
  ]
