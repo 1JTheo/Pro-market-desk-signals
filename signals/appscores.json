@@ -1,6 +1,6 @@
 {
-  "signal_generated_utc": "2026-11-16T09:59:45Z",
-  "scored_utc": "2026-11-16T10:01:21Z",
+  "signal_generated_utc": "2026-11-16T11:57:44Z",
+  "scored_utc": "2026-11-16T11:58:43Z",
   "source": "MultiAssetSignalPro (Streamlit branch)",
   "pairs": [
     {
@@ -151,15 +151,31 @@
       "cot": "EUR: speculators net short 157,791 contracts (-26% of their positions), COT index 0/100 - extreme, crowded, 4-week change -58,459. CHF: speculators net short 16,589 contracts (-22% of their positions), COT index 100/100 - extreme, crowded, 4-week change +7,151. Positioning favours CHF by 100 points. CFTC report as of 03 Nov 2026"
     },
     {
+      "pair": "CHFJPY",
+      "signal_dir": "SHORT",
+      "groups": [
+        "Bias SHORT"
+      ],
+      "score": 40.2,
+      "recommendation": "WEAK SELL",
+      "components": {
+        "technical": 39.0,
+        "fundamental": 41.3,
+        "sentiment": 53.2,
+        "momentum": 20
+      },
+      "cot": "CHF: speculators net short 16,589 contracts (-22% of their positions), COT index 100/100 - extreme, crowded, 4-week change +7,151. JPY: speculators net long 102,321 contracts (+29% of their positions), COT index 94/100 - extreme, crowded, 4-week change +39,996. Positioning favours CHF by 6 points. CFTC report as of 03 Nov 2026"
+    },
+    {
       "pair": "GBPCHF",
       "signal_dir": "LONG",
       "groups": [
         "Bias LONG"
       ],
-      "score": 59.4,
+      "score": 58.7,
       "recommendation": "WEAK BUY",
       "components": {
-        "technical": 60.5,
+        "technical": 58.3,
         "fundamental": 69.9,
         "sentiment": 25.4,
         "momentum": 65
@@ -204,10 +220,10 @@
       "groups": [
         "Bias LONG"
       ],
-      "score": 57.7,
-      "recommendation": "WEAK BUY",
+      "score": 54.1,
+      "recommendation": "HOLD",
       "components": {
-        "technical": 55.9,
+        "technical": 45.6,
         "fundamental": 52.0,
         "sentiment": 72.0,
         "momentum": 65
