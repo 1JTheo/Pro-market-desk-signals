@@ -1,24 +1,24 @@
 {
-  "generated_utc": "2026-11-17T01:54:12Z",
-  "valid_until_utc": "2026-11-17T04:54:12Z",
+  "generated_utc": "2026-11-17T04:00:00Z",
+  "valid_until_utc": "2026-11-17T07:00:00Z",
   "mood": "risk-off",
-  "headline": "Risk-off holds after a 1.9% S&P 500 drop, with the dollar near 19-month highs and AUD below 0.6750 despite hawkish RBA minutes. Clean trades are CAD and AUD shorts against the yen and franc; sell pullbacks only.",
+  "headline": "Risk-off runs into a fourth day in Asia ahead of Nvidia earnings, with the dollar at 20-month highs and NZD near 18-month lows. Sell pullbacks in NZD, CAD and AUD against the yen and franc; leave USD, EUR and GBP pairs alone today.",
   "allow": [
+    {
+      "symbol": "NZDJPY",
+      "dir": "SHORT"
+    },
     {
       "symbol": "CADJPY",
       "dir": "SHORT"
     },
     {
-      "symbol": "AUDJPY",
-      "dir": "SHORT"
-    },
-    {
-      "symbol": "CADCHF",
+      "symbol": "AUDCHF",
       "dir": "SHORT"
     }
   ],
   "backup": {
-    "symbol": "AUDCHF",
+    "symbol": "CADCHF",
     "dir": "SHORT"
   },
   "strength": [
@@ -37,24 +37,24 @@
   ],
   "bias": [
     {
-      "symbol": "NZDJPY",
+      "symbol": "AUDJPY",
       "dir": "SHORT",
-      "status": "Excluded"
+      "status": "Avoid"
     },
     {
       "symbol": "NZDCHF",
       "dir": "SHORT",
-      "status": "Excluded"
+      "status": "Avoid"
     },
     {
       "symbol": "NZDCAD",
       "dir": "SHORT",
-      "status": "Excluded"
+      "status": "No edge"
     },
     {
       "symbol": "AUDNZD",
       "dir": "LONG",
-      "status": "Excluded"
+      "status": "No edge"
     },
     {
       "symbol": "NZDUSD",
@@ -62,13 +62,13 @@
       "status": "Excluded"
     },
     {
-      "symbol": "AUDUSD",
-      "dir": "SHORT",
+      "symbol": "USDCAD",
+      "dir": "LONG",
       "status": "Excluded"
     },
     {
-      "symbol": "USDCAD",
-      "dir": "LONG",
+      "symbol": "AUDUSD",
+      "dir": "SHORT",
       "status": "Excluded"
     },
     {
@@ -92,6 +92,21 @@
       "status": "Excluded"
     },
     {
+      "symbol": "EURNZD",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "EURAUD",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "EURCAD",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
       "symbol": "EURJPY",
       "dir": "SHORT",
       "status": "Excluded"
@@ -102,27 +117,12 @@
       "status": "Excluded"
     },
     {
-      "symbol": "EURCAD",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "EURAUD",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "EURNZD",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
       "symbol": "EURGBP",
       "dir": "SHORT",
       "status": "Excluded"
     },
     {
-      "symbol": "GBPCAD",
+      "symbol": "GBPNZD",
       "dir": "LONG",
       "status": "Excluded"
     },
@@ -132,7 +132,7 @@
       "status": "Excluded"
     },
     {
-      "symbol": "GBPNZD",
+      "symbol": "GBPCAD",
       "dir": "LONG",
       "status": "Excluded"
     }
@@ -149,9 +149,9 @@
   },
   "blackouts": [
     {
-      "from": "2026-11-17T01:45:00Z",
-      "to": "2026-11-17T02:30:00Z",
-      "ccy": "NZD"
+      "from": "2026-11-17T06:45:00Z",
+      "to": "2026-11-17T07:30:00Z",
+      "ccy": "GBP"
     }
   ]
 }
