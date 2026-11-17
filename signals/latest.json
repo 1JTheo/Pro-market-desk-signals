@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-11-17T04:00:00Z",
-  "valid_until_utc": "2026-11-17T07:00:00Z",
+  "generated_utc": "2026-11-17T05:55:00Z",
+  "valid_until_utc": "2026-11-17T08:55:00Z",
   "mood": "risk-off",
-  "headline": "Risk-off runs into a fourth day in Asia ahead of Nvidia earnings, with the dollar at 20-month highs and NZD near 18-month lows. Sell pullbacks in NZD, CAD and AUD against the yen and franc; leave USD, EUR and GBP pairs alone today.",
+  "headline": "Risk-off holds before the European open: the dollar sits at a 19-month high, EURUSD has broken 1.1000 and oil fell 3.5%. Sell pullbacks in NZD, CAD and AUD against the yen and franc; stay out of USD, EUR and GBP pairs today.",
   "allow": [
     {
       "symbol": "NZDJPY",
@@ -92,6 +92,11 @@
       "status": "Excluded"
     },
     {
+      "symbol": "GBPJPY",
+      "dir": "SHORT",
+      "status": "Excluded"
+    },
+    {
       "symbol": "EURNZD",
       "dir": "LONG",
       "status": "Excluded"
@@ -140,7 +145,7 @@
   "currency_strength": {
     "USD": 3,
     "EUR": -1,
-    "GBP": 1,
+    "GBP": 0,
     "JPY": 1,
     "CHF": 1,
     "CAD": -2,
