@@ -1,8 +1,8 @@
 {
- "generated_utc": "2026-11-17T13:56:00Z",
- "valid_until_utc": "2026-11-17T16:56:00Z",
+ "generated_utc": "2026-11-17T15:55:00Z",
+ "valid_until_utc": "2026-11-17T18:55:00Z",
  "mood": "risk-off",
- "headline": "Risk-off holds after the Nasdaq's 2.5% drop; the yen leads G10 on intervention warnings while NZD, AUD and CAD stay weakest. Sell NZD and CAD rallies against the yen, buy AUDNZD dips, and keep USD pairs flat until Fed speakers finish.",
+ "headline": "Risk-off persists before Nvidia results: the dollar sits at a 19-month high and the yen holds haven demand, while NZD, AUD and CAD stay weakest. Sell NZD and CAD rallies against the yen and buy AUDNZD dips, but stop new entries before Nvidia at 23:20.",
  "allow": [
   {
    "symbol": "NZDJPY",
@@ -31,11 +31,11 @@
    "dir": "SHORT"
   },
   {
-   "symbol": "CADJPY",
+   "symbol": "AUDJPY",
    "dir": "SHORT"
   },
   {
-   "symbol": "AUDJPY",
+   "symbol": "CADJPY",
    "dir": "SHORT"
   }
  ],
@@ -63,7 +63,7 @@
   {
    "symbol": "GBPJPY",
    "dir": "SHORT",
-   "status": "No edge"
+   "status": "Avoid"
   },
   {
    "symbol": "CHFJPY",
@@ -78,7 +78,7 @@
   {
    "symbol": "GBPNZD",
    "dir": "LONG",
-   "status": "No edge"
+   "status": "Avoid"
   },
   {
    "symbol": "NZDCAD",
@@ -93,7 +93,7 @@
   {
    "symbol": "GBPCAD",
    "dir": "LONG",
-   "status": "No edge"
+   "status": "Avoid"
   },
   {
    "symbol": "EURAUD",
@@ -103,7 +103,7 @@
   {
    "symbol": "GBPAUD",
    "dir": "LONG",
-   "status": "No edge"
+   "status": "Avoid"
   },
   {
    "symbol": "EURCHF",
@@ -113,17 +113,12 @@
   {
    "symbol": "GBPCHF",
    "dir": "SHORT",
-   "status": "No edge"
+   "status": "Avoid"
   },
   {
    "symbol": "EURGBP",
    "dir": "SHORT",
    "status": "Avoid"
-  },
-  {
-   "symbol": "USDJPY",
-   "dir": "SHORT",
-   "status": "Excluded"
   },
   {
    "symbol": "NZDUSD",
@@ -171,26 +166,5 @@
   "AUD": -2,
   "NZD": -3
  },
- "blackouts": [
-  {
-   "from": "2026-11-17T13:15:00Z",
-   "to": "2026-11-17T14:00:00Z",
-   "ccy": "USD"
-  },
-  {
-   "from": "2026-11-17T13:55:00Z",
-   "to": "2026-11-17T14:40:00Z",
-   "ccy": "USD"
-  },
-  {
-   "from": "2026-11-17T14:00:00Z",
-   "to": "2026-11-17T14:45:00Z",
-   "ccy": "USD"
-  },
-  {
-   "from": "2026-11-17T14:15:00Z",
-   "to": "2026-11-17T15:00:00Z",
-   "ccy": "USD"
-  }
- ]
+ "blackouts": []
 }
