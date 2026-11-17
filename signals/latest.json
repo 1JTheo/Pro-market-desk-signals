@@ -1,20 +1,20 @@
 {
-  "generated_utc": "2026-11-17T07:56:00Z",
-  "valid_until_utc": "2026-11-17T10:56:00Z",
+  "generated_utc": "2026-11-17T09:54:00Z",
+  "valid_until_utc": "2026-11-17T12:54:00Z",
   "mood": "risk-off",
-  "headline": "Risk-off holds after Wall Street's 1.9% drop, but the dollar is easing from its 19-month high ahead of US retail sales. Sell pullbacks in NZD and CAD against the yen, and buy AUDNZD dips on the hawkish RBA; stay out of USD, EUR and GBP pairs today.",
+  "headline": "Risk-off holds as the tech sell-off spreads to Asia; the dollar eases from its 19-month high and the yen firms ahead of US retail sales and Nvidia. Sell NZD and CAD pullbacks against the yen and buy AUDNZD dips; leave USD and EUR pairs alone today.",
   "allow": [
     {
       "symbol": "NZDJPY",
       "dir": "SHORT"
     },
     {
-      "symbol": "AUDNZD",
-      "dir": "LONG"
-    },
-    {
       "symbol": "CADJPY",
       "dir": "SHORT"
+    },
+    {
+      "symbol": "AUDNZD",
+      "dir": "LONG"
     }
   ],
   "backup": {
@@ -27,22 +27,26 @@
       "dir": "SHORT"
     },
     {
-      "symbol": "EURUSD",
+      "symbol": "NZDJPY",
       "dir": "SHORT"
     },
     {
-      "symbol": "USDCAD",
-      "dir": "LONG"
+      "symbol": "CADJPY",
+      "dir": "SHORT"
+    },
+    {
+      "symbol": "EURJPY",
+      "dir": "SHORT"
     }
   ],
   "bias": [
     {
-      "symbol": "CADCHF",
+      "symbol": "AUDJPY",
       "dir": "SHORT",
       "status": "No edge"
     },
     {
-      "symbol": "AUDJPY",
+      "symbol": "CADCHF",
       "dir": "SHORT",
       "status": "No edge"
     },
@@ -62,18 +66,23 @@
       "status": "No edge"
     },
     {
+      "symbol": "CHFJPY",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
       "symbol": "EURUSD",
+      "dir": "SHORT",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "NZDUSD",
       "dir": "SHORT",
       "status": "Excluded"
     },
     {
       "symbol": "USDCAD",
       "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "NZDUSD",
-      "dir": "SHORT",
       "status": "Excluded"
     },
     {
@@ -124,34 +133,34 @@
     {
       "symbol": "GBPJPY",
       "dir": "SHORT",
-      "status": "Excluded"
+      "status": "Avoid"
     },
     {
       "symbol": "GBPCHF",
       "dir": "SHORT",
-      "status": "Excluded"
+      "status": "Avoid"
     },
     {
       "symbol": "GBPNZD",
       "dir": "LONG",
-      "status": "Excluded"
+      "status": "Avoid"
     },
     {
       "symbol": "GBPCAD",
       "dir": "LONG",
-      "status": "Excluded"
+      "status": "Avoid"
     },
     {
       "symbol": "GBPAUD",
-      "dir": "LONG",
-      "status": "Excluded"
+      "dir": "SHORT",
+      "status": "Avoid"
     }
   ],
   "currency_strength": {
-    "USD": 3,
+    "USD": 2,
     "EUR": -2,
     "GBP": 0,
-    "JPY": 1,
+    "JPY": 2,
     "CHF": 1,
     "CAD": -2,
     "AUD": -1,
