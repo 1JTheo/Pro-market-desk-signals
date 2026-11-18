@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-11-18T01:55:47Z",
-  "valid_until_utc": "2026-11-18T04:55:47Z",
+  "generated_utc": "2026-11-18T03:55:24Z",
+  "valid_until_utc": "2026-11-18T06:55:24Z",
   "mood": "mixed",
-  "headline": "Australian wages beat (1.1% q/q) and gave AUD a lift, while NZD stays the weakest major. Sell NZD on pullbacks against CAD, JPY and AUD; leave USD and GBP pairs alone before UK CPI at 09:00 and FOMC minutes at 21:00.",
+  "headline": "USD sits near a 19-month high on Fed hike bets and NZD is the weakest major. Sell NZD on pullbacks against AUD, CAD and JPY; leave USD, GBP and EUR pairs until UK CPI (09:00) and FOMC minutes (21:00) pass.",
   "allow": [
-    {
-      "symbol": "NZDCAD",
-      "dir": "SHORT"
-    },
     {
       "symbol": "AUDNZD",
       "dir": "LONG"
+    },
+    {
+      "symbol": "NZDCAD",
+      "dir": "SHORT"
     },
     {
       "symbol": "NZDJPY",
@@ -29,28 +29,8 @@
   ],
   "bias": [
     {
-      "symbol": "EURNZD",
+      "symbol": "AUDCAD",
       "dir": "LONG",
-      "status": "Avoid"
-    },
-    {
-      "symbol": "AUDJPY",
-      "dir": "SHORT",
-      "status": "No edge"
-    },
-    {
-      "symbol": "CADJPY",
-      "dir": "SHORT",
-      "status": "No edge"
-    },
-    {
-      "symbol": "EURJPY",
-      "dir": "SHORT",
-      "status": "No edge"
-    },
-    {
-      "symbol": "CHFJPY",
-      "dir": "SHORT",
       "status": "No edge"
     },
     {
@@ -60,11 +40,6 @@
     },
     {
       "symbol": "AUDUSD",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "EURUSD",
       "dir": "SHORT",
       "status": "Excluded"
     },
@@ -79,22 +54,22 @@
       "status": "Excluded"
     },
     {
-      "symbol": "GBPUSD",
+      "symbol": "EURUSD",
       "dir": "SHORT",
       "status": "Excluded"
     },
     {
+      "symbol": "XAUUSD",
+      "dir": "SHORT",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "EURNZD",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
       "symbol": "GBPNZD",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "GBPAUD",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "GBPJPY",
       "dir": "LONG",
       "status": "Excluded"
     },
@@ -107,22 +82,23 @@
       "symbol": "GBPCHF",
       "dir": "LONG",
       "status": "Excluded"
-    },
-    {
-      "symbol": "EURGBP",
-      "dir": "SHORT",
-      "status": "Excluded"
     }
   ],
   "currency_strength": {
     "USD": 2,
     "GBP": 1,
-    "JPY": 0,
+    "AUD": 0,
+    "JPY": -1,
     "EUR": -1,
     "CHF": -1,
     "CAD": -1,
-    "AUD": -1,
     "NZD": -3
   },
-  "blackouts": []
+  "blackouts": [
+    {
+      "from": "2026-11-18T06:45:00Z",
+      "to": "2026-11-18T07:30:00Z",
+      "ccy": "GBP"
+    }
+  ]
 }
