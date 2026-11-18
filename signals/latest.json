@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-11-18T13:56:09Z",
-  "valid_until_utc": "2026-11-18T16:56:09Z",
-  "mood": "mixed",
-  "headline": "USD sits at a 19-month high before the FOMC minutes at 21:00; the pound is soft after UK CPI and NZD stays weakest. Only CAD, CHF and JPY are clear of news today, so sell CADJPY and CHFJPY on pullbacks or stand aside.",
+  "generated_utc": "2026-11-18T15:54:47Z",
+  "valid_until_utc": "2026-11-18T18:54:47Z",
+  "mood": "risk-off",
+  "headline": "USD holds 19-month highs after Waller said a 50bp hike is on the table; gold, copper and oil fell and small caps dropped. With FOMC minutes at 21:00, only CAD, CHF and JPY are clear of news, so sell CADJPY and CHFJPY on pullbacks or stand aside.",
   "allow": [
     {
       "symbol": "CADJPY",
@@ -35,12 +35,17 @@
       "status": "Excluded"
     },
     {
+      "symbol": "NZDUSD",
+      "dir": "SHORT",
+      "status": "Excluded"
+    },
+    {
       "symbol": "AUDNZD",
       "dir": "LONG",
       "status": "Excluded"
     },
     {
-      "symbol": "NZDUSD",
+      "symbol": "NZDCAD",
       "dir": "SHORT",
       "status": "Excluded"
     },
@@ -55,33 +60,18 @@
       "status": "Excluded"
     },
     {
-      "symbol": "NZDCAD",
-      "dir": "SHORT",
+      "symbol": "USDCHF",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "USDCAD",
+      "dir": "LONG",
       "status": "Excluded"
     },
     {
       "symbol": "XAUUSD",
       "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "AUDJPY",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "GBPJPY",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "EURJPY",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "USDCHF",
-      "dir": "LONG",
       "status": "Excluded"
     },
     {
@@ -100,7 +90,22 @@
       "status": "Excluded"
     },
     {
-      "symbol": "USDCAD",
+      "symbol": "AUDJPY",
+      "dir": "SHORT",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "EURJPY",
+      "dir": "SHORT",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "GBPJPY",
+      "dir": "SHORT",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "USDJPY",
       "dir": "LONG",
       "status": "Excluded"
     },
@@ -120,6 +125,11 @@
       "status": "Excluded"
     },
     {
+      "symbol": "EURGBP",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
       "symbol": "GBPCHF",
       "dir": "SHORT",
       "status": "Excluded"
@@ -128,43 +138,28 @@
       "symbol": "EURCHF",
       "dir": "SHORT",
       "status": "Excluded"
-    },
-    {
-      "symbol": "EURGBP",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "USDJPY",
-      "dir": "LONG",
-      "status": "Excluded"
     }
   ],
   "currency_strength": {
     "USD": 2,
     "JPY": 1,
     "CHF": 0,
-    "AUD": 0,
     "EUR": -1,
     "GBP": -1,
+    "AUD": -1,
     "CAD": -1,
     "NZD": -2
   },
   "blackouts": [
     {
-      "from": "2026-11-18T13:15:00Z",
-      "to": "2026-11-18T14:00:00Z",
+      "from": "2026-11-18T17:45:00Z",
+      "to": "2026-11-18T18:30:00Z",
+      "ccy": "NZD"
+    },
+    {
+      "from": "2026-11-18T18:45:00Z",
+      "to": "2026-11-18T19:30:00Z",
       "ccy": "USD"
-    },
-    {
-      "from": "2026-11-18T14:10:00Z",
-      "to": "2026-11-18T14:55:00Z",
-      "ccy": "EUR"
-    },
-    {
-      "from": "2026-11-18T14:45:00Z",
-      "to": "2026-11-18T15:30:00Z",
-      "ccy": "GBP"
     }
   ]
 }
