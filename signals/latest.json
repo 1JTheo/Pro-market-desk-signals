@@ -1,168 +1,164 @@
 {
-  "generated_utc": "2026-11-18T05:56:38Z",
-  "valid_until_utc": "2026-11-18T08:56:38Z",
-  "mood": "mixed",
-  "headline": "USD holds near a 19-month high on December hike bets while NZD and CHF stay weakest. Buy AUD on pullbacks against NZD and CHF and sell NZD vs CAD; leave USD and GBP pairs until UK CPI (09:00) and FOMC minutes (21:00) pass.",
-  "allow": [
-    {
-      "symbol": "AUDNZD",
-      "dir": "LONG"
-    },
-    {
-      "symbol": "AUDCHF",
-      "dir": "LONG"
-    },
-    {
-      "symbol": "NZDCAD",
-      "dir": "SHORT"
-    }
-  ],
-  "backup": {
-    "symbol": "CADCHF",
-    "dir": "LONG"
+ "generated_utc": "2026-11-18T07:55:44Z",
+ "valid_until_utc": "2026-11-18T10:55:44Z",
+ "mood": "risk-off",
+ "headline": "USD holds near a 19-month high with a December Fed hike almost fully priced; NZD stays weakest. Sell NZD against JPY and CHF and buy AUDNZD on pullbacks; leave USD, EUR and GBP pairs until FOMC minutes (21:00).",
+ "allow": [
+  {
+   "symbol": "NZDJPY",
+   "dir": "SHORT"
   },
-  "strength": [
-    {
-      "symbol": "NZDUSD",
-      "dir": "SHORT"
-    },
-    {
-      "symbol": "USDCHF",
-      "dir": "LONG"
-    }
-  ],
-  "bias": [
-    {
-      "symbol": "NZDJPY",
-      "dir": "SHORT",
-      "status": "No edge"
-    },
-    {
-      "symbol": "NZDCHF",
-      "dir": "SHORT",
-      "status": "No edge"
-    },
-    {
-      "symbol": "AUDJPY",
-      "dir": "LONG",
-      "status": "No edge"
-    },
-    {
-      "symbol": "CADJPY",
-      "dir": "LONG",
-      "status": "No edge"
-    },
-    {
-      "symbol": "EURNZD",
-      "dir": "LONG",
-      "status": "No edge"
-    },
-    {
-      "symbol": "EURCHF",
-      "dir": "LONG",
-      "status": "No edge"
-    },
-    {
-      "symbol": "CHFJPY",
-      "dir": "SHORT",
-      "status": "No edge"
-    },
-    {
-      "symbol": "EURAUD",
-      "dir": "SHORT",
-      "status": "No edge"
-    },
-    {
-      "symbol": "AUDCAD",
-      "dir": "LONG",
-      "status": "No edge"
-    },
-    {
-      "symbol": "EURCAD",
-      "dir": "SHORT",
-      "status": "No edge"
-    },
-    {
-      "symbol": "NZDUSD",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "USDCHF",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "GBPNZD",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "GBPCHF",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "AUDUSD",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "USDCAD",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "EURUSD",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "USDJPY",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "GBPJPY",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "GBPCAD",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "EURGBP",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "GBPUSD",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "XAUUSD",
-      "dir": "SHORT",
-      "status": "Excluded"
-    }
-  ],
-  "currency_strength": {
-    "USD": 2,
-    "GBP": 1,
-    "AUD": 1,
-    "CAD": 0,
-    "EUR": -1,
-    "JPY": -1,
-    "CHF": -2,
-    "NZD": -3
+  {
+   "symbol": "AUDNZD",
+   "dir": "LONG"
   },
-  "blackouts": [
-    {
-      "from": "2026-11-18T06:45:00Z",
-      "to": "2026-11-18T07:30:00Z",
-      "ccy": "GBP"
-    }
-  ]
+  {
+   "symbol": "NZDCHF",
+   "dir": "SHORT"
+  }
+ ],
+ "backup": {
+  "symbol": "NZDCAD",
+  "dir": "SHORT"
+ },
+ "strength": [
+  {
+   "symbol": "NZDUSD",
+   "dir": "SHORT"
+  }
+ ],
+ "bias": [
+  {
+   "symbol": "AUDJPY",
+   "dir": "SHORT",
+   "status": "No edge"
+  },
+  {
+   "symbol": "AUDCHF",
+   "dir": "SHORT",
+   "status": "No edge"
+  },
+  {
+   "symbol": "CHFJPY",
+   "dir": "SHORT",
+   "status": "No edge"
+  },
+  {
+   "symbol": "CADJPY",
+   "dir": "SHORT",
+   "status": "No edge"
+  },
+  {
+   "symbol": "CADCHF",
+   "dir": "SHORT",
+   "status": "No edge"
+  },
+  {
+   "symbol": "AUDCAD",
+   "dir": "LONG",
+   "status": "No edge"
+  },
+  {
+   "symbol": "NZDUSD",
+   "dir": "SHORT",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "AUDUSD",
+   "dir": "SHORT",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "USDCAD",
+   "dir": "LONG",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "USDCHF",
+   "dir": "LONG",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "USDJPY",
+   "dir": "LONG",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "EURUSD",
+   "dir": "SHORT",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "GBPUSD",
+   "dir": "SHORT",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "EURNZD",
+   "dir": "LONG",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "GBPNZD",
+   "dir": "LONG",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "EURJPY",
+   "dir": "SHORT",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "EURGBP",
+   "dir": "SHORT",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "EURAUD",
+   "dir": "SHORT",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "EURCHF",
+   "dir": "SHORT",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "GBPAUD",
+   "dir": "LONG",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "GBPCAD",
+   "dir": "LONG",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "GBPCHF",
+   "dir": "LONG",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "XAUUSD",
+   "dir": "SHORT",
+   "status": "Excluded"
+  }
+ ],
+ "currency_strength": {
+  "USD": 2,
+  "GBP": 0,
+  "EUR": -1,
+  "JPY": -1,
+  "CHF": -1,
+  "CAD": -1,
+  "AUD": -1,
+  "NZD": -2
+ },
+ "blackouts": [
+  {
+   "from": "2026-11-18T09:45:00Z",
+   "to": "2026-11-18T10:30:00Z",
+   "ccy": "EUR"
+  }
+ ]
 }
