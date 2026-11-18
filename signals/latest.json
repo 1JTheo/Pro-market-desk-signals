@@ -1,12 +1,16 @@
 {
-  "generated_utc": "2026-11-17T23:55:11Z",
-  "valid_until_utc": "2026-11-18T02:55:11Z",
+  "generated_utc": "2026-11-18T01:55:47Z",
+  "valid_until_utc": "2026-11-18T04:55:47Z",
   "mood": "mixed",
-  "headline": "Nvidia's beat lifted US futures (Nasdaq +1.4%) and cooled the haven yen, while a fully priced December Fed hike keeps USD firm. Sell NZD on pullbacks against CAD and JPY; leave AUD, GBP and USD pairs alone before Australian wages, UK CPI and FOMC minutes.",
+  "headline": "Australian wages beat (1.1% q/q) and gave AUD a lift, while NZD stays the weakest major. Sell NZD on pullbacks against CAD, JPY and AUD; leave USD and GBP pairs alone before UK CPI at 09:00 and FOMC minutes at 21:00.",
   "allow": [
     {
       "symbol": "NZDCAD",
       "dir": "SHORT"
+    },
+    {
+      "symbol": "AUDNZD",
+      "dir": "LONG"
     },
     {
       "symbol": "NZDJPY",
@@ -21,10 +25,6 @@
     {
       "symbol": "NZDUSD",
       "dir": "SHORT"
-    },
-    {
-      "symbol": "AUDUSD",
-      "dir": "SHORT"
     }
   ],
   "bias": [
@@ -32,6 +32,11 @@
       "symbol": "EURNZD",
       "dir": "LONG",
       "status": "Avoid"
+    },
+    {
+      "symbol": "AUDJPY",
+      "dir": "SHORT",
+      "status": "No edge"
     },
     {
       "symbol": "CADJPY",
@@ -107,31 +112,6 @@
       "symbol": "EURGBP",
       "dir": "SHORT",
       "status": "Excluded"
-    },
-    {
-      "symbol": "AUDNZD",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "AUDCAD",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "AUDCHF",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "AUDJPY",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "EURAUD",
-      "dir": "LONG",
-      "status": "Excluded"
     }
   ],
   "currency_strength": {
@@ -141,14 +121,8 @@
     "EUR": -1,
     "CHF": -1,
     "CAD": -1,
-    "AUD": -2,
+    "AUD": -1,
     "NZD": -3
   },
-  "blackouts": [
-    {
-      "from": "2026-11-18T00:15:00Z",
-      "to": "2026-11-18T01:00:00Z",
-      "ccy": "AUD"
-    }
-  ]
+  "blackouts": []
 }
