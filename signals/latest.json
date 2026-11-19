@@ -1,24 +1,24 @@
 {
- "generated_utc": "2026-11-19T08:01:00Z",
- "valid_until_utc": "2026-11-19T11:01:00Z",
+ "generated_utc": "2026-11-19T09:54:00Z",
+ "valid_until_utc": "2026-11-19T12:54:00Z",
  "mood": "mixed",
- "headline": "Dollar sits near a 19-month high after hawkish Fed minutes, and the Aussie is the weakest major after a shock jobs drop. Sell AUD and NZD on pullbacks against JPY and GBP; leave USD and EUR pairs until after 13:30 UTC.",
+ "headline": "The dollar holds near a 19-month high while AUD stays the weakest major after its jobs shock, though AUD and NZD are bouncing a little. Sell AUD on pullbacks against GBP, CAD and JPY; leave USD and EUR pairs until after 13:30 UTC.",
  "allow": [
-  {
-   "symbol": "AUDJPY",
-   "dir": "SHORT"
-  },
   {
    "symbol": "GBPAUD",
    "dir": "LONG"
   },
   {
-   "symbol": "NZDJPY",
+   "symbol": "AUDCAD",
+   "dir": "SHORT"
+  },
+  {
+   "symbol": "AUDJPY",
    "dir": "SHORT"
   }
  ],
  "backup": {
-  "symbol": "AUDCAD",
+  "symbol": "AUDCHF",
   "dir": "SHORT"
  },
  "strength": [
@@ -33,7 +33,7 @@
  ],
  "bias": [
   {
-   "symbol": "AUDCHF",
+   "symbol": "NZDJPY",
    "dir": "SHORT",
    "status": "No edge"
   },
@@ -54,21 +54,6 @@
   },
   {
    "symbol": "NZDCHF",
-   "dir": "SHORT",
-   "status": "No edge"
-  },
-  {
-   "symbol": "CADJPY",
-   "dir": "SHORT",
-   "status": "No edge"
-  },
-  {
-   "symbol": "CHFJPY",
-   "dir": "SHORT",
-   "status": "No edge"
-  },
-  {
-   "symbol": "GBPJPY",
    "dir": "SHORT",
    "status": "No edge"
   },
@@ -103,23 +88,18 @@
    "status": "Excluded"
   },
   {
-   "symbol": "EURUSD",
+   "symbol": "GBPUSD",
    "dir": "SHORT",
    "status": "Excluded"
   },
   {
-   "symbol": "GBPUSD",
+   "symbol": "EURUSD",
    "dir": "SHORT",
    "status": "Excluded"
   },
   {
    "symbol": "EURGBP",
    "dir": "LONG",
-   "status": "Excluded"
-  },
-  {
-   "symbol": "EURJPY",
-   "dir": "SHORT",
    "status": "Excluded"
   },
   {
@@ -140,8 +120,8 @@
  ],
  "currency_strength": {
   "USD": 2,
-  "JPY": 1,
   "EUR": 0,
+  "JPY": 0,
   "GBP": -1,
   "CHF": -1,
   "CAD": -1,
