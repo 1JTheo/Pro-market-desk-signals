@@ -1,19 +1,19 @@
 {
-  "generated_utc": "2026-11-19T04:04:59Z",
-  "valid_until_utc": "2026-11-19T07:04:59Z",
+  "generated_utc": "2026-11-19T05:55:00Z",
+  "valid_until_utc": "2026-11-19T08:55:00Z",
   "mood": "mixed",
-  "headline": "Dollar holds near a 19-month high on Fed hike bets while the Aussie sits at a 10-month low after the jobs shock. Sell AUD, NZD and CAD against EUR and JPY on pullbacks; leave USD pairs until US data at 13:30 UTC.",
+  "headline": "Dollar holds near a 19-month high as markets price a 95% chance of a December Fed hike, while the Aussie sits at a 10-month low after a jobs shock. Sell AUD, NZD and CAD on pullbacks against EUR and JPY; leave USD pairs until US data at 13:30 UTC.",
   "allow": [
     {
       "symbol": "EURAUD",
       "dir": "LONG"
     },
     {
-      "symbol": "CADJPY",
+      "symbol": "NZDJPY",
       "dir": "SHORT"
     },
     {
-      "symbol": "NZDJPY",
+      "symbol": "CADJPY",
       "dir": "SHORT"
     }
   ],
@@ -27,12 +27,12 @@
       "dir": "SHORT"
     },
     {
-      "symbol": "USDCAD",
-      "dir": "LONG"
-    },
-    {
       "symbol": "NZDUSD",
       "dir": "SHORT"
+    },
+    {
+      "symbol": "USDCAD",
+      "dir": "LONG"
     }
   ],
   "bias": [
@@ -102,8 +102,8 @@
       "status": "No edge"
     },
     {
-      "symbol": "USDCAD",
-      "dir": "LONG",
+      "symbol": "AUDUSD",
+      "dir": "SHORT",
       "status": "Excluded"
     },
     {
@@ -112,8 +112,8 @@
       "status": "Excluded"
     },
     {
-      "symbol": "AUDUSD",
-      "dir": "SHORT",
+      "symbol": "USDCAD",
+      "dir": "LONG",
       "status": "Excluded"
     },
     {
@@ -141,11 +141,11 @@
     "USD": 2,
     "JPY": 1,
     "EUR": 0,
-    "CHF": -1,
     "GBP": -1,
+    "CHF": -1,
     "AUD": -2,
-    "CAD": -2,
-    "NZD": -2
+    "NZD": -2,
+    "CAD": -2
   },
   "blackouts": []
 }
