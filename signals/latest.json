@@ -1,8 +1,8 @@
 {
- "generated_utc": "2026-11-20T03:55:00Z",
- "valid_until_utc": "2026-11-20T06:55:00Z",
+ "generated_utc": "2026-11-20T05:54:00Z",
+ "valid_until_utc": "2026-11-20T08:54:00Z",
  "mood": "risk-off",
- "headline": "Risk-off holds: VIX jumped 16% to 28, US stocks fell for a sixth day and the Fed is priced to hike in December. Sell AUD and NZD against CHF and JPY on pullbacks; USD, EUR, GBP and CAD pairs sit out today's news.",
+ "headline": "Risk-off deepens: Nikkei fell 4.7% and Kospi 5.1% as the AI trade unwinds, and gold dropped below $3,570. Sell AUD and NZD against CHF and JPY on pullbacks; USD, EUR, GBP and CAD pairs sit out today's news.",
  "allow": [
   {
    "symbol": "AUDCHF",
@@ -136,7 +136,7 @@
  "currency_strength": {
   "USD": 2,
   "CHF": 1,
-  "JPY": 0,
+  "JPY": 1,
   "CAD": 0,
   "EUR": -1,
   "GBP": -1,
@@ -148,6 +148,11 @@
    "from": "2026-11-20T06:45:00Z",
    "to": "2026-11-20T07:30:00Z",
    "ccy": "GBP"
+  },
+  {
+   "from": "2026-11-20T08:00:00Z",
+   "to": "2026-11-20T08:45:00Z",
+   "ccy": "EUR"
   }
  ]
 }
