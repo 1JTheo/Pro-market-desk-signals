@@ -1,8 +1,8 @@
 {
- "generated_utc": "2026-11-20T07:55:00Z",
- "valid_until_utc": "2026-11-20T10:55:00Z",
+ "generated_utc": "2026-11-20T09:56:00Z",
+ "valid_until_utc": "2026-11-20T12:56:00Z",
  "mood": "risk-off",
- "headline": "Risk-off holds: Asian stocks head for their worst week since 2020 and gold slid to about $3,530. Sell AUD and NZD against CHF and JPY on pullbacks; USD, EUR, GBP and CAD pairs sit out today's news.",
+ "headline": "Risk-off rolls into Europe: DAX and Stoxx 600 fall about 1% and gold sits near $3,530. Sell AUD and NZD against CHF and JPY on pullbacks; USD, EUR, GBP and CAD pairs sit out today's news.",
  "allow": [
   {
    "symbol": "AUDCHF",
@@ -142,17 +142,11 @@
   "USD": 2,
   "CHF": 1,
   "JPY": 1,
+  "GBP": 1,
   "CAD": 0,
-  "GBP": 0,
   "EUR": -1,
   "NZD": -2,
   "AUD": -3
  },
- "blackouts": [
-  {
-   "from": "2026-11-20T08:00:00Z",
-   "to": "2026-11-20T08:45:00Z",
-   "ccy": "EUR"
-  }
- ]
+ "blackouts": []
 }
