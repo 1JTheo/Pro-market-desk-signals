@@ -1,8 +1,8 @@
 {
- "generated_utc": "2026-11-20T05:54:00Z",
- "valid_until_utc": "2026-11-20T08:54:00Z",
+ "generated_utc": "2026-11-20T07:55:00Z",
+ "valid_until_utc": "2026-11-20T10:55:00Z",
  "mood": "risk-off",
- "headline": "Risk-off deepens: Nikkei fell 4.7% and Kospi 5.1% as the AI trade unwinds, and gold dropped below $3,570. Sell AUD and NZD against CHF and JPY on pullbacks; USD, EUR, GBP and CAD pairs sit out today's news.",
+ "headline": "Risk-off holds: Asian stocks head for their worst week since 2020 and gold slid to about $3,530. Sell AUD and NZD against CHF and JPY on pullbacks; USD, EUR, GBP and CAD pairs sit out today's news.",
  "allow": [
   {
    "symbol": "AUDCHF",
@@ -131,6 +131,11 @@
    "symbol": "GBPJPY",
    "dir": "SHORT",
    "status": "Excluded"
+  },
+  {
+   "symbol": "EURGBP",
+   "dir": "SHORT",
+   "status": "Excluded"
   }
  ],
  "currency_strength": {
@@ -138,17 +143,12 @@
   "CHF": 1,
   "JPY": 1,
   "CAD": 0,
+  "GBP": 0,
   "EUR": -1,
-  "GBP": -1,
   "NZD": -2,
   "AUD": -3
  },
  "blackouts": [
-  {
-   "from": "2026-11-20T06:45:00Z",
-   "to": "2026-11-20T07:30:00Z",
-   "ccy": "GBP"
-  },
   {
    "from": "2026-11-20T08:00:00Z",
    "to": "2026-11-20T08:45:00Z",
