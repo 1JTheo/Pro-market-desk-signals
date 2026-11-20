@@ -1,8 +1,8 @@
 {
- "generated_utc": "2026-11-20T01:54:52Z",
- "valid_until_utc": "2026-11-20T04:54:52Z",
+ "generated_utc": "2026-11-20T03:55:00Z",
+ "valid_until_utc": "2026-11-20T06:55:00Z",
  "mood": "risk-off",
- "headline": "Stocks fell 2% for a sixth day and USD sits at a 19-month high on Fed hike bets, while AUD stays weakest after a second monthly jobs drop. Sell AUD and NZD against CHF on pullbacks; GBP, CAD and USD pairs sit out today's news.",
+ "headline": "Risk-off holds: VIX jumped 16% to 28, US stocks fell for a sixth day and the Fed is priced to hike in December. Sell AUD and NZD against CHF and JPY on pullbacks; USD, EUR, GBP and CAD pairs sit out today's news.",
  "allow": [
   {
    "symbol": "AUDCHF",
@@ -13,12 +13,12 @@
    "dir": "SHORT"
   },
   {
-   "symbol": "EURAUD",
-   "dir": "LONG"
+   "symbol": "AUDJPY",
+   "dir": "SHORT"
   }
  ],
  "backup": {
-  "symbol": "AUDJPY",
+  "symbol": "NZDJPY",
   "dir": "SHORT"
  },
  "strength": [
@@ -33,27 +33,7 @@
  ],
  "bias": [
   {
-   "symbol": "EURNZD",
-   "dir": "LONG",
-   "status": "No edge"
-  },
-  {
-   "symbol": "NZDJPY",
-   "dir": "SHORT",
-   "status": "No edge"
-  },
-  {
    "symbol": "AUDNZD",
-   "dir": "SHORT",
-   "status": "No edge"
-  },
-  {
-   "symbol": "CHFJPY",
-   "dir": "LONG",
-   "status": "No edge"
-  },
-  {
-   "symbol": "EURCHF",
    "dir": "SHORT",
    "status": "No edge"
   },
@@ -65,6 +45,16 @@
   {
    "symbol": "NZDUSD",
    "dir": "SHORT",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "EURAUD",
+   "dir": "LONG",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "EURNZD",
+   "dir": "LONG",
    "status": "Excluded"
   },
   {
@@ -108,11 +98,6 @@
    "status": "Excluded"
   },
   {
-   "symbol": "GBPCHF",
-   "dir": "SHORT",
-   "status": "Excluded"
-  },
-  {
    "symbol": "AUDCAD",
    "dir": "SHORT",
    "status": "Excluded"
@@ -123,7 +108,27 @@
    "status": "Excluded"
   },
   {
+   "symbol": "EURCHF",
+   "dir": "SHORT",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "GBPCHF",
+   "dir": "SHORT",
+   "status": "Excluded"
+  },
+  {
    "symbol": "CADCHF",
+   "dir": "SHORT",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "EURJPY",
+   "dir": "SHORT",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "GBPJPY",
    "dir": "SHORT",
    "status": "Excluded"
   }
@@ -131,12 +136,18 @@
  "currency_strength": {
   "USD": 2,
   "CHF": 1,
+  "JPY": 0,
   "CAD": 0,
   "EUR": -1,
   "GBP": -1,
-  "JPY": -1,
   "NZD": -2,
   "AUD": -3
  },
- "blackouts": []
+ "blackouts": [
+  {
+   "from": "2026-11-20T06:45:00Z",
+   "to": "2026-11-20T07:30:00Z",
+   "ccy": "GBP"
+  }
+ ]
 }
