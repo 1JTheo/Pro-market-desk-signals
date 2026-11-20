@@ -1,33 +1,17 @@
 {
-  "generated_utc": "2026-11-20T17:56:16Z",
-  "valid_until_utc": "2026-11-20T20:56:16Z",
+  "generated_utc": "2026-11-20T20:00:20Z",
+  "valid_until_utc": "2026-11-20T23:00:20Z",
   "mood": "risk-off",
-  "headline": "Risk-off holds into the weekend close: AI chip stocks and metals slide, the yen and franc lead, and AUD, NZD and CAD stay weakest. Sell AUD and CAD against JPY and CHF on pullbacks only, small size, and be flat before the weekend if you can.",
-  "allow": [
-    {
-      "symbol": "AUDJPY",
-      "dir": "SHORT"
-    },
-    {
-      "symbol": "CADJPY",
-      "dir": "SHORT"
-    },
-    {
-      "symbol": "AUDCHF",
-      "dir": "SHORT"
-    }
-  ],
-  "backup": {
-    "symbol": "NZDJPY",
-    "dir": "SHORT"
-  },
+  "headline": "Risk-off into the weekly close: the AI selloff pushed the S&P 500 and Dow into correction, the yen and franc lead, and AUD is weakest. With an hour to the close, stand aside: no new trades.",
+  "allow": [],
+  "backup": null,
   "strength": [
     {
       "symbol": "AUDJPY",
       "dir": "SHORT"
     },
     {
-      "symbol": "CADJPY",
+      "symbol": "NZDJPY",
       "dir": "SHORT"
     },
     {
@@ -35,18 +19,38 @@
       "dir": "SHORT"
     },
     {
-      "symbol": "NZDJPY",
+      "symbol": "NZDCHF",
       "dir": "SHORT"
     }
   ],
   "bias": [
     {
+      "symbol": "AUDJPY",
+      "dir": "SHORT",
+      "status": "Avoid"
+    },
+    {
+      "symbol": "NZDJPY",
+      "dir": "SHORT",
+      "status": "Avoid"
+    },
+    {
+      "symbol": "AUDCHF",
+      "dir": "SHORT",
+      "status": "Avoid"
+    },
+    {
       "symbol": "NZDCHF",
+      "dir": "SHORT",
+      "status": "Avoid"
+    },
+    {
+      "symbol": "CADJPY",
       "dir": "SHORT",
       "status": "No edge"
     },
     {
-      "symbol": "CADCHF",
+      "symbol": "AUDUSD",
       "dir": "SHORT",
       "status": "No edge"
     },
@@ -66,18 +70,18 @@
       "status": "No edge"
     },
     {
-      "symbol": "AUDUSD",
+      "symbol": "CADCHF",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
+      "symbol": "USDCHF",
       "dir": "SHORT",
       "status": "No edge"
     },
     {
       "symbol": "NZDUSD",
       "dir": "SHORT",
-      "status": "No edge"
-    },
-    {
-      "symbol": "USDCAD",
-      "dir": "LONG",
       "status": "No edge"
     },
     {
@@ -91,27 +95,12 @@
       "status": "No edge"
     },
     {
-      "symbol": "GBPCAD",
-      "dir": "LONG",
+      "symbol": "AUDCAD",
+      "dir": "SHORT",
       "status": "No edge"
     },
     {
-      "symbol": "EURCAD",
-      "dir": "LONG",
-      "status": "No edge"
-    },
-    {
-      "symbol": "GBPNZD",
-      "dir": "LONG",
-      "status": "No edge"
-    },
-    {
-      "symbol": "EURNZD",
-      "dir": "LONG",
-      "status": "No edge"
-    },
-    {
-      "symbol": "USDCHF",
+      "symbol": "AUDNZD",
       "dir": "SHORT",
       "status": "No edge"
     },
@@ -131,12 +120,37 @@
       "status": "No edge"
     },
     {
-      "symbol": "XAUUSD",
+      "symbol": "GBPNZD",
+      "dir": "LONG",
+      "status": "No edge"
+    },
+    {
+      "symbol": "EURNZD",
+      "dir": "LONG",
+      "status": "No edge"
+    },
+    {
+      "symbol": "NZDCAD",
       "dir": "SHORT",
-      "status": "Avoid"
+      "status": "No edge"
+    },
+    {
+      "symbol": "USDCAD",
+      "dir": "LONG",
+      "status": "No edge"
+    },
+    {
+      "symbol": "GBPCAD",
+      "dir": "LONG",
+      "status": "No edge"
     },
     {
       "symbol": "EURUSD",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
+      "symbol": "GBPUSD",
       "dir": "SHORT",
       "status": "No edge"
     },
@@ -146,9 +160,9 @@
       "status": "No edge"
     },
     {
-      "symbol": "AUDNZD",
+      "symbol": "XAUUSD",
       "dir": "SHORT",
-      "status": "No edge"
+      "status": "Avoid"
     }
   ],
   "currency_strength": {
@@ -157,7 +171,7 @@
     "USD": 1,
     "GBP": 0,
     "EUR": -1,
-    "CAD": -2,
+    "CAD": -1,
     "NZD": -2,
     "AUD": -3
   },
