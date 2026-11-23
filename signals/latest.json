@@ -1,8 +1,8 @@
 {
- "generated_utc": "2026-11-23T01:55:58Z",
- "valid_until_utc": "2026-11-23T04:55:58Z",
+ "generated_utc": "2026-11-23T03:56:50Z",
+ "valid_until_utc": "2026-11-23T06:56:50Z",
  "mood": "mixed",
- "headline": "US futures jump about 2% and the yen softens, but AUD stays weakest after a 46.1 PMI while strong NZ retail sales lift NZD. EUR, GBP and USD face PMIs today, so trade only AUD crosses vs NZD, CHF and JPY.",
+ "headline": "US futures bounce about 2% after last week's AI rout and the yen softens with Tokyo shut. AUD stays weakest after a 46.1 PMI; EUR, GBP and USD face flash PMIs today, so trade only AUD crosses vs NZD, CHF and CAD.",
  "allow": [
   {
    "symbol": "AUDNZD",
@@ -13,23 +13,28 @@
    "dir": "SHORT"
   },
   {
-   "symbol": "AUDJPY",
+   "symbol": "AUDCAD",
    "dir": "SHORT"
   }
  ],
  "backup": {
-  "symbol": "AUDCAD",
-  "dir": "SHORT"
+  "symbol": "NZDCAD",
+  "dir": "LONG"
  },
  "strength": [],
  "bias": [
   {
-   "symbol": "NZDJPY",
+   "symbol": "AUDJPY",
    "dir": "SHORT",
    "status": "No edge"
   },
   {
-   "symbol": "NZDCHF",
+   "symbol": "NZDJPY",
+   "dir": "LONG",
+   "status": "No edge"
+  },
+  {
+   "symbol": "CADCHF",
    "dir": "SHORT",
    "status": "No edge"
   },
@@ -39,8 +44,8 @@
    "status": "No edge"
   },
   {
-   "symbol": "CADCHF",
-   "dir": "SHORT",
+   "symbol": "CHFJPY",
+   "dir": "LONG",
    "status": "No edge"
   },
   {
@@ -54,27 +59,17 @@
    "status": "Excluded"
   },
   {
+   "symbol": "USDJPY",
+   "dir": "LONG",
+   "status": "Excluded"
+  },
+  {
    "symbol": "USDCAD",
    "dir": "LONG",
    "status": "Excluded"
   },
   {
    "symbol": "AUDUSD",
-   "dir": "SHORT",
-   "status": "Excluded"
-  },
-  {
-   "symbol": "NZDUSD",
-   "dir": "SHORT",
-   "status": "Excluded"
-  },
-  {
-   "symbol": "EURJPY",
-   "dir": "SHORT",
-   "status": "Excluded"
-  },
-  {
-   "symbol": "GBPJPY",
    "dir": "SHORT",
    "status": "Excluded"
   },
@@ -89,6 +84,16 @@
    "status": "Excluded"
   },
   {
+   "symbol": "EURCAD",
+   "dir": "LONG",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "GBPCAD",
+   "dir": "LONG",
+   "status": "Excluded"
+  },
+  {
    "symbol": "EURAUD",
    "dir": "LONG",
    "status": "Excluded"
@@ -97,17 +102,32 @@
    "symbol": "GBPAUD",
    "dir": "LONG",
    "status": "Excluded"
+  },
+  {
+   "symbol": "EURNZD",
+   "dir": "SHORT",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "GBPNZD",
+   "dir": "SHORT",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "XAUUSD",
+   "dir": "LONG",
+   "status": "Excluded"
   }
  ],
  "currency_strength": {
   "USD": 1,
-  "EUR": -1,
-  "GBP": -1,
-  "JPY": 1,
+  "EUR": 0,
+  "GBP": 0,
+  "JPY": 0,
   "CHF": 1,
   "CAD": -1,
   "AUD": -2,
-  "NZD": -1
+  "NZD": 1
  },
  "blackouts": []
 }
