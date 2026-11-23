@@ -1,8 +1,8 @@
 {
- "generated_utc": "2026-11-23T10:02:07Z",
- "valid_until_utc": "2026-11-23T13:02:07Z",
+ "generated_utc": "2026-11-23T11:56:02Z",
+ "valid_until_utc": "2026-11-23T14:56:02Z",
  "mood": "risk-on",
- "headline": "Futures bounce 2-3% after last week's AI rout and the dollar eases off a 19-month high. USD and GBP face news today, so trade EUR, AUD, NZD, CAD and CHF crosses with AUD as the main short.",
+ "headline": "Stocks and gold bounce after last week's AI rout and the dollar eases off its 19-month high. USD and GBP face news this afternoon, so stick to EUR, AUD, NZD, CAD and CHF crosses with AUD as the main short.",
  "allow": [
   {
    "symbol": "EURAUD",
@@ -144,6 +144,16 @@
    "from": "2026-11-23T12:45:00Z",
    "to": "2026-11-23T13:30:00Z",
    "ccy": "GBP"
+  },
+  {
+   "from": "2026-11-23T13:15:00Z",
+   "to": "2026-11-23T14:00:00Z",
+   "ccy": "USD"
+  },
+  {
+   "from": "2026-11-23T14:30:00Z",
+   "to": "2026-11-23T15:15:00Z",
+   "ccy": "USD"
   }
  ]
 }
