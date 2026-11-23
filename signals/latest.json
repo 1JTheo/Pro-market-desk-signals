@@ -1,8 +1,8 @@
 {
- "generated_utc": "2026-11-23T15:55:20Z",
- "valid_until_utc": "2026-11-23T18:55:20Z",
+ "generated_utc": "2026-11-23T17:55:50Z",
+ "valid_until_utc": "2026-11-23T20:55:50Z",
  "mood": "risk-on",
- "headline": "Stocks rip higher (S&P +3.9%) but the dollar stays firm as yields rise despite a soft US PMI. Williams speaks at 23:00, so keep trading EUR crosses against weak AUD and NZD, on pullbacks only.",
+ "headline": "Stocks surge on Nvidia's Jensen Huang return, yet the dollar climbs to near yearly highs as a December Fed hike is ~96% priced. Stay with EUR crosses against weak AUD and NZD, on pullbacks only, and avoid USD before Williams at 23:00.",
  "allow": [
   {
    "symbol": "EURAUD",
@@ -37,12 +37,27 @@
  ],
  "bias": [
   {
+   "symbol": "GBPAUD",
+   "dir": "LONG",
+   "status": "No edge"
+  },
+  {
+   "symbol": "GBPNZD",
+   "dir": "LONG",
+   "status": "No edge"
+  },
+  {
    "symbol": "NZDCHF",
    "dir": "SHORT",
    "status": "No edge"
   },
   {
    "symbol": "CHFJPY",
+   "dir": "LONG",
+   "status": "No edge"
+  },
+  {
+   "symbol": "GBPJPY",
    "dir": "LONG",
    "status": "No edge"
   },
@@ -68,6 +83,11 @@
   },
   {
    "symbol": "CADCHF",
+   "dir": "SHORT",
+   "status": "No edge"
+  },
+  {
+   "symbol": "GBPCHF",
    "dir": "SHORT",
    "status": "No edge"
   },
@@ -107,39 +127,14 @@
    "status": "Excluded"
   },
   {
-   "symbol": "GBPAUD",
-   "dir": "LONG",
-   "status": "Excluded"
-  },
-  {
-   "symbol": "GBPNZD",
-   "dir": "LONG",
-   "status": "Excluded"
-  },
-  {
-   "symbol": "GBPJPY",
-   "dir": "LONG",
-   "status": "Excluded"
-  },
-  {
-   "symbol": "GBPCHF",
-   "dir": "SHORT",
-   "status": "Excluded"
-  },
-  {
-   "symbol": "EURGBP",
-   "dir": "LONG",
-   "status": "Excluded"
-  },
-  {
    "symbol": "XAUUSD",
    "dir": "LONG",
    "status": "Excluded"
   }
  ],
  "currency_strength": {
-  "USD": 2,
-  "EUR": 0,
+  "USD": 3,
+  "EUR": -1,
   "GBP": -1,
   "JPY": -2,
   "CHF": 0,
@@ -147,5 +142,11 @@
   "AUD": -2,
   "NZD": -2
  },
- "blackouts": []
+ "blackouts": [
+  {
+   "from": "2026-11-23T20:45:00Z",
+   "to": "2026-11-23T21:30:00Z",
+   "ccy": "USD"
+  }
+ ]
 }
