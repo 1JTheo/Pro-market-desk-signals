@@ -1,13 +1,9 @@
 {
-  "generated_utc": "2026-11-24T09:54:00Z",
-  "valid_until_utc": "2026-11-24T12:54:00Z",
+  "generated_utc": "2026-11-24T11:56:13Z",
+  "valid_until_utc": "2026-11-24T14:56:13Z",
   "mood": "mixed",
-  "headline": "Dollar steady near 20-month highs (DXY ~104.3) as a December Fed hike stays ~95% priced; German Ifo came in line at 90.6. Keep fading NZD and AUD against GBP and CHF; USD and CAD news lands later today.",
+  "headline": "Dollar holds near 20-month highs (DXY ~104.3) with a December Fed hike ~95% priced, while NZD and EUR sit at multi-year lows. With USD, GBP and CAD news today, sell NZD, AUD and EUR against a quiet CHF.",
   "allow": [
-    {
-      "symbol": "GBPNZD",
-      "dir": "LONG"
-    },
     {
       "symbol": "NZDCHF",
       "dir": "SHORT"
@@ -15,11 +11,15 @@
     {
       "symbol": "AUDCHF",
       "dir": "SHORT"
+    },
+    {
+      "symbol": "EURCHF",
+      "dir": "SHORT"
     }
   ],
   "backup": {
-    "symbol": "GBPAUD",
-    "dir": "LONG"
+    "symbol": "NZDJPY",
+    "dir": "SHORT"
   },
   "strength": [
     {
@@ -37,11 +37,6 @@
   ],
   "bias": [
     {
-      "symbol": "NZDJPY",
-      "dir": "SHORT",
-      "status": "No edge"
-    },
-    {
       "symbol": "AUDJPY",
       "dir": "SHORT",
       "status": "Avoid"
@@ -52,14 +47,9 @@
       "status": "No edge"
     },
     {
-      "symbol": "GBPCHF",
+      "symbol": "EURJPY",
       "dir": "SHORT",
       "status": "No edge"
-    },
-    {
-      "symbol": "EURUSD",
-      "dir": "SHORT",
-      "status": "Excluded"
     },
     {
       "symbol": "NZDUSD",
@@ -67,7 +57,17 @@
       "status": "Excluded"
     },
     {
+      "symbol": "EURUSD",
+      "dir": "SHORT",
+      "status": "Excluded"
+    },
+    {
       "symbol": "AUDUSD",
+      "dir": "SHORT",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "GBPUSD",
       "dir": "SHORT",
       "status": "Excluded"
     },
@@ -87,27 +87,27 @@
       "status": "Excluded"
     },
     {
-      "symbol": "GBPUSD",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
       "symbol": "XAUUSD",
       "dir": "SHORT",
       "status": "Excluded"
     },
     {
+      "symbol": "GBPNZD",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "GBPAUD",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "GBPCHF",
+      "dir": "SHORT",
+      "status": "Excluded"
+    },
+    {
       "symbol": "EURGBP",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "EURJPY",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "EURCHF",
       "dir": "SHORT",
       "status": "Excluded"
     },
@@ -142,5 +142,11 @@
     "AUD": -2,
     "NZD": -2
   },
-  "blackouts": []
+  "blackouts": [
+    {
+      "from": "2026-11-24T12:15:00Z",
+      "to": "2026-11-24T13:00:00Z",
+      "ccy": "GBP"
+    }
+  ]
 }
