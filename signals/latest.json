@@ -1,8 +1,8 @@
 {
- "generated_utc": "2026-11-24T03:55:18Z",
- "valid_until_utc": "2026-11-24T06:55:18Z",
+ "generated_utc": "2026-11-24T05:56:38Z",
+ "valid_until_utc": "2026-11-24T08:56:38Z",
  "mood": "risk-on",
- "headline": "Asia stays bid after Wall Street's Nvidia rally while a December Fed hike is ~95-100% priced, keeping the dollar index near 104.3, a 20-month high. Favour NZD shorts vs GBP, CHF and AUD; skip USD, EUR and CAD pairs around today's data.",
+ "headline": "The dollar holds near a 20-month high (DXY ~104.3) with a December Fed hike fully priced after the AI-led equity rebound. Favour NZD and AUD shorts vs GBP and CHF; skip USD, EUR and CAD pairs around today's news.",
  "allow": [
   {
    "symbol": "GBPNZD",
@@ -13,17 +13,21 @@
    "dir": "SHORT"
   },
   {
-   "symbol": "AUDNZD",
-   "dir": "LONG"
+   "symbol": "AUDCHF",
+   "dir": "SHORT"
   }
  ],
  "backup": {
-  "symbol": "NZDJPY",
-  "dir": "SHORT"
+  "symbol": "GBPAUD",
+  "dir": "LONG"
  },
  "strength": [
   {
    "symbol": "EURUSD",
+   "dir": "SHORT"
+  },
+  {
+   "symbol": "AUDUSD",
    "dir": "SHORT"
   },
   {
@@ -33,18 +37,23 @@
  ],
  "bias": [
   {
-   "symbol": "GBPCHF",
+   "symbol": "NZDJPY",
    "dir": "SHORT",
    "status": "No edge"
   },
   {
-   "symbol": "AUDCHF",
+   "symbol": "AUDJPY",
    "dir": "SHORT",
-   "status": "No edge"
+   "status": "Avoid"
   },
   {
    "symbol": "CHFJPY",
    "dir": "LONG",
+   "status": "No edge"
+  },
+  {
+   "symbol": "GBPCHF",
+   "dir": "SHORT",
    "status": "No edge"
   },
   {
@@ -54,6 +63,11 @@
   },
   {
    "symbol": "NZDUSD",
+   "dir": "SHORT",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "AUDUSD",
    "dir": "SHORT",
    "status": "Excluded"
   },
@@ -78,13 +92,8 @@
    "status": "Excluded"
   },
   {
-   "symbol": "AUDUSD",
-   "dir": "SHORT",
-   "status": "Excluded"
-  },
-  {
    "symbol": "XAUUSD",
-   "dir": "LONG",
+   "dir": "SHORT",
    "status": "Excluded"
   },
   {
@@ -103,18 +112,13 @@
    "status": "Excluded"
   },
   {
-   "symbol": "EURAUD",
-   "dir": "SHORT",
-   "status": "Excluded"
-  },
-  {
    "symbol": "EURCAD",
    "dir": "SHORT",
    "status": "Excluded"
   },
   {
    "symbol": "AUDCAD",
-   "dir": "LONG",
+   "dir": "SHORT",
    "status": "Excluded"
   },
   {
@@ -126,11 +130,6 @@
    "symbol": "CADCHF",
    "dir": "SHORT",
    "status": "Excluded"
-  },
-  {
-   "symbol": "GBPCAD",
-   "dir": "LONG",
-   "status": "Excluded"
   }
  ],
  "currency_strength": {
@@ -140,7 +139,7 @@
   "JPY": -1,
   "CHF": 0,
   "CAD": -1,
-  "AUD": -1,
+  "AUD": -2,
   "NZD": -2
  },
  "blackouts": []
