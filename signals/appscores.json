@@ -1,6 +1,6 @@
 {
-  "signal_generated_utc": "2026-11-24T05:56:38Z",
-  "scored_utc": "2026-11-24T05:57:44Z",
+  "signal_generated_utc": "2026-11-24T07:55:00Z",
+  "scored_utc": "2026-11-24T07:57:03Z",
   "source": "MultiAssetSignalPro (Streamlit branch)",
   "pairs": [
     {
@@ -140,13 +140,13 @@
       "groups": [
         "Bias SHORT"
       ],
-      "score": 42.1,
+      "score": 44.1,
       "recommendation": "WEAK SELL",
       "components": {
         "technical": 47.6,
         "fundamental": 56.8,
         "sentiment": 5.0,
-        "momentum": 20
+        "momentum": 40
       },
       "cot": "AUD: speculators net short 182,060 contracts (-53% of their positions), COT index 0/100 - extreme, crowded, 4-week change -54,768. JPY: speculators net long 116,317 contracts (+29% of their positions), COT index 98/100 - extreme, crowded, 4-week change +46,439. Positioning favours JPY by 98 points. CFTC report as of 17 Nov 2026"
     },
@@ -300,10 +300,10 @@
       "groups": [
         "Bias SHORT"
       ],
-      "score": 48.4,
+      "score": 47.9,
       "recommendation": "HOLD",
       "components": {
-        "technical": 57.4,
+        "technical": 55.9,
         "fundamental": 60.1,
         "sentiment": 5.0,
         "momentum": 35
@@ -316,10 +316,10 @@
       "groups": [
         "Bias SHORT"
       ],
-      "score": 45.2,
+      "score": 45.7,
       "recommendation": "HOLD",
       "components": {
-        "technical": 50.4,
+        "technical": 51.9,
         "fundamental": 50.9,
         "sentiment": 21.1,
         "momentum": 40
@@ -364,13 +364,13 @@
       "groups": [
         "Bias SHORT"
       ],
-      "score": 52.6,
+      "score": 54.1,
       "recommendation": "HOLD",
       "components": {
         "technical": 59.2,
         "fundamental": 59.2,
         "sentiment": 31.1,
-        "momentum": 35
+        "momentum": 50
       },
       "cot": "CAD: speculators net short 45,048 contracts (-17% of their positions), COT index 62/100, 4-week change +29,661. CHF: speculators net short 8,281 contracts (-11% of their positions), COT index 100/100 - extreme, crowded, 4-week change +9,869. Positioning favours CHF by 38 points. CFTC report as of 17 Nov 2026"
     }
