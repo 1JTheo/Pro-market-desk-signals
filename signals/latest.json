@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-11-24T19:53:46Z",
-  "valid_until_utc": "2026-11-24T22:53:46Z",
+  "generated_utc": "2026-11-24T21:54:37Z",
+  "valid_until_utc": "2026-11-25T00:54:37Z",
   "mood": "mixed",
-  "headline": "Late New York is quiet after Nvidia's slide cut the Nasdaq 2.4% and the dollar gave back Monday's gains. CHF leads, JPY, AUD and NZD lag, and CAD firmed on Macklem's hike warning; sell NZD and EUR against CHF on pullbacks only.",
+  "headline": "Late New York is quiet after a chip-led slide (Nasdaq -2.1%) and a softer dollar. CHF leads, JPY and NZD lag; Australia's October CPI at 02:30 is the next risk, so sell NZD and EUR against CHF on pullbacks only and leave AUD alone.",
   "allow": [
     {
       "symbol": "NZDCHF",
@@ -25,10 +25,6 @@
     {
       "symbol": "CHFJPY",
       "dir": "LONG"
-    },
-    {
-      "symbol": "AUDCHF",
-      "dir": "SHORT"
     },
     {
       "symbol": "NZDCHF",
@@ -87,22 +83,12 @@
       "status": "Excluded"
     },
     {
-      "symbol": "EURAUD",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "GBPAUD",
+      "symbol": "AUDNZD",
       "dir": "LONG",
       "status": "Excluded"
     },
     {
       "symbol": "AUDCAD",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "AUDUSD",
       "dir": "SHORT",
       "status": "Excluded"
     },
@@ -149,8 +135,14 @@
     "JPY": -2,
     "CHF": 2,
     "CAD": 1,
-    "AUD": -2,
+    "AUD": -1,
     "NZD": -2
   },
-  "blackouts": []
+  "blackouts": [
+    {
+      "from": "2026-11-25T00:15:00Z",
+      "to": "2026-11-25T01:00:00Z",
+      "ccy": "AUD"
+    }
+  ]
 }
