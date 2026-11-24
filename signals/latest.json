@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-11-24T17:55:28Z",
-  "valid_until_utc": "2026-11-24T20:55:28Z",
+  "generated_utc": "2026-11-24T19:53:46Z",
+  "valid_until_utc": "2026-11-24T22:53:46Z",
   "mood": "mixed",
-  "headline": "Nvidia's slide dragged the Nasdaq down 2.4% and the dollar gave back Monday's gains; CHF leads while JPY, AUD and NZD lag. Sell NZD and EUR against CHF on pullbacks, buy CHFJPY on dips, and leave CAD alone until Macklem's press conference ends.",
+  "headline": "Late New York is quiet after Nvidia's slide cut the Nasdaq 2.4% and the dollar gave back Monday's gains. CHF leads, JPY, AUD and NZD lag, and CAD firmed on Macklem's hike warning; sell NZD and EUR against CHF on pullbacks only.",
   "allow": [
     {
       "symbol": "NZDCHF",
@@ -37,6 +37,21 @@
   ],
   "bias": [
     {
+      "symbol": "CADJPY",
+      "dir": "LONG",
+      "status": "No edge"
+    },
+    {
+      "symbol": "NZDCAD",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
+      "symbol": "CADCHF",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
       "symbol": "EURJPY",
       "dir": "LONG",
       "status": "No edge"
@@ -57,19 +72,39 @@
       "status": "No edge"
     },
     {
+      "symbol": "EURCAD",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
+      "symbol": "GBPCAD",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
       "symbol": "AUDCHF",
       "dir": "SHORT",
-      "status": "Avoid"
+      "status": "Excluded"
     },
     {
       "symbol": "EURAUD",
       "dir": "LONG",
-      "status": "Avoid"
+      "status": "Excluded"
     },
     {
       "symbol": "GBPAUD",
       "dir": "LONG",
-      "status": "Avoid"
+      "status": "Excluded"
+    },
+    {
+      "symbol": "AUDCAD",
+      "dir": "SHORT",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "AUDUSD",
+      "dir": "SHORT",
+      "status": "Excluded"
     },
     {
       "symbol": "USDCHF",
@@ -79,6 +114,11 @@
     {
       "symbol": "USDJPY",
       "dir": "LONG",
+      "status": "Avoid"
+    },
+    {
+      "symbol": "USDCAD",
+      "dir": "SHORT",
       "status": "Avoid"
     },
     {
@@ -97,39 +137,9 @@
       "status": "Avoid"
     },
     {
-      "symbol": "AUDUSD",
-      "dir": "SHORT",
-      "status": "Avoid"
-    },
-    {
       "symbol": "XAUUSD",
       "dir": "SHORT",
       "status": "Avoid"
-    },
-    {
-      "symbol": "USDCAD",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "AUDCAD",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "NZDCAD",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "CADJPY",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "CADCHF",
-      "dir": "SHORT",
-      "status": "Excluded"
     }
   ],
   "currency_strength": {
@@ -138,15 +148,9 @@
     "GBP": -1,
     "JPY": -2,
     "CHF": 2,
-    "CAD": 0,
+    "CAD": 1,
     "AUD": -2,
     "NZD": -2
   },
-  "blackouts": [
-    {
-      "from": "2026-11-24T18:45:00Z",
-      "to": "2026-11-24T19:30:00Z",
-      "ccy": "CAD"
-    }
-  ]
+  "blackouts": []
 }
