@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-11-24T07:55:00Z",
-  "valid_until_utc": "2026-11-24T10:55:00Z",
-  "mood": "risk-on",
-  "headline": "The dollar holds near a 20-month high (DXY 104.3) with a December Fed hike fully priced. Favour NZD and AUD shorts vs GBP and CHF; skip USD, EUR and CAD pairs around today's news.",
+  "generated_utc": "2026-11-24T09:54:00Z",
+  "valid_until_utc": "2026-11-24T12:54:00Z",
+  "mood": "mixed",
+  "headline": "Dollar steady near 20-month highs (DXY ~104.3) as a December Fed hike stays ~95% priced; German Ifo came in line at 90.6. Keep fading NZD and AUD against GBP and CHF; USD and CAD news lands later today.",
   "allow": [
     {
       "symbol": "GBPNZD",
@@ -142,11 +142,5 @@
     "AUD": -2,
     "NZD": -2
   },
-  "blackouts": [
-    {
-      "from": "2026-11-24T08:45:00Z",
-      "to": "2026-11-24T09:30:00Z",
-      "ccy": "EUR"
-    }
-  ]
+  "blackouts": []
 }
