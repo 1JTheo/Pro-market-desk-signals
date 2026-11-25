@@ -1,6 +1,6 @@
 {
-  "signal_generated_utc": "2026-11-25T09:58:01Z",
-  "scored_utc": "2026-11-25T09:59:08Z",
+  "signal_generated_utc": "2026-11-25T11:59:57Z",
+  "scored_utc": "2026-11-25T12:01:36Z",
   "source": "MultiAssetSignalPro (Streamlit branch)",
   "pairs": [
     {
@@ -27,10 +27,10 @@
         "Strength SHORT",
         "Top 3 SHORT"
       ],
-      "score": 38.9,
+      "score": 38.8,
       "recommendation": "SELL",
       "components": {
-        "technical": 31.8,
+        "technical": 31.5,
         "fundamental": 62.5,
         "sentiment": 5.0,
         "momentum": 20
@@ -43,10 +43,10 @@
       "groups": [
         "Top 3 SHORT"
       ],
-      "score": 42.9,
+      "score": 42.8,
       "recommendation": "WEAK SELL",
       "components": {
-        "technical": 45.9,
+        "technical": 45.6,
         "fundamental": 60.1,
         "sentiment": 5.0,
         "momentum": 20
@@ -107,13 +107,13 @@
       "groups": [
         "Bias SHORT"
       ],
-      "score": 48.6,
+      "score": 47.6,
       "recommendation": "HOLD",
       "components": {
-        "technical": 47.8,
+        "technical": 49.3,
         "fundamental": 59.2,
         "sentiment": 31.1,
-        "momentum": 35
+        "momentum": 20
       },
       "cot": "CAD: speculators net short 45,048 contracts (-17% of their positions), COT index 62/100, 4-week change +29,661. CHF: speculators net short 8,281 contracts (-11% of their positions), COT index 100/100 - extreme, crowded, 4-week change +9,869. Positioning favours CHF by 38 points. CFTC report as of 17 Nov 2026"
     },
@@ -123,13 +123,13 @@
       "groups": [
         "Bias LONG"
       ],
-      "score": 42.8,
+      "score": 44.3,
       "recommendation": "WEAK SELL",
       "components": {
         "technical": 35.0,
         "fundamental": 40.9,
         "sentiment": 51.2,
-        "momentum": 65
+        "momentum": 80
       },
       "cot": "CHF: speculators net short 8,281 contracts (-11% of their positions), COT index 100/100 - extreme, crowded, 4-week change +9,869. JPY: speculators net long 116,317 contracts (+29% of their positions), COT index 98/100 - extreme, crowded, 4-week change +46,439. Positioning favours CHF by 2 points. CFTC report as of 17 Nov 2026"
     },
@@ -235,13 +235,13 @@
       "groups": [
         "Bias SHORT"
       ],
-      "score": 42.0,
+      "score": 41.0,
       "recommendation": "WEAK SELL",
       "components": {
         "technical": 45.2,
         "fundamental": 51.0,
         "sentiment": 5.0,
-        "momentum": 50
+        "momentum": 40
       },
       "cot": "EUR: speculators net short 142,710 contracts (-24% of their positions), COT index 4/100 - extreme, crowded, 4-week change -8,186. JPY: speculators net long 116,317 contracts (+29% of their positions), COT index 98/100 - extreme, crowded, 4-week change +46,439. Positioning favours JPY by 93 points. CFTC report as of 17 Nov 2026"
     },
@@ -267,10 +267,10 @@
       "groups": [
         "Bias SHORT"
       ],
-      "score": 45.7,
-      "recommendation": "HOLD",
+      "score": 40.8,
+      "recommendation": "WEAK SELL",
       "components": {
-        "technical": 51.8,
+        "technical": 38.0,
         "fundamental": 50.9,
         "sentiment": 21.1,
         "momentum": 40
@@ -299,13 +299,13 @@
       "groups": [
         "Bias LONG"
       ],
-      "score": 54.4,
+      "score": 49.5,
       "recommendation": "HOLD",
       "components": {
-        "technical": 50.5,
+        "technical": 40.8,
         "fundamental": 60.8,
         "sentiment": 39.4,
-        "momentum": 65
+        "momentum": 50
       },
       "cot": "USD (US dollar index): speculators net long 13,345 contracts (+22% of their positions), COT index 76/100, 4-week change -1,699. JPY: speculators net long 116,317 contracts (+29% of their positions), COT index 98/100 - extreme, crowded, 4-week change +46,439. Positioning favours JPY by 21 points. CFTC report as of 17 Nov 2026"
     },
@@ -315,10 +315,10 @@
       "groups": [
         "Bias SHORT"
       ],
-      "score": 56.5,
+      "score": 59.6,
       "recommendation": "WEAK BUY",
       "components": {
-        "technical": 56.2,
+        "technical": 65.0,
         "fundamental": 67.7,
         "sentiment": 38.2,
         "momentum": 40
@@ -331,13 +331,13 @@
       "groups": [
         "Bias LONG"
       ],
-      "score": 56.4,
+      "score": 55.4,
       "recommendation": "WEAK BUY",
       "components": {
         "technical": 52.8,
         "fundamental": 60.8,
         "sentiment": 57.1,
-        "momentum": 50
+        "momentum": 40
       },
       "cot": "USD (US dollar index): speculators net long 13,345 contracts (+22% of their positions), COT index 76/100, 4-week change -1,699. CAD: speculators net short 45,048 contracts (-17% of their positions), COT index 62/100, 4-week change +29,661. Positioning favours USD by 14 points. CFTC report as of 17 Nov 2026"
     },
