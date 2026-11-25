@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-11-25T13:57:39Z",
-  "valid_until_utc": "2026-11-25T16:57:39Z",
+  "generated_utc": "2026-11-25T15:59:00Z",
+  "valid_until_utc": "2026-11-25T18:59:00Z",
   "mood": "risk-off",
-  "headline": "US core PCE beat (3.3%) and GDP was revised up to 4.3%, but the dollar barely moved as a tech sell-off keeps markets risk-off. CHF stays strongest and AUD/NZD weakest: sell AUD and NZD against CHF and JPY on pullbacks, away from USD pairs.",
+  "headline": "US data beat across the board (core PCE 3.3%, GDP 4.3%, claims 189K, new home sales 701K), locking in a December Fed hike, but haven CHF and JPY still lead. AUD and NZD stay weakest: sell them against CHF and JPY on pullbacks, away from USD pairs into the Beige Book.",
   "allow": [
     {
       "symbol": "AUDCHF",
@@ -33,12 +33,12 @@
   ],
   "bias": [
     {
-      "symbol": "NZDJPY",
+      "symbol": "AUDCAD",
       "dir": "SHORT",
       "status": "No edge"
     },
     {
-      "symbol": "AUDCAD",
+      "symbol": "NZDJPY",
       "dir": "SHORT",
       "status": "No edge"
     },
@@ -48,8 +48,18 @@
       "status": "No edge"
     },
     {
-      "symbol": "CADCHF",
+      "symbol": "GBPCHF",
       "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
+      "symbol": "GBPAUD",
+      "dir": "LONG",
+      "status": "No edge"
+    },
+    {
+      "symbol": "GBPNZD",
+      "dir": "LONG",
       "status": "No edge"
     },
     {
@@ -63,12 +73,17 @@
       "status": "No edge"
     },
     {
+      "symbol": "CADCHF",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
       "symbol": "EURJPY",
       "dir": "SHORT",
       "status": "No edge"
     },
     {
-      "symbol": "CADJPY",
+      "symbol": "GBPJPY",
       "dir": "SHORT",
       "status": "No edge"
     },
@@ -83,29 +98,9 @@
       "status": "No edge"
     },
     {
-      "symbol": "GBPCHF",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "GBPJPY",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "GBPAUD",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "GBPNZD",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
       "symbol": "GBPCAD",
       "dir": "SHORT",
-      "status": "Excluded"
+      "status": "No edge"
     },
     {
       "symbol": "USDCHF",
@@ -124,7 +119,7 @@
     },
     {
       "symbol": "USDCAD",
-      "dir": "LONG",
+      "dir": "SHORT",
       "status": "Excluded"
     },
     {
@@ -144,19 +139,19 @@
     }
   ],
   "currency_strength": {
-    "USD": 1,
+    "USD": 0,
     "EUR": -1,
     "GBP": -1,
     "JPY": 1,
     "CHF": 2,
-    "CAD": 0,
+    "CAD": 1,
     "AUD": -2,
     "NZD": -2
   },
   "blackouts": [
     {
-      "from": "2026-11-25T14:45:00Z",
-      "to": "2026-11-25T15:30:00Z",
+      "from": "2026-11-25T18:45:00Z",
+      "to": "2026-11-25T19:30:00Z",
       "ccy": "USD"
     }
   ]
