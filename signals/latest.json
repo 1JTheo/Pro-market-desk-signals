@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-11-25T11:59:57Z",
-  "valid_until_utc": "2026-11-25T14:59:57Z",
+  "generated_utc": "2026-11-25T13:57:39Z",
+  "valid_until_utc": "2026-11-25T16:57:39Z",
   "mood": "risk-off",
-  "headline": "CHF stays the strongest major and AUD the weakest as tech-led risk-off holds before US PCE. Sell AUD and NZD against CHF on pullbacks before 15:15; stay off USD pairs and gold until the 15:30 data clears.",
+  "headline": "US core PCE beat (3.3%) and GDP was revised up to 4.3%, but the dollar barely moved as a tech sell-off keeps markets risk-off. CHF stays strongest and AUD/NZD weakest: sell AUD and NZD against CHF and JPY on pullbacks, away from USD pairs.",
   "allow": [
     {
       "symbol": "AUDCHF",
@@ -13,12 +13,12 @@
       "dir": "SHORT"
     },
     {
-      "symbol": "EURCHF",
+      "symbol": "AUDJPY",
       "dir": "SHORT"
     }
   ],
   "backup": {
-    "symbol": "AUDJPY",
+    "symbol": "EURCHF",
     "dir": "SHORT"
   },
   "strength": [
@@ -38,21 +38,6 @@
       "status": "No edge"
     },
     {
-      "symbol": "GBPCHF",
-      "dir": "SHORT",
-      "status": "No edge"
-    },
-    {
-      "symbol": "CADCHF",
-      "dir": "SHORT",
-      "status": "No edge"
-    },
-    {
-      "symbol": "CHFJPY",
-      "dir": "LONG",
-      "status": "No edge"
-    },
-    {
       "symbol": "AUDCAD",
       "dir": "SHORT",
       "status": "No edge"
@@ -63,17 +48,12 @@
       "status": "No edge"
     },
     {
-      "symbol": "GBPAUD",
-      "dir": "LONG",
+      "symbol": "CADCHF",
+      "dir": "SHORT",
       "status": "No edge"
     },
     {
       "symbol": "EURAUD",
-      "dir": "LONG",
-      "status": "No edge"
-    },
-    {
-      "symbol": "GBPNZD",
       "dir": "LONG",
       "status": "No edge"
     },
@@ -88,8 +68,13 @@
       "status": "No edge"
     },
     {
-      "symbol": "GBPJPY",
+      "symbol": "CADJPY",
       "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
+      "symbol": "CHFJPY",
+      "dir": "LONG",
       "status": "No edge"
     },
     {
@@ -98,23 +83,33 @@
       "status": "No edge"
     },
     {
-      "symbol": "GBPCAD",
+      "symbol": "GBPCHF",
       "dir": "SHORT",
-      "status": "No edge"
+      "status": "Excluded"
     },
     {
-      "symbol": "USDJPY",
+      "symbol": "GBPJPY",
+      "dir": "SHORT",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "GBPAUD",
       "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "GBPNZD",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "GBPCAD",
+      "dir": "SHORT",
       "status": "Excluded"
     },
     {
       "symbol": "USDCHF",
       "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "USDCAD",
-      "dir": "LONG",
       "status": "Excluded"
     },
     {
@@ -125,6 +120,11 @@
     {
       "symbol": "NZDUSD",
       "dir": "SHORT",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "USDCAD",
+      "dir": "LONG",
       "status": "Excluded"
     },
     {
@@ -147,7 +147,7 @@
     "USD": 1,
     "EUR": -1,
     "GBP": -1,
-    "JPY": 0,
+    "JPY": 1,
     "CHF": 2,
     "CAD": 0,
     "AUD": -2,
@@ -155,8 +155,8 @@
   },
   "blackouts": [
     {
-      "from": "2026-11-25T13:15:00Z",
-      "to": "2026-11-25T14:00:00Z",
+      "from": "2026-11-25T14:45:00Z",
+      "to": "2026-11-25T15:30:00Z",
       "ccy": "USD"
     }
   ]
