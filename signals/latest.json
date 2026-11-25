@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-11-25T05:55:28Z",
-  "valid_until_utc": "2026-11-25T08:55:28Z",
+  "generated_utc": "2026-11-25T07:55:22Z",
+  "valid_until_utc": "2026-11-25T10:55:22Z",
   "mood": "risk-off",
-  "headline": "Chip-led equity selloff keeps havens bid: CHF leads, JPY lags despite BoJ hike talk. Hot Australian CPI lifts AUD; stay off USD and gold before the 15:30 GDP/PCE batch.",
+  "headline": "Tech selloff keeps CHF bid and JPY, NZD weak; German GDP missed. Trade CHF crosses before 15:30, stay off USD and gold until the PCE/GDP batch clears.",
   "allow": [
     {
       "symbol": "CHFJPY",
@@ -25,6 +25,10 @@
     {
       "symbol": "CHFJPY",
       "dir": "LONG"
+    },
+    {
+      "symbol": "NZDCHF",
+      "dir": "SHORT"
     }
   ],
   "bias": [
@@ -44,6 +48,21 @@
       "status": "No edge"
     },
     {
+      "symbol": "GBPNZD",
+      "dir": "LONG",
+      "status": "No edge"
+    },
+    {
+      "symbol": "EURNZD",
+      "dir": "LONG",
+      "status": "No edge"
+    },
+    {
+      "symbol": "NZDCAD",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
       "symbol": "CADCHF",
       "dir": "SHORT",
       "status": "No edge"
@@ -54,13 +73,8 @@
       "status": "No edge"
     },
     {
-      "symbol": "NZDCAD",
+      "symbol": "GBPCHF",
       "dir": "SHORT",
-      "status": "No edge"
-    },
-    {
-      "symbol": "GBPNZD",
-      "dir": "LONG",
       "status": "No edge"
     },
     {
@@ -70,11 +84,6 @@
     },
     {
       "symbol": "EURAUD",
-      "dir": "SHORT",
-      "status": "No edge"
-    },
-    {
-      "symbol": "GBPCHF",
       "dir": "SHORT",
       "status": "No edge"
     },
@@ -89,8 +98,8 @@
       "status": "No edge"
     },
     {
-      "symbol": "EURNZD",
-      "dir": "LONG",
+      "symbol": "EURGBP",
+      "dir": "SHORT",
       "status": "No edge"
     },
     {
@@ -131,13 +140,13 @@
   ],
   "currency_strength": {
     "USD": 0,
-    "EUR": 0,
+    "EUR": -1,
     "GBP": 0,
     "JPY": -2,
     "CHF": 2,
     "CAD": 1,
     "AUD": 1,
-    "NZD": -1
+    "NZD": -2
   },
   "blackouts": []
 }
