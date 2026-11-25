@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-11-25T01:54:44Z",
-  "valid_until_utc": "2026-11-25T04:54:44Z",
+  "generated_utc": "2026-11-25T03:57:09Z",
+  "valid_until_utc": "2026-11-25T06:57:09Z",
   "mood": "risk-off",
-  "headline": "Hot Australian CPI lifted AUD while a chip selloff drags Asian stocks; CHF leads and JPY lags. Plan CHF strength vs JPY, NZD and EUR on pullbacks, and stay off USD and gold before 15:30 GDP/PCE.",
+  "headline": "A chip selloff sinks Asian stocks (Kospi about -5%, Nikkei -3%) while hot Australian CPI keeps RBA hike risk alive. CHF leads and JPY lags; stay off USD and gold before 15:30 GDP/PCE.",
   "allow": [
     {
       "symbol": "CHFJPY",
@@ -25,16 +25,12 @@
     {
       "symbol": "CHFJPY",
       "dir": "LONG"
-    },
-    {
-      "symbol": "AUDJPY",
-      "dir": "LONG"
     }
   ],
   "bias": [
     {
-      "symbol": "GBPCHF",
-      "dir": "SHORT",
+      "symbol": "AUDNZD",
+      "dir": "LONG",
       "status": "No edge"
     },
     {
@@ -53,12 +49,12 @@
       "status": "No edge"
     },
     {
-      "symbol": "NZDCAD",
+      "symbol": "AUDCHF",
       "dir": "SHORT",
       "status": "No edge"
     },
     {
-      "symbol": "EURCAD",
+      "symbol": "NZDCAD",
       "dir": "SHORT",
       "status": "No edge"
     },
@@ -68,7 +64,17 @@
       "status": "No edge"
     },
     {
-      "symbol": "EURGBP",
+      "symbol": "EURCAD",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
+      "symbol": "EURAUD",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
+      "symbol": "GBPCHF",
       "dir": "SHORT",
       "status": "No edge"
     },
@@ -78,14 +84,19 @@
       "status": "No edge"
     },
     {
-      "symbol": "AUDJPY",
-      "dir": "LONG",
-      "status": "Excluded"
+      "symbol": "GBPAUD",
+      "dir": "SHORT",
+      "status": "No edge"
     },
     {
-      "symbol": "AUDNZD",
+      "symbol": "EURGBP",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
+      "symbol": "AUDJPY",
       "dir": "LONG",
-      "status": "Excluded"
+      "status": "Avoid"
     },
     {
       "symbol": "USDJPY",
@@ -98,23 +109,8 @@
       "status": "Excluded"
     },
     {
-      "symbol": "EURAUD",
+      "symbol": "USDCAD",
       "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "GBPAUD",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "AUDCAD",
-      "dir": "LONG",
-      "status": "Excluded"
-    },
-    {
-      "symbol": "AUDUSD",
-      "dir": "LONG",
       "status": "Excluded"
     },
     {
@@ -123,7 +119,12 @@
       "status": "Excluded"
     },
     {
-      "symbol": "USDCAD",
+      "symbol": "AUDUSD",
+      "dir": "LONG",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "EURUSD",
       "dir": "SHORT",
       "status": "Excluded"
     },
@@ -140,7 +141,7 @@
     "JPY": -2,
     "CHF": 2,
     "CAD": 1,
-    "AUD": 2,
+    "AUD": 1,
     "NZD": -1
   },
   "blackouts": []
