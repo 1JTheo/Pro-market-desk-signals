@@ -1,19 +1,19 @@
 {
-  "generated_utc": "2026-11-25T15:59:00Z",
-  "valid_until_utc": "2026-11-25T18:59:00Z",
+  "generated_utc": "2026-11-25T17:54:00Z",
+  "valid_until_utc": "2026-11-25T20:54:00Z",
   "mood": "risk-off",
-  "headline": "US data beat across the board (core PCE 3.3%, GDP 4.3%, claims 189K, new home sales 701K), locking in a December Fed hike, but haven CHF and JPY still lead. AUD and NZD stay weakest: sell them against CHF and JPY on pullbacks, away from USD pairs into the Beige Book.",
+  "headline": "Risk-off deepens: Nasdaq fell about 4% and gold 3% after core PCE ran hot at 3.3% and Q3 GDP hit 4.3%, cementing a December Fed hike. CHF and JPY lead, NZD and AUD lag; sell NZD and AUD against CHF and JPY on pullbacks only, and stay out of USD pairs into the Beige Book.",
   "allow": [
-    {
-      "symbol": "AUDCHF",
-      "dir": "SHORT"
-    },
     {
       "symbol": "NZDCHF",
       "dir": "SHORT"
     },
     {
-      "symbol": "AUDJPY",
+      "symbol": "AUDCHF",
+      "dir": "SHORT"
+    },
+    {
+      "symbol": "NZDJPY",
       "dir": "SHORT"
     }
   ],
@@ -33,17 +33,7 @@
   ],
   "bias": [
     {
-      "symbol": "AUDCAD",
-      "dir": "SHORT",
-      "status": "No edge"
-    },
-    {
-      "symbol": "NZDJPY",
-      "dir": "SHORT",
-      "status": "No edge"
-    },
-    {
-      "symbol": "NZDCAD",
+      "symbol": "AUDJPY",
       "dir": "SHORT",
       "status": "No edge"
     },
@@ -53,7 +43,12 @@
       "status": "No edge"
     },
     {
-      "symbol": "GBPAUD",
+      "symbol": "CADCHF",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
+      "symbol": "EURNZD",
       "dir": "LONG",
       "status": "No edge"
     },
@@ -63,18 +58,23 @@
       "status": "No edge"
     },
     {
+      "symbol": "NZDCAD",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
+      "symbol": "AUDCAD",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
       "symbol": "EURAUD",
       "dir": "LONG",
       "status": "No edge"
     },
     {
-      "symbol": "EURNZD",
+      "symbol": "GBPAUD",
       "dir": "LONG",
-      "status": "No edge"
-    },
-    {
-      "symbol": "CADCHF",
-      "dir": "SHORT",
       "status": "No edge"
     },
     {
@@ -88,7 +88,17 @@
       "status": "No edge"
     },
     {
+      "symbol": "CADJPY",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
       "symbol": "CHFJPY",
+      "dir": "LONG",
+      "status": "No edge"
+    },
+    {
+      "symbol": "AUDNZD",
       "dir": "LONG",
       "status": "No edge"
     },
@@ -119,7 +129,7 @@
     },
     {
       "symbol": "USDCAD",
-      "dir": "SHORT",
+      "dir": "LONG",
       "status": "Excluded"
     },
     {
@@ -139,12 +149,12 @@
     }
   ],
   "currency_strength": {
-    "USD": 0,
+    "USD": 1,
     "EUR": -1,
     "GBP": -1,
     "JPY": 1,
     "CHF": 2,
-    "CAD": 1,
+    "CAD": 0,
     "AUD": -2,
     "NZD": -2
   },
