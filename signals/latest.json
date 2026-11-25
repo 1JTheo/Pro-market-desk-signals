@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-11-25T03:57:09Z",
-  "valid_until_utc": "2026-11-25T06:57:09Z",
+  "generated_utc": "2026-11-25T05:55:28Z",
+  "valid_until_utc": "2026-11-25T08:55:28Z",
   "mood": "risk-off",
-  "headline": "A chip selloff sinks Asian stocks (Kospi about -5%, Nikkei -3%) while hot Australian CPI keeps RBA hike risk alive. CHF leads and JPY lags; stay off USD and gold before 15:30 GDP/PCE.",
+  "headline": "Chip-led equity selloff keeps havens bid: CHF leads, JPY lags despite BoJ hike talk. Hot Australian CPI lifts AUD; stay off USD and gold before the 15:30 GDP/PCE batch.",
   "allow": [
     {
       "symbol": "CHFJPY",
@@ -89,8 +89,8 @@
       "status": "No edge"
     },
     {
-      "symbol": "EURGBP",
-      "dir": "SHORT",
+      "symbol": "EURNZD",
+      "dir": "LONG",
       "status": "No edge"
     },
     {
@@ -124,11 +124,6 @@
       "status": "Excluded"
     },
     {
-      "symbol": "EURUSD",
-      "dir": "SHORT",
-      "status": "Excluded"
-    },
-    {
       "symbol": "XAUUSD",
       "dir": "SHORT",
       "status": "Excluded"
@@ -136,7 +131,7 @@
   ],
   "currency_strength": {
     "USD": 0,
-    "EUR": -1,
+    "EUR": 0,
     "GBP": 0,
     "JPY": -2,
     "CHF": 2,
