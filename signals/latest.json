@@ -1,8 +1,8 @@
 {
- "generated_utc": "2026-11-26T17:55:51Z",
- "valid_until_utc": "2026-11-26T20:55:51Z",
+ "generated_utc": "2026-11-26T19:55:59Z",
+ "valid_until_utc": "2026-11-26T22:55:59Z",
  "mood": "mixed",
- "headline": "Quiet Thanksgiving evening with US markets shut. NZD stays the weakest currency, so sell it only on pullbacks; leave JPY flat before Tokyo CPI at 01:30.",
+ "headline": "Quiet Thanksgiving night with US markets shut and risk tone improving. NZD stays weakest, so sell it on pullbacks only; keep JPY flat into Tokyo CPI at 01:30.",
  "allow": [
   {
    "symbol": "NZDUSD",
@@ -39,22 +39,17 @@
    "status": "No edge"
   },
   {
-   "symbol": "CADCHF",
+   "symbol": "GBPCHF",
    "dir": "LONG",
-   "status": "No edge"
-  },
-  {
-   "symbol": "AUDCHF",
-   "dir": "LONG",
-   "status": "No edge"
-  },
-  {
-   "symbol": "AUDUSD",
-   "dir": "SHORT",
    "status": "No edge"
   },
   {
    "symbol": "EURUSD",
+   "dir": "SHORT",
+   "status": "No edge"
+  },
+  {
+   "symbol": "AUDUSD",
    "dir": "SHORT",
    "status": "No edge"
   },
@@ -67,6 +62,21 @@
    "symbol": "EURCHF",
    "dir": "LONG",
    "status": "No edge"
+  },
+  {
+   "symbol": "AUDCHF",
+   "dir": "LONG",
+   "status": "No edge"
+  },
+  {
+   "symbol": "CADCHF",
+   "dir": "LONG",
+   "status": "No edge"
+  },
+  {
+   "symbol": "XAUUSD",
+   "dir": "LONG",
+   "status": "Avoid"
   },
   {
    "symbol": "USDJPY",
@@ -97,10 +107,10 @@
  "currency_strength": {
   "USD": 1,
   "JPY": 1,
-  "CAD": 1,
-  "AUD": 0,
+  "GBP": 1,
   "EUR": 0,
-  "GBP": 0,
+  "AUD": 0,
+  "CAD": 0,
   "CHF": -1,
   "NZD": -2
  },
