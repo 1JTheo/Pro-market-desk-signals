@@ -1,19 +1,19 @@
 {
- "generated_utc": "2026-11-26T05:56:07Z",
- "valid_until_utc": "2026-11-26T08:56:07Z",
+ "generated_utc": "2026-11-26T07:56:17Z",
+ "valid_until_utc": "2026-11-26T10:56:17Z",
  "mood": "mixed",
- "headline": "US Thanksgiving leaves FX thin; CHF and CAD lead, AUD and NZD lag. Sell NZD and AUD against CHF and CAD on pullbacks only.",
+ "headline": "Thin Thanksgiving trade: CHF and CAD lead, NZD lags most. Sell NZD against CHF and CAD on pullbacks; AUD shorts only from supply after the capex beat.",
  "allow": [
   {
    "symbol": "NZDCHF",
    "dir": "SHORT"
   },
   {
-   "symbol": "AUDCAD",
+   "symbol": "NZDCAD",
    "dir": "SHORT"
   },
   {
-   "symbol": "NZDCAD",
+   "symbol": "AUDCAD",
    "dir": "SHORT"
   }
  ],
@@ -23,15 +23,7 @@
  },
  "strength": [
   {
-   "symbol": "AUDCHF",
-   "dir": "SHORT"
-  },
-  {
    "symbol": "NZDCHF",
-   "dir": "SHORT"
-  },
-  {
-   "symbol": "AUDCAD",
    "dir": "SHORT"
   },
   {
@@ -40,6 +32,11 @@
   }
  ],
  "bias": [
+  {
+   "symbol": "NZDUSD",
+   "dir": "SHORT",
+   "status": "No edge"
+  },
   {
    "symbol": "USDCHF",
    "dir": "SHORT",
@@ -52,11 +49,6 @@
   },
   {
    "symbol": "AUDUSD",
-   "dir": "SHORT",
-   "status": "No edge"
-  },
-  {
-   "symbol": "NZDUSD",
    "dir": "SHORT",
    "status": "No edge"
   },
@@ -111,11 +103,6 @@
    "status": "Excluded"
   },
   {
-   "symbol": "EURAUD",
-   "dir": "LONG",
-   "status": "Excluded"
-  },
-  {
    "symbol": "EURNZD",
    "dir": "LONG",
    "status": "Excluded"
@@ -136,31 +123,26 @@
    "status": "Excluded"
   },
   {
-   "symbol": "GBPAUD",
-   "dir": "LONG",
-   "status": "Excluded"
-  },
-  {
    "symbol": "GBPNZD",
    "dir": "LONG",
    "status": "Excluded"
   }
  ],
  "currency_strength": {
-  "USD": 1,
-  "EUR": 0,
-  "GBP": 0,
-  "JPY": 1,
   "CHF": 2,
   "CAD": 2,
-  "AUD": -2,
+  "USD": 1,
+  "JPY": 1,
+  "EUR": 0,
+  "GBP": 0,
+  "AUD": -1,
   "NZD": -2
  },
  "blackouts": [
   {
-   "from": "2026-11-26T06:45:00Z",
-   "to": "2026-11-26T07:30:00Z",
-   "ccy": "EUR"
+   "from": "2026-11-26T10:15:00Z",
+   "to": "2026-11-26T11:00:00Z",
+   "ccy": "GBP"
   }
  ]
 }
