@@ -1,8 +1,8 @@
 {
- "generated_utc": "2026-11-26T13:54:18Z",
- "valid_until_utc": "2026-11-26T16:54:18Z",
+ "generated_utc": "2026-11-26T15:55:35Z",
+ "valid_until_utc": "2026-11-26T18:55:35Z",
  "mood": "mixed",
- "headline": "Quiet Thanksgiving afternoon with US markets shut. ECB accounts are out and backed more hikes, freeing EUR pairs; NZD stays the weakest, so sell it on pullbacks and leave JPY flat before Tokyo CPI.",
+ "headline": "Thin Thanksgiving trade with US markets shut. NZD is still the weakest currency, so sell it on pullbacks; AUD led today and CHF lagged. Leave JPY flat before Tokyo CPI tonight.",
  "allow": [
   {
    "symbol": "NZDUSD",
@@ -18,44 +18,39 @@
   }
  ],
  "backup": {
-  "symbol": "EURNZD",
+  "symbol": "AUDNZD",
   "dir": "LONG"
  },
  "strength": [],
  "bias": [
+  {
+   "symbol": "EURNZD",
+   "dir": "LONG",
+   "status": "No edge"
+  },
   {
    "symbol": "NZDCHF",
    "dir": "SHORT",
    "status": "No edge"
   },
   {
-   "symbol": "AUDCAD",
-   "dir": "SHORT",
+   "symbol": "USDCHF",
+   "dir": "LONG",
+   "status": "No edge"
+  },
+  {
+   "symbol": "CADCHF",
+   "dir": "LONG",
+   "status": "No edge"
+  },
+  {
+   "symbol": "AUDCHF",
+   "dir": "LONG",
    "status": "No edge"
   },
   {
    "symbol": "AUDUSD",
    "dir": "SHORT",
-   "status": "No edge"
-  },
-  {
-   "symbol": "EURAUD",
-   "dir": "LONG",
-   "status": "No edge"
-  },
-  {
-   "symbol": "GBPAUD",
-   "dir": "LONG",
-   "status": "No edge"
-  },
-  {
-   "symbol": "AUDNZD",
-   "dir": "LONG",
-   "status": "No edge"
-  },
-  {
-   "symbol": "USDCHF",
-   "dir": "LONG",
    "status": "No edge"
   },
   {
@@ -69,13 +64,8 @@
    "status": "No edge"
   },
   {
-   "symbol": "CADCHF",
+   "symbol": "EURCHF",
    "dir": "LONG",
-   "status": "No edge"
-  },
-  {
-   "symbol": "AUDCHF",
-   "dir": "SHORT",
    "status": "No edge"
   },
   {
@@ -94,12 +84,12 @@
    "status": "Excluded"
   },
   {
-   "symbol": "AUDJPY",
+   "symbol": "NZDJPY",
    "dir": "SHORT",
    "status": "Excluded"
   },
   {
-   "symbol": "NZDJPY",
+   "symbol": "CHFJPY",
    "dir": "SHORT",
    "status": "Excluded"
   }
@@ -108,10 +98,10 @@
   "USD": 1,
   "JPY": 1,
   "CAD": 1,
+  "AUD": 0,
   "EUR": 0,
-  "CHF": 0,
   "GBP": 0,
-  "AUD": -1,
+  "CHF": -1,
   "NZD": -2
  },
  "blackouts": []
