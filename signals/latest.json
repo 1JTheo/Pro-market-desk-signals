@@ -1,15 +1,15 @@
 {
- "generated_utc": "2026-11-26T07:56:17Z",
- "valid_until_utc": "2026-11-26T10:56:17Z",
+ "generated_utc": "2026-11-26T09:55:21Z",
+ "valid_until_utc": "2026-11-26T12:55:21Z",
  "mood": "mixed",
- "headline": "Thin Thanksgiving trade: CHF and CAD lead, NZD lags most. Sell NZD against CHF and CAD on pullbacks; AUD shorts only from supply after the capex beat.",
+ "headline": "Quiet Thanksgiving trade: oil-backed CAD leads and NZD lags most. Sell NZD and AUD against CAD on pullbacks; GBP and EUR wait for the BoE and ECB releases.",
  "allow": [
   {
-   "symbol": "NZDCHF",
+   "symbol": "NZDCAD",
    "dir": "SHORT"
   },
   {
-   "symbol": "NZDCAD",
+   "symbol": "NZDCHF",
    "dir": "SHORT"
   },
   {
@@ -18,14 +18,10 @@
   }
  ],
  "backup": {
-  "symbol": "AUDCHF",
+  "symbol": "NZDUSD",
   "dir": "SHORT"
  },
  "strength": [
-  {
-   "symbol": "NZDCHF",
-   "dir": "SHORT"
-  },
   {
    "symbol": "NZDCAD",
    "dir": "SHORT"
@@ -33,12 +29,7 @@
  ],
  "bias": [
   {
-   "symbol": "NZDUSD",
-   "dir": "SHORT",
-   "status": "No edge"
-  },
-  {
-   "symbol": "USDCHF",
+   "symbol": "AUDCHF",
    "dir": "SHORT",
    "status": "No edge"
   },
@@ -54,6 +45,16 @@
   },
   {
    "symbol": "AUDNZD",
+   "dir": "LONG",
+   "status": "No edge"
+  },
+  {
+   "symbol": "USDCHF",
+   "dir": "LONG",
+   "status": "No edge"
+  },
+  {
+   "symbol": "CADCHF",
    "dir": "LONG",
    "status": "No edge"
   },
@@ -83,17 +84,7 @@
    "status": "Excluded"
   },
   {
-   "symbol": "CHFJPY",
-   "dir": "LONG",
-   "status": "Excluded"
-  },
-  {
    "symbol": "EURJPY",
-   "dir": "SHORT",
-   "status": "Excluded"
-  },
-  {
-   "symbol": "EURCHF",
    "dir": "SHORT",
    "status": "Excluded"
   },
@@ -113,11 +104,6 @@
    "status": "Excluded"
   },
   {
-   "symbol": "GBPCHF",
-   "dir": "SHORT",
-   "status": "Excluded"
-  },
-  {
    "symbol": "GBPCAD",
    "dir": "SHORT",
    "status": "Excluded"
@@ -129,10 +115,10 @@
   }
  ],
  "currency_strength": {
-  "CHF": 2,
   "CAD": 2,
   "USD": 1,
   "JPY": 1,
+  "CHF": 1,
   "EUR": 0,
   "GBP": 0,
   "AUD": -1,
@@ -143,6 +129,11 @@
    "from": "2026-11-26T10:15:00Z",
    "to": "2026-11-26T11:00:00Z",
    "ccy": "GBP"
+  },
+  {
+   "from": "2026-11-26T12:15:00Z",
+   "to": "2026-11-26T13:00:00Z",
+   "ccy": "EUR"
   }
  ]
 }
