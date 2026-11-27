@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-11-27T05:55:25Z",
-  "valid_until_utc": "2026-11-27T08:55:25Z",
+  "generated_utc": "2026-11-27T07:55:30Z",
+  "valid_until_utc": "2026-11-27T10:55:30Z",
   "mood": "risk-on",
-  "headline": "Risk-on Black Friday: Nasdaq futures +2.4%, Asian stocks rally and the dollar eases (DXY 103.74). AUD leads on China profits; CHF and JPY lag. EUR data from 09:45 is the next risk.",
+  "headline": "Risk-on Black Friday holds: gold rebounds, US futures firm and the dollar idles at DXY 103.7. AUD leads, CHF lags; German jobs at 10:55 is the next EUR risk.",
   "allow": [
     {
       "symbol": "AUDCHF",
@@ -34,18 +34,13 @@
       "status": "No edge"
     },
     {
+      "symbol": "AUDUSD",
+      "dir": "LONG",
+      "status": "No edge"
+    },
+    {
       "symbol": "GBPAUD",
       "dir": "SHORT",
-      "status": "No edge"
-    },
-    {
-      "symbol": "GBPUSD",
-      "dir": "SHORT",
-      "status": "No edge"
-    },
-    {
-      "symbol": "AUDCAD",
-      "dir": "LONG",
       "status": "No edge"
     },
     {
@@ -54,12 +49,22 @@
       "status": "No edge"
     },
     {
-      "symbol": "GBPCAD",
+      "symbol": "AUDCAD",
+      "dir": "LONG",
+      "status": "No edge"
+    },
+    {
+      "symbol": "GBPUSD",
       "dir": "SHORT",
       "status": "No edge"
     },
     {
-      "symbol": "GBPNZD",
+      "symbol": "NZDUSD",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
+      "symbol": "GBPCAD",
       "dir": "SHORT",
       "status": "No edge"
     },
@@ -89,11 +94,6 @@
       "status": "Avoid"
     },
     {
-      "symbol": "NZDJPY",
-      "dir": "LONG",
-      "status": "Avoid"
-    },
-    {
       "symbol": "CHFJPY",
       "dir": "SHORT",
       "status": "Avoid"
@@ -112,6 +112,11 @@
       "symbol": "EURCHF",
       "dir": "LONG",
       "status": "Excluded"
+    },
+    {
+      "symbol": "EURNZD",
+      "dir": "LONG",
+      "status": "Excluded"
     }
   ],
   "currency_strength": {
@@ -122,14 +127,9 @@
     "CHF": -2,
     "CAD": 1,
     "AUD": 2,
-    "NZD": 0
+    "NZD": -1
   },
   "blackouts": [
-    {
-      "from": "2026-11-27T07:30:00Z",
-      "to": "2026-11-27T08:15:00Z",
-      "ccy": "EUR"
-    },
     {
       "from": "2026-11-27T07:45:00Z",
       "to": "2026-11-27T08:30:00Z",
