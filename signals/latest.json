@@ -1,8 +1,8 @@
 {
- "generated_utc": "2026-11-26T23:55:18Z",
- "valid_until_utc": "2026-11-27T02:55:18Z",
+ "generated_utc": "2026-11-27T01:55:08Z",
+ "valid_until_utc": "2026-11-27T04:55:08Z",
  "mood": "mixed",
- "headline": "Quiet Asian Friday: Tokyo core CPI rose to 2.9% but missed 3.0%, keeping USD/JPY near 159 and the dollar firm with a December Fed hike priced. EUR data from 09:45 is the next risk.",
+ "headline": "Quiet Black Friday Asia: Tokyo core CPI missed at 2.9%, USD/JPY holds 159.3 and the dollar stays firm on a near-certain December Fed hike. EUR data from 09:45 is the next risk.",
  "allow": [
   {
    "symbol": "USDCHF",
@@ -18,29 +18,14 @@
   }
  ],
  "backup": {
-  "symbol": "GBPAUD",
+  "symbol": "USDCAD",
   "dir": "LONG"
  },
  "strength": [],
  "bias": [
   {
-   "symbol": "GBPNZD",
-   "dir": "LONG",
-   "status": "No edge"
-  },
-  {
-   "symbol": "USDCAD",
-   "dir": "LONG",
-   "status": "No edge"
-  },
-  {
    "symbol": "GBPUSD",
    "dir": "SHORT",
-   "status": "No edge"
-  },
-  {
-   "symbol": "GBPCHF",
-   "dir": "LONG",
    "status": "No edge"
   },
   {
@@ -59,17 +44,17 @@
    "status": "No edge"
   },
   {
+   "symbol": "GBPCAD",
+   "dir": "SHORT",
+   "status": "No edge"
+  },
+  {
    "symbol": "XAUUSD",
    "dir": "SHORT",
    "status": "Avoid"
   },
   {
    "symbol": "USDJPY",
-   "dir": "LONG",
-   "status": "Avoid"
-  },
-  {
-   "symbol": "GBPJPY",
    "dir": "LONG",
    "status": "Avoid"
   },
@@ -82,17 +67,12 @@
    "symbol": "EURUSD",
    "dir": "SHORT",
    "status": "Excluded"
-  },
-  {
-   "symbol": "EURGBP",
-   "dir": "SHORT",
-   "status": "Excluded"
   }
  ],
  "currency_strength": {
   "USD": 2,
-  "EUR": -1,
-  "GBP": 0,
+  "EUR": 0,
+  "GBP": -1,
   "JPY": -1,
   "CHF": -1,
   "CAD": 0,
