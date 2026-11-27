@@ -1,8 +1,8 @@
 {
- "generated_utc": "2026-11-27T13:55:14Z",
- "valid_until_utc": "2026-11-27T16:55:14Z",
+ "generated_utc": "2026-11-27T15:54:49Z",
+ "valid_until_utc": "2026-11-27T18:54:49Z",
  "mood": "risk-on",
- "headline": "Risk-on Black Friday: equity futures and Asia stocks rally, gold and oil jump, and CAD and AUD lead while JPY lags near 160. US data is out; only Nagel and early US closes remain, in thin liquidity.",
+ "headline": "Risk-on Black Friday: equity futures up about 2%, gold and oil jump, AUD and NZD lead while JPY and CHF lag. No major data remains; liquidity is thin into early US closes.",
  "allow": [
   {
    "symbol": "AUDCHF",
@@ -13,47 +13,27 @@
    "dir": "LONG"
   },
   {
-   "symbol": "AUDNZD",
+   "symbol": "AUDUSD",
    "dir": "LONG"
   }
  ],
  "backup": {
-  "symbol": "AUDUSD",
+  "symbol": "NZDCHF",
   "dir": "LONG"
  },
  "strength": [
   {
-   "symbol": "AUDJPY",
+   "symbol": "AUDCHF",
    "dir": "LONG"
   },
   {
-   "symbol": "CADJPY",
+   "symbol": "AUDJPY",
    "dir": "LONG"
   }
  ],
  "bias": [
   {
-   "symbol": "USDCAD",
-   "dir": "SHORT",
-   "status": "No edge"
-  },
-  {
-   "symbol": "NZDCAD",
-   "dir": "SHORT",
-   "status": "No edge"
-  },
-  {
-   "symbol": "GBPAUD",
-   "dir": "SHORT",
-   "status": "No edge"
-  },
-  {
-   "symbol": "GBPCAD",
-   "dir": "SHORT",
-   "status": "No edge"
-  },
-  {
-   "symbol": "GBPCHF",
+   "symbol": "AUDCAD",
    "dir": "LONG",
    "status": "No edge"
   },
@@ -63,54 +43,94 @@
    "status": "No edge"
   },
   {
-   "symbol": "NZDCHF",
+   "symbol": "GBPCHF",
    "dir": "LONG",
    "status": "No edge"
   },
   {
-   "symbol": "GBPUSD",
+   "symbol": "NZDUSD",
+   "dir": "LONG",
+   "status": "No edge"
+  },
+  {
+   "symbol": "GBPAUD",
+   "dir": "SHORT",
+   "status": "No edge"
+  },
+  {
+   "symbol": "AUDNZD",
    "dir": "LONG",
    "status": "No edge"
   },
   {
    "symbol": "GBPNZD",
-   "dir": "LONG",
+   "dir": "SHORT",
    "status": "No edge"
+  },
+  {
+   "symbol": "GBPCAD",
+   "dir": "SHORT",
+   "status": "No edge"
+  },
+  {
+   "symbol": "USDCAD",
+   "dir": "SHORT",
+   "status": "Avoid"
   },
   {
    "symbol": "XAUUSD",
    "dir": "LONG",
-   "status": "No edge"
+   "status": "Avoid"
   },
   {
    "symbol": "AUDJPY",
    "dir": "LONG",
-   "status": "Avoid"
+   "status": "Excluded"
   },
   {
    "symbol": "CADJPY",
    "dir": "LONG",
-   "status": "Avoid"
-  },
-  {
-   "symbol": "GBPJPY",
-   "dir": "LONG",
-   "status": "Avoid"
-  },
-  {
-   "symbol": "USDJPY",
-   "dir": "LONG",
-   "status": "Avoid"
+   "status": "Excluded"
   },
   {
    "symbol": "NZDJPY",
    "dir": "LONG",
-   "status": "Avoid"
+   "status": "Excluded"
   },
   {
-   "symbol": "CHFJPY",
+   "symbol": "USDJPY",
    "dir": "LONG",
-   "status": "Avoid"
+   "status": "Excluded"
+  },
+  {
+   "symbol": "GBPJPY",
+   "dir": "LONG",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "EURJPY",
+   "dir": "LONG",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "EURCHF",
+   "dir": "LONG",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "EURAUD",
+   "dir": "SHORT",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "EURNZD",
+   "dir": "SHORT",
+   "status": "Excluded"
+  },
+  {
+   "symbol": "EURCAD",
+   "dir": "SHORT",
+   "status": "Excluded"
   },
   {
    "symbol": "EURUSD",
@@ -121,32 +141,17 @@
    "symbol": "EURGBP",
    "dir": "SHORT",
    "status": "Excluded"
-  },
-  {
-   "symbol": "EURAUD",
-   "dir": "SHORT",
-   "status": "Excluded"
-  },
-  {
-   "symbol": "EURCAD",
-   "dir": "SHORT",
-   "status": "Excluded"
-  },
-  {
-   "symbol": "EURJPY",
-   "dir": "LONG",
-   "status": "Excluded"
   }
  ],
  "currency_strength": {
-  "USD": 0,
-  "EUR": -1,
-  "GBP": 1,
-  "JPY": -2,
-  "CHF": -1,
-  "CAD": 2,
   "AUD": 2,
-  "NZD": 0
+  "NZD": 1,
+  "CAD": 1,
+  "USD": 0,
+  "GBP": 0,
+  "EUR": -1,
+  "CHF": -2,
+  "JPY": -2
  },
  "blackouts": []
 }
