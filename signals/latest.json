@@ -1,83 +1,113 @@
 {
- "generated_utc": "2026-11-27T01:55:08Z",
- "valid_until_utc": "2026-11-27T04:55:08Z",
- "mood": "mixed",
- "headline": "Quiet Black Friday Asia: Tokyo core CPI missed at 2.9%, USD/JPY holds 159.3 and the dollar stays firm on a near-certain December Fed hike. EUR data from 09:45 is the next risk.",
- "allow": [
-  {
-   "symbol": "USDCHF",
-   "dir": "LONG"
+  "generated_utc": "2026-11-27T03:55:40Z",
+  "valid_until_utc": "2026-11-27T06:55:40Z",
+  "mood": "mixed",
+  "headline": "Quiet Black Friday Asia: Tokyo core CPI missed at 2.9%, USD/JPY holds near 159.35 and the dollar stays firm on a near-certain December Fed hike. NZD is the weakest major; EUR data from 09:45 is the next risk.",
+  "allow": [
+    {
+      "symbol": "NZDUSD",
+      "dir": "SHORT"
+    },
+    {
+      "symbol": "USDCHF",
+      "dir": "LONG"
+    },
+    {
+      "symbol": "AUDUSD",
+      "dir": "SHORT"
+    }
+  ],
+  "backup": {
+    "symbol": "USDCAD",
+    "dir": "LONG"
   },
-  {
-   "symbol": "NZDUSD",
-   "dir": "SHORT"
+  "strength": [
+    {
+      "symbol": "NZDUSD",
+      "dir": "SHORT"
+    }
+  ],
+  "bias": [
+    {
+      "symbol": "NZDCAD",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
+      "symbol": "GBPUSD",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
+      "symbol": "AUDNZD",
+      "dir": "LONG",
+      "status": "No edge"
+    },
+    {
+      "symbol": "GBPNZD",
+      "dir": "LONG",
+      "status": "No edge"
+    },
+    {
+      "symbol": "NZDCHF",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
+      "symbol": "AUDCAD",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
+      "symbol": "CADCHF",
+      "dir": "LONG",
+      "status": "No edge"
+    },
+    {
+      "symbol": "GBPCAD",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
+      "symbol": "XAUUSD",
+      "dir": "SHORT",
+      "status": "Avoid"
+    },
+    {
+      "symbol": "USDJPY",
+      "dir": "LONG",
+      "status": "Avoid"
+    },
+    {
+      "symbol": "CADJPY",
+      "dir": "LONG",
+      "status": "Avoid"
+    },
+    {
+      "symbol": "NZDJPY",
+      "dir": "SHORT",
+      "status": "Avoid"
+    },
+    {
+      "symbol": "EURUSD",
+      "dir": "SHORT",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "EURNZD",
+      "dir": "LONG",
+      "status": "Excluded"
+    }
+  ],
+  "currency_strength": {
+    "USD": 2,
+    "EUR": 0,
+    "GBP": -1,
+    "JPY": -1,
+    "CHF": -1,
+    "CAD": 0,
+    "AUD": -1,
+    "NZD": -2
   },
-  {
-   "symbol": "AUDUSD",
-   "dir": "SHORT"
-  }
- ],
- "backup": {
-  "symbol": "USDCAD",
-  "dir": "LONG"
- },
- "strength": [],
- "bias": [
-  {
-   "symbol": "GBPUSD",
-   "dir": "SHORT",
-   "status": "No edge"
-  },
-  {
-   "symbol": "NZDCAD",
-   "dir": "SHORT",
-   "status": "No edge"
-  },
-  {
-   "symbol": "AUDCAD",
-   "dir": "SHORT",
-   "status": "No edge"
-  },
-  {
-   "symbol": "CADCHF",
-   "dir": "LONG",
-   "status": "No edge"
-  },
-  {
-   "symbol": "GBPCAD",
-   "dir": "SHORT",
-   "status": "No edge"
-  },
-  {
-   "symbol": "XAUUSD",
-   "dir": "SHORT",
-   "status": "Avoid"
-  },
-  {
-   "symbol": "USDJPY",
-   "dir": "LONG",
-   "status": "Avoid"
-  },
-  {
-   "symbol": "CADJPY",
-   "dir": "LONG",
-   "status": "Avoid"
-  },
-  {
-   "symbol": "EURUSD",
-   "dir": "SHORT",
-   "status": "Excluded"
-  }
- ],
- "currency_strength": {
-  "USD": 2,
-  "EUR": 0,
-  "GBP": -1,
-  "JPY": -1,
-  "CHF": -1,
-  "CAD": 0,
-  "AUD": -1,
-  "NZD": -1
- },
- "blackouts": []
+  "blackouts": []
 }
