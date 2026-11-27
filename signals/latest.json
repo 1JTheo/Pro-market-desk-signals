@@ -1,35 +1,40 @@
 {
-  "generated_utc": "2026-11-27T03:55:40Z",
-  "valid_until_utc": "2026-11-27T06:55:40Z",
-  "mood": "mixed",
-  "headline": "Quiet Black Friday Asia: Tokyo core CPI missed at 2.9%, USD/JPY holds near 159.35 and the dollar stays firm on a near-certain December Fed hike. NZD is the weakest major; EUR data from 09:45 is the next risk.",
+  "generated_utc": "2026-11-27T05:55:25Z",
+  "valid_until_utc": "2026-11-27T08:55:25Z",
+  "mood": "risk-on",
+  "headline": "Risk-on Black Friday: Nasdaq futures +2.4%, Asian stocks rally and the dollar eases (DXY 103.74). AUD leads on China profits; CHF and JPY lag. EUR data from 09:45 is the next risk.",
   "allow": [
     {
-      "symbol": "NZDUSD",
-      "dir": "SHORT"
+      "symbol": "AUDCHF",
+      "dir": "LONG"
     },
     {
       "symbol": "USDCHF",
       "dir": "LONG"
     },
     {
-      "symbol": "AUDUSD",
-      "dir": "SHORT"
+      "symbol": "AUDNZD",
+      "dir": "LONG"
     }
   ],
   "backup": {
-    "symbol": "USDCAD",
+    "symbol": "CADCHF",
     "dir": "LONG"
   },
   "strength": [
     {
-      "symbol": "NZDUSD",
-      "dir": "SHORT"
+      "symbol": "AUDCHF",
+      "dir": "LONG"
     }
   ],
   "bias": [
     {
-      "symbol": "NZDCAD",
+      "symbol": "NZDCHF",
+      "dir": "LONG",
+      "status": "No edge"
+    },
+    {
+      "symbol": "GBPAUD",
       "dir": "SHORT",
       "status": "No edge"
     },
@@ -39,27 +44,12 @@
       "status": "No edge"
     },
     {
-      "symbol": "AUDNZD",
-      "dir": "LONG",
-      "status": "No edge"
-    },
-    {
-      "symbol": "GBPNZD",
-      "dir": "LONG",
-      "status": "No edge"
-    },
-    {
-      "symbol": "NZDCHF",
-      "dir": "SHORT",
-      "status": "No edge"
-    },
-    {
       "symbol": "AUDCAD",
-      "dir": "SHORT",
+      "dir": "LONG",
       "status": "No edge"
     },
     {
-      "symbol": "CADCHF",
+      "symbol": "GBPCHF",
       "dir": "LONG",
       "status": "No edge"
     },
@@ -69,12 +59,27 @@
       "status": "No edge"
     },
     {
-      "symbol": "XAUUSD",
+      "symbol": "GBPNZD",
       "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
+      "symbol": "NZDCAD",
+      "dir": "SHORT",
+      "status": "No edge"
+    },
+    {
+      "symbol": "XAUUSD",
+      "dir": "LONG",
       "status": "Avoid"
     },
     {
       "symbol": "USDJPY",
+      "dir": "LONG",
+      "status": "Avoid"
+    },
+    {
+      "symbol": "AUDJPY",
       "dir": "LONG",
       "status": "Avoid"
     },
@@ -85,6 +90,11 @@
     },
     {
       "symbol": "NZDJPY",
+      "dir": "LONG",
+      "status": "Avoid"
+    },
+    {
+      "symbol": "CHFJPY",
       "dir": "SHORT",
       "status": "Avoid"
     },
@@ -94,20 +104,41 @@
       "status": "Excluded"
     },
     {
-      "symbol": "EURNZD",
+      "symbol": "EURAUD",
+      "dir": "SHORT",
+      "status": "Excluded"
+    },
+    {
+      "symbol": "EURCHF",
       "dir": "LONG",
       "status": "Excluded"
     }
   ],
   "currency_strength": {
-    "USD": 2,
+    "USD": 1,
     "EUR": 0,
     "GBP": -1,
     "JPY": -1,
-    "CHF": -1,
-    "CAD": 0,
-    "AUD": -1,
-    "NZD": -2
+    "CHF": -2,
+    "CAD": 1,
+    "AUD": 2,
+    "NZD": 0
   },
-  "blackouts": []
+  "blackouts": [
+    {
+      "from": "2026-11-27T07:30:00Z",
+      "to": "2026-11-27T08:15:00Z",
+      "ccy": "EUR"
+    },
+    {
+      "from": "2026-11-27T07:45:00Z",
+      "to": "2026-11-27T08:30:00Z",
+      "ccy": "EUR"
+    },
+    {
+      "from": "2026-11-27T08:40:00Z",
+      "to": "2026-11-27T09:25:00Z",
+      "ccy": "EUR"
+    }
+  ]
 }
